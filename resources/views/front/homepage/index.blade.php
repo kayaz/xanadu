@@ -191,7 +191,24 @@
 </section>
 
 <section>
-    .
+    <div id="homepage-map">
+        <div class="container-fluid p-0">
+            <div class="row m-0">
+                <div class="col-7 p-0">
+                    <img src="{{ asset('/images/mapa.png') }}" alt="Mapa lokalizacji" width="1178" height="738">
+                </div>
+                <div class="col-5 p-0">
+                    <div class="map-text">
+                        <div>
+                            <h2>Nasza lokalizacja, <br>bliskość morza i spokoju.</h2>
+                            <p>Nasze noclegi stwarzają możliwość spokojnego wypoczynku połączonego z aktywnościami na świeżym powietrzu. W pobliżu ośrodka Xanadu znajdą Państwo promenadę dla pieszych i rowerzystów, która łączy łączący Sianożęty z Ustroniem Morskim oraz Sianożęty z Kołobrzegiem.</p>
+                            <a href="https://maps.app.goo.gl/jaWf75Q1rqin9oKv9" class="btn btn-theme btn-icon mt-5" target="_blank">WYZNACZ TRASĘ <i class="las la-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section>

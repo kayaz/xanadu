@@ -131,6 +131,28 @@ iframe {
 .icon-box img {
   margin: 0 auto;
 }
+#homepage-map img {
+  width: 100%;
+}
+#homepage-map .map-text {
+  background: #4079a5;
+  height: 100%;
+  padding: 0 90px;
+  display: flex;
+  align-items: center;
+}
+#homepage-map h2,
+#homepage-map p {
+  color: white;
+}
+#homepage-map a.btn-theme {
+  background: none;
+  color: white;
+}
+#homepage-map a.btn-theme:hover {
+  background: #1b5582;
+  border-color: white;
+}
 /* Tabelka
 ================================================== */
 /* Buttons
@@ -206,7 +228,8 @@ section .text-left .section-title {
 }
 section.cta-section {
   margin: 70px 0;
-  background: #222;
+  background: #222 url("../images/restaurant-bg.jpg") no-repeat center;
+  background-attachment: fixed;
 }
 section.cta-section h2,
 section.cta-section p {

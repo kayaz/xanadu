@@ -93,6 +93,32 @@ iframe {
   }
 }
 
+#homepage-map {
+  img {
+    width: 100%;
+  }
+  .map-text {
+    background: #4079a5;
+    height: 100%;
+    padding: 0 90px;
+    display: flex;
+    align-items: center;
+  }
+
+  h2, p {
+    color: white;
+  }
+
+  a.btn-theme {
+    background: none;
+    color:white;
+    &:hover {
+      background: #1b5582;
+      border-color:white
+    }
+  }
+}
+
 
 /* Tabelka
 ================================================== */
@@ -179,7 +205,8 @@ section {
 
   &.cta-section {
     margin: 70px 0;
-    background: #222;
+    background: #222 url("../images/restaurant-bg.jpg") no-repeat center;
+    background-attachment: fixed;
     h2, p {
       color: white;
     }
