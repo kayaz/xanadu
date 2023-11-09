@@ -205,8 +205,8 @@ section {
 
   &.cta-section {
     margin: 70px 0;
-    background: #222 url("../images/restaurant-bg.jpg") no-repeat center;
-    background-attachment: fixed;
+    background: #222 url("../images/restaurant-bg.jpg") no-repeat fixed center;
+    background-size: 100% auto;
     h2, p {
       color: white;
     }
@@ -278,6 +278,7 @@ section {
 /* Header
 ================================================== */
 @import "less-partials/header";
+@import "less-partials/slider";
 
 /* Cennik
 ================================================== */
@@ -343,23 +344,58 @@ table.cennik thead td {background:#113f63 !important;color:white}
 
 /* Rezerwacja
 ================================================== */
-.booking {width:260px;padding:0 20px}
+.booking {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  width:260px;
+  padding: 10px;
+  background: rgba(0,0,0,0.5);
+}
 #checkin, #checkout {width:-webkit-calc(50% - 3px);width:calc(50% - 3px);border:1px solid #e6dbca;background:white;text-align:center}
 
 #checkin {float:left}
 #checkout {float:right}
 
-span.label {font-size:14px;color:#4f4b4a;display:flex;padding:7px 0 0;align-items: center;justify-content: center}
+span.label {font-family: 'Barlow Condensed', sans-serif;font-size:18px;font-weight:500;color:#555555;display:flex;padding:7px 0 0;align-items: center;justify-content: center}
 span.label i {color:#ad8b57;margin-right:3px;font-size: 24px}
 
-.date_day, .date_month, .date_year {font-family: 'Open Sans Condensed', sans-serif;display:inline-block;width:100%;font-weight:300}
-.date_month, .date_year {font-weight:600}
+.date_day,
+.date_month,
+.date_year {
+  display:inline-block;
+  width:100%
+}
+.date_month, .date_year {}
 .date_change {display:inline-block;width:100%;border:0}
-.date_day {text-align:center;color:#4f4b4a;font-size:60px;line-height:60px}
-.date_month, .date_year {width:50%;display:inline;font-size:14px;line-height:14px}
-.date_change {background:#e77918;color:white;text-align:center;font-size:14px;padding:5px 0;margin-top:5px}
+.date_day {text-align:center;color:#e77918;font-size:60px;line-height:60px}
+.date_month, .date_year {font-family: 'Barlow Condensed', sans-serif;width:50%;display:inline;font-size:16px;line-height:16px;color: #585858;font-weight: 500;}
+.date_change {
+  font-family: 'Barlow Condensed', sans-serif;
+  background:#4079a5;
+  color:white;
+  text-align:center;
+  font-size:14px;
+  padding:5px 0;
+  margin-top:5px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
 
-.date_check {text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);background:#4f4b4a;color:white;text-align:center;font-size:14px;width:100%;margin-top:4px;display:inline-block;padding:7px 3px;border:0}
+.date_check {
+  font-family: 'Barlow Condensed', sans-serif;
+  background:#e77918;
+  color:white;
+  text-align:center;
+  font-size:18px;
+  width:100%;
+  margin-top:4px;
+  display:inline-block;
+  padding:7px 3px;
+  border:0;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
 
 /* Slider
 ================================================== */

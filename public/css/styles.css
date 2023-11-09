@@ -228,8 +228,8 @@ section .text-left .section-title {
 }
 section.cta-section {
   margin: 70px 0;
-  background: #222 url("../images/restaurant-bg.jpg") no-repeat center;
-  background-attachment: fixed;
+  background: #222 url("../images/restaurant-bg.jpg") no-repeat fixed center;
+  background-size: 100% auto;
 }
 section.cta-section h2,
 section.cta-section p {
@@ -339,6 +339,32 @@ header.fixed {
   width: 100%;
   z-index: 9900;
   top: 0;
+}
+#slider {
+  position: relative;
+  padding: 0;
+}
+#slider li {
+  position: relative;
+}
+#slider .slider-apla {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  width: 600px;
+}
+#slider .slider-apla h1 {
+  font-size: 50px;
+  line-height: 67px;
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+}
+#slider .slider-link {
+  font-size: 20px;
+  color: black;
+  display: block;
+  margin-top: 50px;
 }
 /* Cennik
 ================================================== */
@@ -580,8 +606,12 @@ div[class*='col-'].slick-slide {
 /* Rezerwacja
 ================================================== */
 .booking {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
   width: 260px;
-  padding: 0 20px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5);
 }
 #checkin,
 #checkout {
@@ -598,8 +628,10 @@ div[class*='col-'].slick-slide {
   float: right;
 }
 span.label {
-  font-size: 14px;
-  color: #4f4b4a;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #555555;
   display: flex;
   padding: 7px 0 0;
   align-items: center;
@@ -613,14 +645,8 @@ span.label i {
 .date_day,
 .date_month,
 .date_year {
-  font-family: 'Open Sans Condensed', sans-serif;
   display: inline-block;
   width: 100%;
-  font-weight: 300;
-}
-.date_month,
-.date_year {
-  font-weight: 600;
 }
 .date_change {
   display: inline-block;
@@ -629,36 +655,44 @@ span.label i {
 }
 .date_day {
   text-align: center;
-  color: #4f4b4a;
+  color: #e77918;
   font-size: 60px;
   line-height: 60px;
 }
 .date_month,
 .date_year {
+  font-family: 'Barlow Condensed', sans-serif;
   width: 50%;
   display: inline;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #585858;
+  font-weight: 500;
 }
 .date_change {
-  background: #e77918;
+  font-family: 'Barlow Condensed', sans-serif;
+  background: #4079a5;
   color: white;
   text-align: center;
   font-size: 14px;
   padding: 5px 0;
   margin-top: 5px;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 .date_check {
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
-  background: #4f4b4a;
+  font-family: 'Barlow Condensed', sans-serif;
+  background: #e77918;
   color: white;
   text-align: center;
-  font-size: 14px;
+  font-size: 18px;
   width: 100%;
   margin-top: 4px;
   display: inline-block;
   padding: 7px 3px;
   border: 0;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 /* Slider
 ================================================== */

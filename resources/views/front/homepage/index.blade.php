@@ -4,9 +4,36 @@
 <div id="slider">
     <ul class="mb-0 list-unstyled">
         <li>
+            <div class="slider-apla">
+                <h1>Bałtyckie przygody czekają na Ciebie.</h1>
+            </div>
             <img src="{{ asset('/uploads/slider/slider-1.jpg') }}" alt="" width="1920" height="900" class="w-100">
         </li>
     </ul>
+
+    <div class="booking">
+        <form action="#" method="post">
+            {{ csrf_field() }}
+            <div id="checkin">
+                <span class="label">PRZYJAZD</span>
+                <span class="date_day">09</span>
+                <span class="date_month">11</span>
+                <span class="date_year">2023</span>
+                <button class="date_change checkin" type="button">ZMIEŃ DATĘ</button>
+                <input type="hidden" name="checkin" value="">
+            </div>
+
+            <div id="checkout">
+                <span class="label">WYJAZD</span>
+                <span class="date_day">10</span>
+                <span class="date_month">11</span>
+                <span class="date_year">2023</span>
+                <button class="date_change checkout" type="button">ZMIEŃ DATĘ</button>
+                <input type="hidden" name="checkout" value="">
+            </div>
+            <button type="submit" class="date_check">SPRAWDŹ DOSTĘPNOŚĆ</button>
+        </form>
+    </div>
 </div>
 
 <section>
