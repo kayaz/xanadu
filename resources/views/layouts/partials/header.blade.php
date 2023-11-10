@@ -12,7 +12,7 @@
                 <nav>
                     <ul class="mb-0 list-unstyled">
                         <li><a href="/">Strona główna</a></li>
-                        <li><a href="">Xanadu Resort</a></li>
+                        <li><a href="{{ route('about') }}">Xanadu Resort</a></li>
                         <li><a href="{{ route('front.menu', ['language' => 'pl', 'uri' => 'pokoje']) }}">Pokoje</a></li>
                         <li><a href="{{ route('front.menu', ['language' => 'pl', 'uri' => 'domki']) }}">Domki</a></li>
                         <li><a href="">Restauracja</a></li>

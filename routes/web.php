@@ -16,6 +16,12 @@ Route::get('routes', function() {
 Route::group(['namespace' => 'Front'], function () {
     Route::get('/', 'IndexController@index')->name('index');
 
+    // About
+    Route::get('/pl/o-nas', 'AboutController@index')->name('about');
+
+    // Restaurant
+    Route::get('/pl/restauracja', 'RestaurantController@index')->name('restaurant');
+
     // Contact page
     Route::get('/pl/kontakt', 'ContactController@index')->name('contact');
     Route::post('/pl/kontakt', 'ContactController@form')->name('contact.form');

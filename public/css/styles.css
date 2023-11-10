@@ -694,6 +694,21 @@ span.label i {
   font-weight: 500;
   letter-spacing: 1px;
 }
+/* Oferta
+================================================== */
+.offer h2 {
+  font-size: 48px;
+}
+#ask-form {
+  padding: 120px 0;
+  margin: 70px 0;
+  background: #000;
+}
+#ask-form h2 {
+  color: white;
+  margin: 0;
+  text-align: center;
+}
 /* Slider
 ================================================== */
 .full-slider {
@@ -914,6 +929,9 @@ span.label i {
 }
 /* Page
 ================================================== */
+.no-bottom #page {
+  padding-bottom: 0 !important;
+}
 section#page {
   padding: 120px 0;
 }
