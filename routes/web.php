@@ -19,6 +19,9 @@ Route::group(['namespace' => 'Front'], function () {
     // About
     Route::get('/pl/o-nas', 'AboutController@index')->name('about');
 
+    // Location
+    Route::get('/pl/lokalizacja', 'LocationController@index')->name('location');
+
     // Restaurant
     Route::get('/pl/restauracja', 'RestaurantController@index')->name('restaurant');
 
