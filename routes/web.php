@@ -22,6 +22,9 @@ Route::group(['namespace' => 'Front'], function () {
     // Location
     Route::get('/pl/lokalizacja', 'LocationController@index')->name('location');
 
+    // Animals
+    Route::get('/pl/zwierzeta-w-resorcie', 'AnimalsController@index')->name('animals');
+
     // Restaurant
     Route::get('/pl/restauracja', 'RestaurantController@index')->name('restaurant');
 
