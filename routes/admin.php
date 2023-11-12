@@ -15,12 +15,18 @@ Route::group([
         return redirect('admin/settings/seo');
     });
 
+    Route::post('gallery/set', 'Gallery\IndexController@sort')->name('gallery.sort');
+    Route::post('image/set', 'Gallery\ImageController@sort')->name('image.sort');
+
     Route::resources([
         'user' => 'User\IndexController',
         'role' => 'Role\IndexController',
+        'gallery' => 'Gallery\IndexController',
+        'image' => 'Gallery\ImageController',
         'greylist' => 'Greylist\IndexController',
         'article' => 'Article\IndexController',
         'page' => 'Page\IndexController',
+        'url' => 'Url\IndexController',
         'file' => 'File\IndexController',
     ]);
 

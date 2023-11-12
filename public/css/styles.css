@@ -90,6 +90,13 @@ iframe {
     max-width: 1530px;
   }
 }
+:focus,
+button:focus {
+  outline: none;
+}
+::-moz-focus-inner {
+  border: 0;
+}
 .bg-light {
   background: #e8f3fb !important;
 }
@@ -697,6 +704,32 @@ span.label i {
   font-weight: 500;
   letter-spacing: 1px;
 }
+/* Galeria
+================================================== */
+.col-gallery-thumb {
+  margin-bottom: 30px;
+}
+.col-gallery-thumb img,
+.col-gallery-thumb a {
+  display: block;
+  position: relative;
+}
+.col-gallery-thumb a {
+  overflow: hidden;
+}
+.col-gallery-thumb div {
+  position: absolute;
+  background: rgba(249, 166, 50, 0.81);
+  width: 100%;
+  height: 100%;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+.col-gallery-thumb div i {
+  color: var(--main-color-gold);
+  font-size: 32px;
+}
 /* Oferta
 ================================================== */
 .offer h2 {
@@ -705,12 +738,41 @@ span.label i {
 #ask-form {
   padding: 120px 0;
   margin: 70px 0;
-  background: #000;
+  background: #000 url("../uploads/reservation-bg.jpg") no-repeat fixed center;
+  background-size: cover;
 }
 #ask-form h2 {
   color: white;
   margin: 0;
   text-align: center;
+}
+#ask-form input {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  border: 0;
+  border-bottom: 1px solid #333333;
+  color: white;
+  padding: 13px 15px 13px 45px;
+}
+#ask-form label {
+  font-size: 32px;
+  position: absolute;
+  color: #824e03;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  left: 5px;
+}
+#ask-form button {
+  font-family: 'Barlow Condensed', sans-serif;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  color: white;
+  background: #000;
+  padding: 0 15px;
+  font-size: 21px;
 }
 /* Slider
 ================================================== */

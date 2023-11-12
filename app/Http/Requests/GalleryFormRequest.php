@@ -38,7 +38,7 @@ class GalleryFormRequest extends FormRequest
     {
         return [
             'name' => 'required|string|max:255',
-            'text' => 'max:255|nullable',
+            'text' => 'nullable',
             'slug' => '',
             'status' => 'boolean'
         ];
