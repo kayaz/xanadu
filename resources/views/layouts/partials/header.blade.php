@@ -15,8 +15,8 @@
                         <li><a href="{{ route('about') }}">Xanadu Resort</a></li>
                         <li><a href="{{ route('front.menu', ['language' => 'pl', 'uri' => 'pokoje']) }}">Pokoje</a></li>
                         <li><a href="{{ route('front.menu', ['language' => 'pl', 'uri' => 'domki']) }}">Domki</a></li>
-                        <li><a href="">Restauracja</a></li>
-                        <li><a href="">Galeria</a></li>
+                        <li><a href="{{ route('restaurant') }}">Restauracja</a></li>
+                        <li><a href="{{ route('gallery') }}">Galeria</a></li>
                         <li><a href="{{ route('front.menu', ['language' => 'pl', 'uri' => 'basen']) }}">Basen</a></li>
                         <li><a href="{{ route('front.menu', ['language' => 'pl', 'uri' => 'cennik']) }}">Cennik</a></li>
                         <li><a href="{{ route('contact') }}">Kontakt</a></li>

@@ -12,7 +12,7 @@
     </ul>
 
     <div class="booking">
-        <form action="#" method="post">
+        <form action="{{ route('reservation') }}" method="get">
             {{ csrf_field() }}
             <div id="checkin">
                 <span class="label">PRZYJAZD</span>

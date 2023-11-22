@@ -222,6 +222,21 @@ button:focus {
   margin-left: 30px;
   color: #e77918;
 }
+.btn-input {
+  border: 0;
+  background: #1b5582;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-input i {
+  color: white;
+  font-size: 19px;
+}
 section {
   padding: 70px 0;
 }
@@ -230,11 +245,18 @@ section .section-title {
   background: url("../images/svg/section-title-icon.svg") no-repeat top;
   background-size: 113px auto;
 }
+section .section-title.section-title-border {
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 30px;
+}
 section .section-box {
   padding: 0 70px;
 }
 section .text-left .section-title {
   background-position: top left;
+}
+section .text-center .section-title {
+  background-position: top center;
 }
 section.cta-section {
   margin: 70px 0;
@@ -949,7 +971,7 @@ span.label i {
   background-attachment: fixed !important;
   background-size: contain !important;
   position: relative;
-  height: 530px;
+  height: 370px;
 }
 #page-header img {
   filter: brightness(0) invert(1);
@@ -967,6 +989,9 @@ span.label i {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#page-header .container .row {
+  margin-top: 120px;
 }
 #page-header h1 {
   color: #fff;
@@ -994,6 +1019,28 @@ span.label i {
 }
 /* Page
 ================================================== */
+.hr {
+  position: relative;
+}
+.hr img {
+  width: 180px;
+  background: white;
+  padding: 0 30px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 20;
+}
+.hr:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #e8e8e8;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
 .no-bottom #page {
   padding-bottom: 0 !important;
 }
@@ -1122,6 +1169,36 @@ section#page {
   align-items: center;
   position: relative;
   z-index: 10;
+}
+.contact-box {
+  background: #e8f3fb;
+  padding: 50px;
+  text-align: center;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contact-box-icon {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.contact-box a {
+  font-size: 25px;
+  font-weight: bold;
+  color: #103e62;
+  font-family: 'Merriweather', serif;
+}
+.contact-box img {
+  display: block;
+  margin: 0 auto;
+}
+.mix-nav .btn-theme {
+  padding: 10px 28px;
+  margin: 0 5px;
+}
+.mix {
+  margin: 12px 0;
 }
 /* Forms
 ================================================== */

@@ -191,12 +191,32 @@ iframe {
   }
 }
 
+.btn-input {
+  border: 0;
+  background: #1b5582;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  i {
+    color:white;
+    font-size: 19px
+  }
+}
+
 section {
   padding: 70px 0;
   .section-title {
     padding-top: 60px;
     background: url("../images/svg/section-title-icon.svg") no-repeat top;
     background-size: 113px auto;
+    &.section-title-border {
+      border-bottom: 1px solid #e8e8e8;
+      padding-bottom: 30px;
+    }
   }
 
   .section-box {
@@ -206,6 +226,12 @@ section {
   .text-left {
     .section-title {
       background-position: top left;
+    }
+  }
+
+  .text-center {
+    .section-title {
+      background-position: top center;
     }
   }
 
@@ -516,7 +542,7 @@ span.label i {color:#ad8b57;margin-right:3px;font-size: 24px}
   background-attachment: fixed !important;
   background-size: contain !important;
   position: relative;
-  height: 530px;
+  height: 370px;
 
   img {
     filter: brightness(0) invert(1);
@@ -535,6 +561,9 @@ span.label i {color:#ad8b57;margin-right:3px;font-size: 24px}
     display: flex;
     justify-content: center;
     align-items: center;
+    .row {
+      margin-top: 120px;
+    }
   }
   h1 {
     color: #fff;
@@ -568,6 +597,29 @@ span.label i {color:#ad8b57;margin-right:3px;font-size: 24px}
 ================================================== */
 #page-content {
 
+}
+
+.hr {
+  position: relative;
+  img {
+    width: 180px;
+    background: white;
+    padding: 0 30px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 20;
+  }
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #e8e8e8;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
 }
 
 .no-bottom #page {
@@ -715,6 +767,40 @@ section#page {
       z-index: 10;
     }
   }
+}
+
+.contact-box {
+  background: #e8f3fb;
+  padding: 50px;
+  text-align: center;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  &-icon {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  a {
+    font-size: 25px;
+    font-weight: bold;
+    color: #103e62;
+    font-family: 'Merriweather',serif;
+  }
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.mix-nav {
+  .btn-theme {
+    padding: 10px 28px;
+    margin: 0 5px;
+  }
+}
+.mix {
+  margin: 12px 0;
 }
 
 /* Forms

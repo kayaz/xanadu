@@ -25,35 +25,26 @@
         </div>
     </section>
 
-    @foreach($galeries as $key => $g)
-        <section class="pt-0">
-            <div class="container">
-                <div class="@if($key % 2 == 0) row @else row flex-row-reverse @endif">
-                    <div class="col-6">
-                        <picture>
-                            <source type="image/webp" srcset="{{ asset('/uploads/gallery/webp/'.$g->file_webp) }}">
-                            <source type="image/jpeg" srcset="{{ asset('/uploads/gallery/'.$g->file) }}">
-                            <img src="{{ asset('/uploads/gallery/'.$g->file) }}" alt="Galeria {{ $g->name }}" width="1120" height="780" class="w-100">
-                        </picture>
-                    </div>
-                    <div class="col-6 align-items-center d-flex">
-                        <div class="text-left pe-5 ps-5">
-                            <h2 class="section-title mb-4">{{ $g->name }}</h2>
-                            <p>{{ $g->text }}</p>
-                            <a href="" class="btn btn-theme btn-icon mt-5">ZOBACZ ZDJĘCIA <i class="las la-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    @endforeach
-
-    <section class="pb-0">
+    <section class="p-0">
         <div class="container">
             <div class="row">
-                <div class="col-12 text-center">
-                    <div id="virtual">
-                        <h3 class="mb-0">[ Miejsce na wirtualny spacer ]</h3>
+                <div class="col-12">
+                    <div class="mix-nav text-center">
+                        <button type="button" class="btn btn-theme mt-0" data-filter="all">Wszystkie</button>
+                        @foreach($galeries as $key => $g)
+                            <button type="button" class="btn btn-theme mt-0" data-filter=".category-{{ $g->id }}">{{ $g->name }}</button>
+                        @endforeach
+                    </div>
+                    <div class="mix-container row mt-5">
+                        <div class="col-4 mix category-1"><img src="https://placehold.co/600x400/orange/white" alt=""></div>
+                        <div class="col-4 mix category-2"><img src="https://placehold.co/600x400/blue/white" alt=""></div>
+                        <div class="col-4 mix category-1"><img src="https://placehold.co/600x400/orange/white" alt=""></div>
+                        <div class="col-4 mix category-2"><img src="https://placehold.co/600x400/blue/white" alt=""></div>
+                        <div class="col-4 mix category-1"><img src="https://placehold.co/600x400/orange/white" alt=""></div>
+                        <div class="col-4 mix category-2"><img src="https://placehold.co/600x400/blue/white" alt=""></div>
+                        <div class="col-4 mix category-1"><img src="https://placehold.co/600x400/orange/white" alt=""></div>
+                        <div class="col-4 mix category-2"><img src="https://placehold.co/600x400/blue/white" alt=""></div>
+                        <div class="col-4 mix category-1"><img src="https://placehold.co/600x400/orange/white" alt=""></div>
                     </div>
                 </div>
             </div>
@@ -71,5 +62,8 @@
     </section>
 @endsection
 @push('scripts')
-
+    <script src="{{ asset('/js/mixitup.js') }}" charset="utf-8"></script>
+    <script>
+        var mixer = mixitup('.mix-container')
+    </script>
 @endpush

@@ -32,6 +32,18 @@ Route::group(['namespace' => 'Front'], function () {
     // Restaurant
     Route::get('/pl/restauracja', 'RestaurantController@index')->name('restaurant');
 
+    // Reservation
+    Route::get('/pl/rezerwacja', 'ReservationController@index')->name('reservation');
+
+    // Pool
+    Route::get('/pl/basen', 'PoolController@index')->name('pool');
+
+    // Gallery
+    Route::get('/pl/galeria', 'GalleryController@index')->name('gallery');
+
+    // Price list
+    Route::get('/pl/cennik', 'PricelistController@index')->name('pricelist');
+
     // Contact page
     Route::get('/pl/kontakt', 'ContactController@index')->name('contact');
     Route::post('/pl/kontakt', 'ContactController@form')->name('contact.form');
