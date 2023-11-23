@@ -78,7 +78,7 @@
                 </div>
                 <div class="col-6">
                     <div class="offer text-center">
-                        <a href=""><img src="https://placehold.co/750x520" alt="Pokoje nad morzem 3-osobowe"></a>
+                        <a href=""><img src="{{ asset('section/pokoje-nad-morzem.jpg') }}" alt="Pokoje nad morzem 3-osobowe" width="750" height="520"></a>
                         <h2 class="m-0 mt-4"><a href=""><span class="text-blue">Pokoje nad morzem</span> <br>3-osobowe</a></h2>
                         <a href="{{ route('front.menu', ['language' => 'pl', 'uri' => 'pokoje']) }}" class="btn btn-theme btn-icon mt-4">PEŁNA OFERTA <i class="las la-arrow-right"></i></a>
                     </div>
@@ -101,7 +101,7 @@
         <div class="container-fluid p-0">
             <div class="row g-0 flex-row-reverse">
                 <div class="col-7">
-                    <img src="https://placehold.co/1120x780" alt="" class="w-100">
+                    <img src="{{ asset('/section/restauracja.jpg') }}" alt="" class="w-100" width="1120" height="780">
                 </div>
                 <div class="col-5 d-flex align-items-center">
                     <div class="section-box text-left">
@@ -118,7 +118,7 @@
         <div class="container-fluid p-0">
             <div class="row g-0">
                 <div class="col-7">
-                    <img src="https://placehold.co/1120x780" alt="" class="w-100">
+                    <img src="{{ asset('/section/plac-zabaw.jpg') }}" alt="" class="w-100" width="1120" height="780">
                 </div>
                 <div class="col-5 d-flex align-items-center">
                     <div class="section-box text-left">
@@ -134,7 +134,7 @@
         <div class="container-fluid p-0">
             <div class="row g-0 flex-row-reverse">
                 <div class="col-7">
-                    <img src="https://placehold.co/1120x780" alt="" class="w-100">
+                    <img src="{{ asset('/section/basen.jpg') }}" alt="" class="w-100" width="1120" height="780">
                 </div>
                 <div class="col-5 d-flex align-items-center">
                     <div class="section-box text-left">

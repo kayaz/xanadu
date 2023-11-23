@@ -17,7 +17,8 @@
                         <div class="contact-box-icon">
                             <img src="/images/icons/icon-envelope.png" alt="" width="70" height="70">
                         </div>
-                        <a href="mailto:rezerwacje@xanaduhotel.pl">rezerwacje@xanaduhotel.pl</a></p>
+                        <p>Napisz do nas:</p>
+                        <p><a href="mailto:rezerwacje@xanaduhotel.pl">rezerwacje@xanaduhotel.pl</a></p>
                     </div>
                 </div>
                 <div class="col-4">
@@ -25,15 +26,17 @@
                         <div class="contact-box-icon">
                             <img src="/images/icons/icon-phone.png" alt="" width="70" height="70">
                         </div>
-                        <a href="tel:+48502058200">502 058 200</a>
+                        <p><a href="tel:+48502058200">502 058 200</a></p>
+                        <p><a href="tel:+48503094222">503 094 222</a></p>
                     </div>
                 </div>
                 <div class="col-4">
                     <div class="contact-box">
                         <div class="contact-box-icon">
-                            <img src="/images/icons/icon-phone.png" alt="" width="70" height="70">
+                            <img src="/images/icons/icon-location.png" alt="" width="70" height="70">
                         </div>
-                        <a href="tel:+48503094222">503 094 222</a>
+                        <p>Lotnicza 17</p>
+                        <p>78-111 Sianożęty</p>
                     </div>
                 </div>
             </div>
@@ -110,19 +113,45 @@
                         </form>
                     </div>
                 </div>
-                <div class="col-12 mt-5">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9333.816923599206!2d15.723134!3d54.207447!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa6c9b12523eca568!2sXanadu!5e0!3m2!1spl!2spl!4v1560473084734!5m2!1spl!2spl" width="100%" height="420" frameborder="0" style="border:0;margin-top:30px" allowfullscreen></iframe>
-                </div>
-                <div class="col-12 text-center">
-                    <div class="hr mt-5 mb-5"><img src="https://xanaduhotel.test/images/svg/section-title-icon.svg" alt=""></div>
+            </div>
+        </div>
 
-                    <p>Przelew krajowy:</p>
-                    <p>F.H.U "Fiszerija" s.c,</p>
-                    <p>Ul. Bolesława Chrobrego 4A,</p>
-                    <p>78-111 Ustronie Morskie</p>
-                    <p>Bank Spółdzielczy Gryfice</p>
-                    <p>Nr konta: 27 9376 0001 2006 00162463 0002</p>
-                    <p><b>W tytule przelewu proszę podać: Imię i nazwisko</b></p>
+        <section class="mt-3">
+            <div id="homepage-map">
+                <div class="container-fluid p-0">
+                    <div class="row m-0">
+                        <div class="col-7 p-0">
+                            <img src="{{ asset('/images/mapa.png') }}" alt="Mapa lokalizacji" width="1178" height="738">
+                        </div>
+                        <div class="col-5 p-0">
+                            <div class="map-text">
+                                <div>
+                                    <h2>Nasza lokalizacja, <br>bliskość morza i spokoju.</h2>
+                                    <p>Nasze noclegi stwarzają możliwość spokojnego wypoczynku połączonego z aktywnościami na świeżym powietrzu. W pobliżu ośrodka Xanadu znajdą Państwo promenadę dla pieszych i rowerzystów, która łączy łączący Sianożęty z Ustroniem Morskim oraz Sianożęty z Kołobrzegiem.</p>
+                                    <a href="https://maps.app.goo.gl/jaWf75Q1rqin9oKv9" class="btn btn-theme btn-icon mt-5" target="_blank">WYZNACZ TRASĘ <i class="las la-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <img src="{{ asset('images/kontakt-osrodek.jpg') }}" alt="">
+                </div>
+                <div class="col-6 d-flex align-items-center">
+                    <div class="ps-5">
+                        <p>Przelew krajowy:</p>
+                        <p>F.H.U "Fiszerija" s.c,</p>
+                        <p>Ul. Bolesława Chrobrego 4A,</p>
+                        <p>78-111 Ustronie Morskie</p>
+                        <p>Bank Spółdzielczy Gryfice</p>
+                        <p>Nr konta: 27 9376 0001 2006 00162463 0002</p>
+                        <p><b>W tytule przelewu proszę podać: Imię i nazwisko</b></p>
+                    </div>
                 </div>
             </div>
         </div>
