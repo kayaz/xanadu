@@ -1,3 +1,14 @@
+<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+    </defs>
+    <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(17,63,99,0.7)" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(17,63,99,0.5)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(17,63,99,0.3)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#113f63" />
+    </g>
+</svg>
 <footer>
     <div class="container">
         <div class="row">
@@ -15,14 +26,15 @@
                 <nav>
                     <ul class="mb-0 list-unstyled row justify-content-end">
                         <li><a href="/">Strona główna</a></li>
-                        <li><a href="">Xanadu Resort</a></li>
-                        <li><a href="">Pokoje</a></li>
-                        <li><a href="">Domki</a></li>
-                        <li><a href="">Restauracja</a></li>
-                        <li><a href="">Galeria</a></li>
-                        <li><a href="">Basen</a></li>
-                        <li><a href="">Cennik</a></li>
+                        <li><a href="{{ route('about') }}">Xanadu Resort</a></li>
+                        <li><a href="{{ route('front.menu', ['language' => 'pl', 'uri' => 'pokoje']) }}">Pokoje</a></li>
+                        <li><a href="{{ route('front.menu', ['language' => 'pl', 'uri' => 'domki']) }}">Domki</a></li>
+                        <li><a href="{{ route('restaurant') }}">Restauracja</a></li>
+                        <li><a href="{{ route('gallery') }}">Galeria</a></li>
+                        <li><a href="{{ route('front.menu', ['language' => 'pl', 'uri' => 'basen']) }}">Basen</a></li>
+                        <li><a href="{{ route('front.menu', ['language' => 'pl', 'uri' => 'cennik']) }}">Cennik</a></li>
                         <li><a href="{{ route('contact') }}">Kontakt</a></li>
+                        <li><a href="https://www.facebook.com/xanadunadmorzem" target="_blank"><i class="lab la-facebook-square"></i></a></li>
                     </ul>
                 </nav>
                 <p class="copyrights"><a href="">POLITYKA PRYWATNOŚCI</a> / REALIZACJA: <a href="" target="_blank">JK DESIGN</a></p>

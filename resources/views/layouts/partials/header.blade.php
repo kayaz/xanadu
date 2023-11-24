@@ -12,11 +12,31 @@
                 <nav>
                     <ul class="mb-0 list-unstyled">
                         <li><a href="/">Strona główna</a></li>
-                        <li><a href="{{ route('about') }}">Xanadu Resort</a></li>
+                        <li>
+                            <a href="#">Xanadu Resort</a>
+                            <ul class="nav-sub mb-0">
+                                <li><a href="{{ route('about') }}">O nas</a></li>
+                                <li><a href="{{ route('location') }}">Lokalizacja</a></li>
+                                <li><a href="#">Atrakcje turystyczne</a></li>
+                                <li><a href="{{ route('animals') }}">Zwierzęta w resorcie</a></li>
+                            </ul>
+                        </li>
                         <li><a href="{{ route('front.menu', ['language' => 'pl', 'uri' => 'pokoje']) }}">Pokoje</a></li>
                         <li><a href="{{ route('front.menu', ['language' => 'pl', 'uri' => 'domki']) }}">Domki</a></li>
-                        <li><a href="{{ route('restaurant') }}">Restauracja</a></li>
-                        <li><a href="{{ route('gallery') }}">Galeria</a></li>
+                        <li>
+                            <a href="#">Restauracja</a>
+                            <ul class="nav-sub mb-0">
+                                <li><a href="{{ route('restaurant') }}">O restauracji</a></li>
+                                <li><a href="#">Śniadania</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Galeria</a>
+                            <ul class="nav-sub mb-0">
+                                <li><a href="{{ route('gallery') }}">Zdjęcia</a></li>
+                                <li><a href="#">Wirtualny spacer</a></li>
+                            </ul>
+                        </li>
                         <li><a href="{{ route('front.menu', ['language' => 'pl', 'uri' => 'basen']) }}">Basen</a></li>
                         <li><a href="{{ route('front.menu', ['language' => 'pl', 'uri' => 'cennik']) }}">Cennik</a></li>
                         <li><a href="{{ route('contact') }}">Kontakt</a></li>

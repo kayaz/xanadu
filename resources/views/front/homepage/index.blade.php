@@ -90,7 +90,12 @@
     <div class="container-fluid p-0">
         <div class="row g-0">
             <div class="col-7">
-                <img src="https://placehold.co/1120x780" alt="" class="w-100">
+                <div class="sliderWrapper">
+                    <ul class="rslides">
+                        <li><img src="{{ asset('section/domki_1.jpg') }}" alt="" width="1120" height="780"></li>
+                        <li><img src="{{ asset('section/domki_2.jpg') }}" alt="" width="1120" height="780"></li>
+                    </ul>
+                </div>
             </div>
             <div class="col-5 d-flex align-items-center">
                 <div class="section-box text-left">
@@ -109,7 +114,12 @@
     <div class="container-fluid p-0">
         <div class="row g-0 flex-row-reverse">
             <div class="col-7">
-                <img src="https://placehold.co/1120x780" alt="" class="w-100">
+                <div class="sliderWrapper">
+                    <ul class="rslides">
+                        <li><img src="{{ asset('section/pokoje_1.jpg') }}" alt="" width="1120" height="780"></li>
+                        <li><img src="{{ asset('section/pokoje_2.jpg') }}" alt="" width="1120" height="780"></li>
+                    </ul>
+                </div>
             </div>
             <div class="col-5 d-flex align-items-center">
                 <div class="section-box text-left">

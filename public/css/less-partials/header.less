@@ -15,17 +15,50 @@ header {
       height: 120px;
       display: flex;
       align-items: center;
+      position: relative;
       a {
         font-family: 'Barlow Condensed', sans-serif;
         color: white;
         font-size: 20px;
         text-transform: uppercase;
-        //font-weight: 500;
+        transition: all 200ms linear;
         i {
           font-size: 32px;
         }
         &:hover {
           color: white;
+        }
+      }
+
+      ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none;
+        flex-wrap: wrap;
+        background: #1b5582;
+        padding: 0;
+        justify-content: start;
+        width: 210px;
+        li {
+          height: auto;
+          padding: 0;
+          width: 100%;
+          border-top: 1px dashed rgba(255,255,255,0.3);
+          a {
+            width: 100%;
+            display: block;
+            padding: 10px 20px;
+            &:hover {
+              background: rgba(255,255,255,0.1);
+            }
+          }
+        }
+      }
+
+      &:hover {
+        ul {
+          display: flex;
         }
       }
     }

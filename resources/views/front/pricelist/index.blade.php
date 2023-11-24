@@ -121,7 +121,7 @@
                         <li>26.08.2023 - 02.09.2023: <strong>220 zł</strong></li>
                         <li>02.09.2023 - 30.09.2023: <strong>180 zł</strong></li>
                     </ul>
-                    <p>* istnieje możliwość dokupienia śniadania</p>
+                    <p>&nbsp;</p>
                     <p>&nbsp;</p>
                     <table class="cennik" border="0">
                         <thead>
@@ -244,7 +244,6 @@
                     </div>
                     <p style="text-align: center;"><strong>UWAGA!!!</strong><br /><strong>Jeżeli prowadzisz działalność gospodarczą i chcesz otrzymać fakturę za dokonane zakupy lub świadczone usługi, <span style="text-decoration: underline;">poinformuj o tym przed dokonaniem transakcji</span> i podaj numer NIP. </strong><strong>Od 1 stycznia 2020 roku nie wystawiamy faktur do paragonu bez numeru NIP dla firm i os&oacute;b prowadzących działalność gospodarczą.</strong></p>
                     <p>&nbsp;</p>
-                    <p>W okresie od&nbsp;25.04.2023 - 30.09.2023 przy zakwaterowaniu powyżej 6 os&oacute;b w domach dziecko do 3 lat gratis kolejna osoba 30 zł.</p>
                     <section>
                         <div class="container">
                             <div class="row">
@@ -264,7 +263,7 @@
                                 </div>
                                 <div class="col-4">
                                     <div class="features-box">
-                                        <i class="las la-concierge-bell"></i>
+                                        <i class="las la-copy"></i>
                                         <h3>KOMPLET RĘCZNIKÓW</h3>
                                         <p>Wypożyczenie (duży i mały) - 10 zł</p>
                                     </div>

@@ -45,7 +45,7 @@
                 <div class="features-box">
                     <i class="las la-leaf"></i>
                     <h3>OPŁATA KLIMATYCZNA</h3>
-                    <p>2 zł/ doba osoba dorosła. Dzieci od 0 do 3 roku życia są zwolnione z opłat. Brak ulgi dla seniorów, rencistów i dzieci poniżej 3 roku życia.</p>
+                    <p>2 zł/ doba osoba dorosła. Dzieci od 0 do 3 roku życia są zwolnione z opłat. Brak ulgi dla seniorów, rencistów i dzieci powyżej 3 roku życia.</p>
                 </div>
             </div>
         </div>

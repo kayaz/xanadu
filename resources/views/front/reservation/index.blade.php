@@ -18,11 +18,12 @@
                     <p>&nbsp;</p>
                     <p>Rezerwacja będzie dokonana po potwierdzeniu przyjęcia przez biuro rezerwacji i wpłaceniu w terminie 7 dni wymaganej zaliczki. Po tym terminie rezerwację uważamy za nieaktualną.</p>
                     <p>&nbsp;</p>
-                    <p>mBank Oddział Bankowości Detalicznej</p>
-                    <p>Nr konta: 21 1140 2004 0000 3802 7603 2590</p>
-                    <p>F.H.U "Fiszerija" s.c, Ul. B. Chrobrego 4A, 78-111 Ustronie Morskie</p>
-                    <p>&nbsp;</p>
-                    <p>kod BIC/SWIFT mBanku: BREXPLPWMBK</p>
+                    <p>F.H.U &quot;Fiszerija&quot; s.c,</p>
+                    <p>Ul. Bolesława Chrobrego 4A,</p>
+                    <p>78-111 Ustronie Morskie</p>
+                    <p>Bank Spółdzielczy Gryfice</p>
+                    <p>Nr konta: 27 9376 0001 2006 00162463 0002</p>
+                    <p><b>W tytule przelewu proszę podać: Imię i nazwisko</b></p>
                 </div>
                 <div class="col-8 ps-5">
                     <div class="row">
@@ -33,20 +34,20 @@
                     <form action="" class="row">
                         <div class="col-4">
                             <div class="mb-5">
-                                <label for="exampleFormControlInput1" class="form-label">Data przyjazdu</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1">
+                                <label for="dataStart" class="form-label">Data przyjazdu</label>
+                                <input type="text" class="form-control datepicker" id="dataStart" name="form_data_start">
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="mb-5">
-                                <label for="exampleFormControlInput1" class="form-label">Data wyjazdu</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1">
+                                <label for="dataEnd" class="form-label">Data wyjazdu</label>
+                                <input type="text" class="form-control datepicker" id="dataEnd" name="form_data_end">
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="mb-5">
-                                <label for="exampleFormControlInput1" class="form-label">Pokój / domek</label>
-                                <select class="form-select" aria-label="Default select example">
+                                <label for="roomType" class="form-label">Pokój / domek</label>
+                                <select class="form-select" name="form_room_type" id="roomType">
                                     <option selected>Wybierz</option>
                                     <option value="1">Pokój</option>
                                     <option value="2">Domek</option>
@@ -55,33 +56,20 @@
                         </div>
                         <div class="col-3">
                             <div class="mb-5">
-                                <label for="exampleFormControlInput1" class="form-label">Wyżywienie</label>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
-                                    <label class="form-check-label" for="flexRadioDefault1">
-                                        Brak
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                                    <label class="form-check-label" for="flexRadioDefault2">
-                                        Śniadanie
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                                    <label class="form-check-label" for="flexRadioDefault2">
-                                        Śniadanie + obiadokolacja
-                                    </label>
-                                </div>
+                                <label for="foodType" class="form-label">Wyżywienie</label>
+                                <select class="form-select" name="form_food" id="foodType">
+                                    <option selected>Brak</option>
+                                    <option value="1">Śniadanie</option>
+                                    <option value="2">Śniadanie + obiadokolacja</option>
+                                </select>
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="mb-5">
-                                <label class="form-label w-100 text-center">Dorośli</label>
+                                <label class="form-label w-100 text-center" for="adultCount">Dorośli</label>
                                 <div class="input-group number-spinner">
                                     <span class="input-group-btn"><button class="btn-input" data-dir="dwn" type="button"><i class="las la-minus"></i></button></span>
-                                    <input type="text" class="form-control text-center" value="1">
+                                    <input type="text" class="form-control text-center" value="1" id="adultCount" data-count="1">
                                     <span class="input-group-btn"><button class="btn-input" data-dir="up" type="button"><i class="las la-plus"></i></button></span>
                                 </div>
                             </div>
@@ -89,20 +77,20 @@
 
                         <div class="col-3">
                             <div class="mb-5">
-                                <label class="form-label w-100 text-center">Dziecko 3-12 lat</label>
+                                <label class="form-label w-100 text-center" for="childCount">Dziecko 3-12 lat</label>
                                 <div class="input-group number-spinner">
                                     <span class="input-group-btn"><button class="btn-input" data-dir="dwn" type="button"><i class="las la-minus"></i></button></span>
-                                    <input type="text" class="form-control text-center" value="1">
+                                    <input type="text" class="form-control text-center" value="0" id="childCount" data-count="0">
                                     <span class="input-group-btn"><button class="btn-input" data-dir="up" type="button"><i class="las la-plus"></i></button></span>
                                 </div>
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="mb-5">
-                                <label class="form-label w-100 text-center">Dziecko 0-3 lat</label>
+                                <label class="form-label w-100 text-center" for="kidCount">Dziecko 0-3 lat</label>
                                 <div class="input-group number-spinner">
                                     <span class="input-group-btn"><button class="btn-input" data-dir="dwn" type="button"><i class="las la-minus"></i></button></span>
-                                    <input type="text" class="form-control text-center" value="1">
+                                    <input type="text" class="form-control text-center" value="0" id="kidCount" data-count="0">
                                     <span class="input-group-btn"><button class="btn-input" data-dir="up" type="button"><i class="las la-plus"></i></button></span>
                                 </div>
                             </div>
@@ -110,26 +98,26 @@
 
                         <div class="col-4">
                             <div class="mb-5">
-                                <label for="exampleFormControlInput1" class="form-label">Imię</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1">
+                                <label for="formName" class="form-label" >Imię</label>
+                                <input type="text" class="form-control" id="formName" name="form_name">
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="mb-5">
-                                <label for="exampleFormControlInput1" class="form-label">E-mail</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1">
+                                <label for="formEmail" class="form-label">E-mail</label>
+                                <input type="email" class="form-control" id="formEmail" name="form_email">
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="mb-5">
-                                <label for="exampleFormControlInput1" class="form-label">Telefon</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1">
+                                <label for="formPhone" class="form-label">Telefon</label>
+                                <input type="tel" class="form-control" id="formPhone" name="form_phone">
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="">
-                                <label for="exampleFormControlTextarea1" class="form-label">Dodatkowe informacje</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                <label for="formMessage" class="form-label">Treść wiadomości</label>
+                                <textarea class="form-control" id="formMessage" rows="3" name="form_messgae"></textarea>
                             </div>
                         </div>
                         <div class="col-12">
@@ -142,11 +130,24 @@
     </section>
 @endsection
 @push('scripts')
+    <script src="{{ asset('/js/datepicker/bootstrap-datepicker.min.js') }}" charset="utf-8"></script>
+    <script src="{{ asset('/js/datepicker/bootstrap-datepicker.pl.min.js') }}" charset="utf-8"></script>
+    <link href="{{ asset('/js/datepicker/bootstrap-datepicker3.css') }}" rel="stylesheet">
     <script>
+        $('.datepicker').datepicker({
+            format: 'yyyy-mm-dd',
+            language: 'pl',
+            startDate: new Date(2024, 4, 1), // Use startDate instead of minDate
+            endDate: new Date(2024, 8, 30)     // Use endDate instead of maxDate
+        });
+
         $(document).on('click', '.number-spinner button', function () {
             let btn = $(this),
                 oldValue = btn.closest('.number-spinner').find('input').val().trim(),
                 newVal = 0;
+            let dataCount = btn.closest('.number-spinner').find('input').attr('data-count');
+
+            console.log(dataCount);
 
             if (btn.attr('data-dir') === 'up') {
                 newVal = parseInt(oldValue) + 1;
@@ -154,7 +155,11 @@
                 if (oldValue > 1) {
                     newVal = parseInt(oldValue) - 1;
                 } else {
-                    newVal = 1;
+                    if(parseInt(dataCount) === 0){
+                        newVal = 0;
+                    } else {
+                        newVal = 1;
+                    }
                 }
             }
             btn.closest('.number-spinner').find('input').val(newVal);

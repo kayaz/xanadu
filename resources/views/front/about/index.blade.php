@@ -71,7 +71,7 @@
             <div class="row">
                 <div class="col-6">
                     <div class="offer text-center">
-                        <a href=""><img src="https://placehold.co/750x520" alt="Domki nad morzem 6-osobowe"></a>
+                        <a href=""><img src="{{ asset('section/domki-nad-morzem.jpg') }}" alt="Domki nad morzem 6-osobowe" width="750" height="520"></a>
                         <h2 class="m-0 mt-4"><a href=""><span class="text-blue">Domki nad morzem</span> <br>6-osobowe</a></h2>
                         <a href="{{ route('front.menu', ['language' => 'pl', 'uri' => 'domki']) }}" class="btn btn-theme btn-icon mt-4">PEŁNA OFERTA <i class="las la-arrow-right"></i></a>
                     </div>
@@ -92,6 +92,41 @@
             <div class="row">
                 <div class="col-12">
                     <h2>Wyślij zapytanie o dostępność</h2>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-2">
+                    <div class="position-relative">
+                        <label for="form_data_1"><i class="las la-calendar"></i></label>
+                        <input type="text" name="" value="" id="form_data_1" placeholder="Data przyjazdu">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="position-relative">
+                        <label for="form_data_1"><i class="las la-calendar"></i></label>
+                        <input type="text" name="" value="" id="form_data_1" placeholder="Data odjazdu">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="position-relative">
+                        <label for="form_data_1"><i class="las la-user"></i></label>
+                        <input type="text" name="" value="" id="form_data_1" placeholder="Dorośli">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="position-relative">
+                        <label for="form_data_1"><i class="las la-user"></i></label>
+                        <input type="text" name="" value="" id="form_data_1" placeholder="Dzieci">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="position-relative">
+                        <label for="form_data_1"><i class="las la-key"></i></label>
+                        <input type="text" name="" value="" id="form_data_1" placeholder="Domek / pokój">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <button>WYŚLIJ ZAPYTANIE</button>
                 </div>
             </div>
         </div>

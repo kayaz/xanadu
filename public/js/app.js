@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Responsive slides
     $(".sliderWrapper .rslides").responsiveSlides({auto:true, pager:false, nav:true, timeout:5000, random:false, speed: 500});
+    $(".slider-mini").responsiveSlides({auto:true, pager:false, nav:true, timeout:5000, random:false, speed: 500});
 
 });
 

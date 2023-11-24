@@ -30,9 +30,12 @@
             <div class="row">
                 <div class="col-12">
                     <div class="mix-nav text-center">
-                        <button type="button" class="btn btn-theme mt-0" data-filter="all">Wszystkie</button>
+                        <button type="button" class="btn btn-theme mt-0" data-filter="all">
+                            <span><i class="las la-grip-horizontal"></i></span>
+                            Wszystkie
+                        </button>
                         @foreach($galeries as $key => $g)
-                            <button type="button" class="btn btn-theme mt-0" data-filter=".category-{{ $g->id }}">{{ $g->name }}</button>
+                            <button type="button" class="btn btn-theme mt-0" data-filter=".category-{{ $g->id }}"><span>{!! $g->text !!}</span>{{ $g->name }}</button>
                         @endforeach
                     </div>
                     <div class="mix-container row mt-5">
