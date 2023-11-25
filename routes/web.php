@@ -47,6 +47,9 @@ Route::group(['namespace' => 'Front'], function () {
     // Breakfast
     Route::get('/pl/sniadania', 'BreakfastController@index')->name('breakfast');
 
+    // Regional attractions
+    Route::get('/pl/atrakcje-regionalne', 'AttractionController@index')->name('attraction');
+
     // Contact page
     Route::get('/pl/kontakt', 'ContactController@index')->name('contact');
     Route::post('/pl/kontakt', 'ContactController@form')->name('contact.form');

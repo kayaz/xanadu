@@ -120,8 +120,8 @@
                         <img src="{{ asset('/images/mapa.png') }}" alt="Mapa lokalizacji" width="1178" height="738">
                     </div>
                     <div class="col-5 p-0">
-                        <div class="map-text justify-content-center">
-                           <p>[ Tu pojawi się zdjęcie domków ]</p>
+                        <div class="map-text justify-content-center" style="background: url({{ asset('section/lokalizacja-domki.jpg') }}) no-repeat top center;background-size:  cover">
+
                         </div>
                     </div>
                 </div>

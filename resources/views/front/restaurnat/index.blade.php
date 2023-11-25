@@ -35,28 +35,28 @@
 
                     <div class="icon-box icon-box-blue">
                         <div>
-                            <img src="{{ asset('/images/icons/icon-food.png') }}" alt="" width="70" height="70">
+                            <img src="{{ asset('/images/icons/icon-maindish.png') }}" alt="" width="70" height="70">
                             <h3>Serwujemy <br>śniadania i obiady</h3>
                         </div>
                     </div>
 
                     <div class="icon-box icon-box-blue">
                         <div>
-                            <img src="{{ asset('/images/icons/icon-food.png') }}" alt="" width="70" height="70">
+                            <img src="{{ asset('/images/icons/icon-fish.png') }}" alt="" width="70" height="70">
                             <h3>8 dań <br>do wyboru na obiad</h3>
                         </div>
                     </div>
 
                     <div class="icon-box icon-box-blue">
                         <div>
-                            <img src="{{ asset('/images/icons/icon-food.png') }}" alt="" width="70" height="70">
+                            <img src="{{ asset('/images/icons/icon-deser.png') }}" alt="" width="70" height="70">
                             <h3>Pyszne desery <br>dla smakoszy</h3>
                         </div>
                     </div>
 
                     <div class="icon-box icon-box-blue">
                         <div>
-                            <img src="{{ asset('/images/icons/icon-food.png') }}" alt="" width="70" height="70">
+                            <img src="{{ asset('/images/icons/icon-pizza.png') }}" alt="" width="70" height="70">
                             <h3>Włoskia pizzy <br>na cienkim cieście</h3>
                         </div>
                     </div>
@@ -70,7 +70,12 @@
         <div class="container-fluid p-0">
             <div class="row g-0">
                 <div class="col-7">
-                    <img src="https://placehold.co/1120x780" alt="" class="w-100">
+                    <div class="sliderWrapper m-0">
+                        <ul class="rslides">
+                            <li><img src="{{ asset('section/restauracja-sniadania.jpg') }}" alt="" width="1120" height="780"></li>
+                            <li><img src="{{ asset('section/restauracja_2.jpg') }}" alt="" width="1120" height="780"></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="col-5 d-flex align-items-center">
                     <div class="section-box text-left">
@@ -88,13 +93,17 @@
         <div class="container-fluid p-0">
             <div class="row g-0 flex-row-reverse">
                 <div class="col-7">
-                    <img src="https://placehold.co/1120x780" alt="" class="w-100">
+                    <div class="sliderWrapper m-0">
+                        <ul class="rslides">
+                            <li><img src="{{ asset('section/glowne-danie.jpg') }}" alt="" width="1120" height="780"></li>
+                            <li><img src="{{ asset('section/restauracja-pizza.jpg') }}" alt="" width="1120" height="780"></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="col-5 d-flex align-items-center">
                     <div class="section-box text-left">
                         <h2 class="section-title"><span class="text-blue">Dla małych i dużych</span> <br>koneserów smaku!</h2>
                         <p>Dopełnieniem wypoczynku w obiekcie Xanadu Resort jest wyjątkowa kuchnia i potrawy przygotowane z niezwykłą starannością przez naszych kucharzy. Oferujemy menu oparte na tradycji kuchni polskiej, włoskiej, a także regionalnej. Jego bogactwo z pewnością zaspokoi gust każdego Gościa, a unikalna atmosfera i klimat panujący w naszej restauracji sprawi, że każdy posiłek stanie się dla Państwa wyjątkowy.</p>
-                        <a href="" class="btn btn-theme btn-icon mt-5">NASZE MENU <i class="las la-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
