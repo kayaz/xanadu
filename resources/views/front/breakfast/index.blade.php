@@ -22,14 +22,54 @@
                     <p>Śniadanie traktujemy szczególnie, ponieważ jest ono nie tylko pierwszym, <br>lecz jednocześnie najważniejszym posiłkiem dnia.</p>
                 </div>
             </div>
+
+            <div class="row mt-5 pt-3">
+                <div class="col-12 d-flex justify-content-center">
+
+                    <div class="icon-box icon-box-blue">
+                        <div>
+                            <img src="{{ asset('/images/icons/icon-food.png') }}" alt="" width="70" height="70">
+                            <h3>150 miejsc <br>w restauracji</h3>
+                        </div>
+                    </div>
+
+                    <div class="icon-box icon-box-blue">
+                        <div>
+                            <img src="{{ asset('/images/icons/icon-maindish.png') }}" alt="" width="70" height="70">
+                            <h3>Serwujemy <br>śniadania i obiady</h3>
+                        </div>
+                    </div>
+
+                    <div class="icon-box icon-box-blue">
+                        <div>
+                            <img src="{{ asset('/images/icons/icon-fish.png') }}" alt="" width="70" height="70">
+                            <h3>8 dań <br>do wyboru na obiad</h3>
+                        </div>
+                    </div>
+
+                    <div class="icon-box icon-box-blue">
+                        <div>
+                            <img src="{{ asset('/images/icons/icon-deser.png') }}" alt="" width="70" height="70">
+                            <h3>Pyszne desery <br>dla smakoszy</h3>
+                        </div>
+                    </div>
+
+                    <div class="icon-box icon-box-blue">
+                        <div>
+                            <img src="{{ asset('/images/icons/icon-pizza.png') }}" alt="" width="70" height="70">
+                            <h3>Włoskia pizzy <br>na cienkim cieście</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section>
-        <div class="container-fluid p-0">
-            <div class="row g-0">
+        <div class="container">
+            <div class="row">
                 <div class="col-7">
-                    <div class="sliderWrapper">
+                    <div class="sliderWrapper m-0">
                         <ul class="rslides">
                             <li><img src="{{ asset('section/restauracja-sniadanie.jpg') }}" alt="" width="1120" height="780"></li>
                             <li><img src="{{ asset('section/restauracja-sniadania.jpg') }}" alt="" width="1120" height="780"></li>
@@ -39,22 +79,22 @@
                 <div class="col-5 d-flex align-items-center">
                     <div class="section-box text-left">
                         <h2 class="section-title"><span class="text-blue">Tradycyjne</span> śniadania!</h2>
-                        <p>Zapraszamy na noclegi ze śniadaniem do Xanadu Resort w Sianożętach. Codziennie dla naszych gości przygotowujemy bogaty bufet śniadaniowy. Znaleźć w nim można pożywne dania na ciepło, pyszne sałatki, świeże owoce oraz różnorodne dodatki, w tym chrupiące pieczywo, lokalne sery, wyborne wędliny oraz słodkie wypieki.</p>
+                        <p class="text-justify">Zapraszamy na noclegi ze śniadaniem do Xanadu Resort w Sianożętach. Codziennie dla naszych gości przygotowujemy bogaty bufet śniadaniowy. Znaleźć w nim można pożywne dania na ciepło, pyszne sałatki, świeże owoce oraz różnorodne dodatki, w tym chrupiące pieczywo, lokalne sery, wyborne wędliny oraz słodkie wypieki.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section>
+    <section class="pt-0">
         <div class="container">
             <div class="row flex-row-reverse">
-                <div class="col-6">
+                <div class="col-7">
                     <img src="{{ asset('section/sniadanie-na-stole.jpg') }}" alt="" class="w-100" width="745" height="520">
                 </div>
                 <div class="col-5 d-flex align-items-center">
                     <div class="section-box text-left">
-                        <p>Rezerwując pobyt zapytaj o opcje z wyżywieniem. Oferujemy korzystne pakiety ze śniadaniem i obiadokolacją!</p>
+                        <p class="text-justify">Rezerwując pobyt zapytaj o opcje z wyżywieniem. Oferujemy korzystne pakiety ze śniadaniem i obiadokolacją!</p>
                     </div>
                 </div>
             </div>

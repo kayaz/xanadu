@@ -240,6 +240,9 @@ button:focus {
   color: white;
   font-size: 19px;
 }
+.text-justify {
+  text-align: justify !important;
+}
 section {
   padding: 70px 0;
 }
@@ -253,7 +256,7 @@ section .section-title.section-title-border {
   padding-bottom: 30px;
 }
 section .section-box {
-  padding: 0 70px;
+  padding: 0 50px;
 }
 section .text-left .section-title {
   background-position: top left;

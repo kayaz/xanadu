@@ -17,7 +17,7 @@
                             <ul class="nav-sub mb-0">
                                 <li><a href="{{ route('about') }}">O nas</a></li>
                                 <li><a href="{{ route('location') }}">Lokalizacja</a></li>
-                                <li><a href="#">Atrakcje turystyczne</a></li>
+                                <li><a href="{{ route('attraction') }}">Atrakcje turystyczne</a></li>
                                 <li><a href="{{ route('animals') }}">Zwierzęta w resorcie</a></li>
                             </ul>
                         </li>
@@ -27,7 +27,7 @@
                             <a href="#">Restauracja</a>
                             <ul class="nav-sub mb-0">
                                 <li><a href="{{ route('restaurant') }}">O restauracji</a></li>
-                                <li><a href="#">Śniadania</a></li>
+                                <li><a href="{{ route('breakfast') }}">Śniadania</a></li>
                             </ul>
                         </li>
                         <li>
@@ -40,7 +40,7 @@
                         <li><a href="{{ route('front.menu', ['language' => 'pl', 'uri' => 'basen']) }}">Basen</a></li>
                         <li><a href="{{ route('front.menu', ['language' => 'pl', 'uri' => 'cennik']) }}">Cennik</a></li>
                         <li><a href="{{ route('contact') }}">Kontakt</a></li>
-                        <li><a href=""><i class="lab la-facebook-square"></i></a></li>
+                        <li><a href="https://www.facebook.com/xanadunadmorzem" target="_blank"><i class="lab la-facebook-square"></i></a></li>
                     </ul>
                 </nav>
             </div>
