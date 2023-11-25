@@ -111,7 +111,7 @@
             <div class="row justify-content-center text-center">
                 <div class="col-8">
                     <p>Śniadanie traktujemy szczególnie, ponieważ jest ono nie tylko pierwszym, lecz jednocześnie najważniejszym posiłkiem dnia.</p>
-                    <a href="" class="btn btn-theme btn-icon mt-5">ZOBACZ OFERTĘ <i class="las la-arrow-right"></i></a>
+                    <a href="{{ route('breakfast') }}" class="btn btn-theme btn-icon mt-5">ZOBACZ OFERTĘ <i class="las la-arrow-right"></i></a>
                 </div>
             </div>
         </div>
