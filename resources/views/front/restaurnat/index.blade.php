@@ -94,8 +94,9 @@
                 <div class="col-7">
                     <div class="sliderWrapper m-0">
                         <ul class="rslides">
-                            <li><img src="{{ asset('section/glowne-danie.jpg') }}" alt="" width="1120" height="780"></li>
-                            <li><img src="{{ asset('section/restauracja-pizza.jpg') }}" alt="" width="1120" height="780"></li>
+                            <li><img src="{{ asset('section/restauracja-3.jpg') }}" alt="" width="870" height="606"></li>
+                            <li><img src="{{ asset('section/restauracja-4.jpg') }}" alt="" width="870" height="606"></li>
+                            <li><img src="{{ asset('section/restauracja-5.jpg') }}" alt="" width="870" height="606"></li>
                         </ul>
                     </div>
                 </div>
