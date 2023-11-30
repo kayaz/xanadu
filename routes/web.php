@@ -44,6 +44,9 @@ Route::group(['namespace' => 'Front'], function () {
     // Price list
     Route::get('/pl/cennik', 'PricelistController@index')->name('pricelist');
 
+    // Houses
+    Route::get('/pl/domki', 'HousesController@index')->name('houses');
+
     // Breakfast
     Route::get('/pl/sniadania', 'BreakfastController@index')->name('breakfast');
 

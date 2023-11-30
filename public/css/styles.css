@@ -299,6 +299,9 @@ section.cta-section .btn-theme:hover i {
 section.cta-section .section-title {
   filter: grayscale(100%);
 }
+section.cta-section.domek-bg {
+  background: #222 url("../images/domek-bg.jpg") no-repeat fixed center;
+}
 .text-blue {
   color: #4079a5 !important;
 }
@@ -1198,6 +1201,33 @@ span.label i {
 #page-header .breadcrumb li.active {
   color: #fff;
 }
+#page-header.offer-header {
+  height: 840px;
+}
+#offer-form {
+  background: #1b5582;
+  padding: 20px;
+  margin-top: -130px;
+  position: sticky;
+  top: 120px;
+  z-index: 20;
+  text-align: center;
+  color: white;
+}
+#offer-form h3 {
+  font-size: 30px;
+  color: white;
+  margin-bottom: 10px;
+}
+#offer-form p {
+  color: white;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+#offer-form p strong {
+  font-size: 30px;
+  color: #ff9c00;
+}
 /* Page
 ================================================== */
 .hr {
@@ -1221,6 +1251,9 @@ span.label i {
   top: 0;
   bottom: 0;
   margin: auto;
+}
+.no-top #page {
+  padding-top: 0 !important;
 }
 .no-bottom #page {
   padding-bottom: 0 !important;

@@ -1,8 +1,8 @@
 @if($list->count() > 0)
-<div id="photos-list" class="container">
+<div id="photos-list" class="container mt-3">
     <div class="row justify-content-center">
         @foreach ($list as $p)
-        <div class="col-3">
+        <div class="col-4">
             <div class="col-gallery-thumb">
                 <a href="/uploads/gallery/images/{{$p->file}}" class="swipebox" rel="gallery-1" title="">
                     <picture>

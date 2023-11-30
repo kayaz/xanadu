@@ -106,7 +106,7 @@
             <div class="row justify-content-center">
                 <div class="col-8 text-center">
                     <h2 class="section-title">Nasza lokalizacja, <br>bliskość morza i spokoju.</h2>
-                    <p>Nasze noclegi stwarzają możliwość spokojnego wypoczynku połączonego z aktywnościami na świeżym powietrzu. W pobliżu ośrodka Xanadu znajdą Państwo promenadę dla pieszych i rowerzystów, która łączy łączący Sianożęty z Ustroniem Morskim oraz Sianożęty z Kołobrzegiem.</p>
+                    <p>Nasze noclegi stwarzają możliwość spokojnego wypoczynku połączonego z aktywnościami na świeżym powietrzu. W pobliżu ośrodka Xanadu znajdą Państwo promenadę dla pieszych i rowerzystów, która łączy Sianożęty z Ustroniem Morskim oraz Sianożęty z Kołobrzegiem.</p>
                 </div>
             </div>
         </div>

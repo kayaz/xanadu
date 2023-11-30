@@ -280,6 +280,10 @@ section {
     .section-title {
       filter: grayscale(100%);
     }
+
+    &.domek-bg {
+      background: #222 url("../images/domek-bg.jpg") no-repeat fixed center;
+    }
   }
 }
 
@@ -754,6 +758,35 @@ span.label i {color:#ad8b57;margin-right:3px;font-size: 24px}
       }
     }
   }
+
+  &.offer-header {
+    height: 840px;
+  }
+}
+
+#offer-form {
+  background: #1b5582;
+  padding: 20px;
+  margin-top: -130px;
+  position: sticky;
+  top: 120px;
+  z-index: 20;
+  text-align: center;
+  color: white;
+  h3 {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 10px;
+  }
+  p {
+    color: white;
+    font-size: 15px;
+    margin-bottom: 30px;
+    strong {
+      font-size: 30px;
+      color: #ff9c00;
+    }
+  }
 }
 
 /* Page
@@ -783,6 +816,10 @@ span.label i {color:#ad8b57;margin-right:3px;font-size: 24px}
     bottom: 0;
     margin: auto;
   }
+}
+
+.no-top #page {
+  padding-top: 0 !important;
 }
 
 .no-bottom #page {
