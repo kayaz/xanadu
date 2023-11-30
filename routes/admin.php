@@ -17,6 +17,7 @@ Route::group([
 
     Route::post('gallery/set', 'Gallery\IndexController@sort')->name('gallery.sort');
     Route::post('image/set', 'Gallery\ImageController@sort')->name('image.sort');
+    Route::post('attraction/set', 'Attraction\IndexController@sort')->name('attraction.sort');
 
     Route::resources([
         'user' => 'User\IndexController',
@@ -28,6 +29,7 @@ Route::group([
         'page' => 'Page\IndexController',
         'url' => 'Url\IndexController',
         'file' => 'File\IndexController',
+        'attraction' => 'Attraction\IndexController',
     ]);
 
     // Settings

@@ -49,6 +49,7 @@ Route::group(['namespace' => 'Front'], function () {
 
     // Regional attractions
     Route::get('/pl/atrakcje-regionalne', 'AttractionController@index')->name('attraction');
+    Route::get('/pl/atrakcje-regionalne/{id}', 'AttractionController@show')->name('attraction.show');
 
     // Contact page
     Route::get('/pl/kontakt', 'ContactController@index')->name('contact');

@@ -43,7 +43,7 @@
                     <div class="icon-box icon-box-blue">
                         <div>
                             <img src="{{ asset('/images/icons/icon-fish.png') }}" alt="" width="70" height="70">
-                            <h3>8 dań <br>do wyboru na obiad</h3>
+                            <h3>Różnorodność <br>posiłków</h3>
                         </div>
                     </div>
 
@@ -101,7 +101,7 @@
                 </div>
                 <div class="col-5 d-flex align-items-center">
                     <div class="section-box text-left">
-                        <h2 class="section-title"><span class="text-blue">Dla małych i dużych</span> <br>koneserów smaku!</h2>
+                        <h2 class="section-title"><span class="text-blue">Doskonała </span> obsługa!</h2>
                         <p class="text-justify">Dopełnieniem wypoczynku w obiekcie Xanadu Resort jest wyjątkowa kuchnia i potrawy przygotowane z niezwykłą starannością przez naszych kucharzy. Oferujemy menu oparte na tradycji kuchni polskiej, włoskiej, a także regionalnej. Jego bogactwo z pewnością zaspokoi gust każdego Gościa, a unikalna atmosfera i klimat panujący w naszej restauracji sprawi, że każdy posiłek stanie się dla Państwa wyjątkowy.</p>
                     </div>
                 </div>

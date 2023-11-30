@@ -73,6 +73,13 @@
                                     <span class="bullet bullet-dot"></span>
                                 </span> Galeria</a>
                         </li>
+
+                        <li {{ Request::routeIs('admin.attraction.*') ? 'class=active' : '' }}>
+                            <a href="{{ route('admin.attraction.index') }}">
+                                <span class="menu-bullet">
+                                    <span class="bullet bullet-dot"></span>
+                                </span> Atrakcje</a>
+                        </li>
                     </ul>
                 </li>
             </ul>

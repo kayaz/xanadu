@@ -117,7 +117,10 @@
             <div class="container-fluid p-0">
                 <div class="row m-0">
                     <div class="col-7 p-0">
-                        <img src="{{ asset('/images/mapa.png') }}" alt="Mapa lokalizacji" width="1178" height="738">
+                        <div class="position-relative">
+                            <img src="{{ asset('/images/mapa.png') }}" alt="Mapa lokalizacji" width="1178" height="738">
+                            <a href="#" target="_blank" class="btn btn-theme btn-icon">WSKAZÓWKI DOJAZDU<i class="las la-map-marker"></i></a>
+                        </div>
                     </div>
                     <div class="col-5 p-0">
                         <div class="map-text justify-content-center" style="background: url({{ asset('section/lokalizacja-domki.jpg') }}) no-repeat top center;background-size:  cover">

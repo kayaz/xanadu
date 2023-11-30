@@ -27,31 +27,27 @@
         </div>
     </section>
 
-    <section>
+    <section class="pt-0">
         <div class="container">
-            <div class="row flex-row-reverse pt-5">
-                <div class="col-5"><img src="/uploads/hortulus.jpg" alt="Ogrody Hortulus" width="600" height="400" /></div>
-                <div class="col-7 d-flex align-items-center">
-                    <div class="pe-5">
-                        <h3>OGRODY HORTULUS W DOBRZYCY</h3>
-                        <p>Ogrody Hortulus w Dobrzycy to kompleks ogrodów pokazowych tworzonych już od ponad 25 lat z miłości do natury i z potrzeby dzielenia się tym, co piękne z innymi. Ogrody Hortulus to unikatowe miejsce wypoczynku, rozrywki oraz edukacji przyrodniczej.</p>
-                        <p>Ogrody Hortulus położone są w powiecie koszalińskim w wyjątkowej strefie klimatycznej 7b. Ogrody oddalone są tylko o 8 kilometrów w linii prostej od brzegu Morza Bałtyckiego. Jest to najbardziej na północ wysunięta kolekcja dendrologiczna w Polsce.</p>
-                        <p>Kompleks składa się z dwóch zespołów ogrodowych o odmiennym charakterze - Ogrodów Tematycznych Hortulus oraz Ogrodów Hortulus Spectabilis. Zespoły ogrodowe, oddalone są od siebie o 2 km, a między nimi znajduje się teren Szkółki Roślin Ozdobnych Hortulus.</p>
+            <div class="row justify-content-center">
+                @foreach($attractions as $a)
+                    <div class="col-4">
+                        <div class="attraction-item">
+                            <img src="{{ asset('/uploads/attractions/'.$a->file) }}" alt="{{ $a->name }}">
+                            <h3>{{ $a->name }}</h3>
+                            <div class="attraction-item-desc">
+                                <div class="attraction-item-short">
+                                    <p>{{ $a->short }}</p>
+                                    <a href="#" class="btn btn-theme" data-id="{{ $a->id }}">CZYTAJ WIĘCEJ</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                @endforeach
+
             </div>
 
-            <div class="row mt-5 pt-5">
-                <div class="col-5"><img src="/uploads/latarnia_w_kolobrzegu.jpg" alt="Latarnia w Kołobrzegu" width="600" height="400" /></div>
-                <div class="col-7 d-flex align-items-center">
-                    <div class="pe-5">
-                        <h3>LATARNIA MORSKA W KOŁOBRZEGU</h3>
-                        <p>Miejscem, które powinien zwiedzić każdy turysta spędzający czas w naszej okolicy, jest 26-metrowa latarnia morska w Kołobrzegu, a jej zasięg dochodzi do 16 Mm. Źródłem światła jest obrotowy aparat optyczny o dziesięciu ścianach świetlnych, a w każdej ścianie umieszczone są dwie żarówki, każda o mocy 200 W. Światło latarni wznosi się na wysokości 36,5 m. Latarnia wybudowana z czerwonej cegły, na planie dawnego fortu, pełni rolę nie tylko obiektu nawigacyjnego, ale także symbolu tego miejsca. Obiekt jest otwarty dla turystów, którzy po wspinaczce po metalowych schodach mogą podziwiać przepiękną panoramę miasta oraz zarys linii brzegowej Bałtyku. W pobliżu znajduje się również zabytkowa armata oraz tablica upamiętniająca rybaków, którzy stracili życie na morzu.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row flex-row-reverse mt-5 pt-5">
+            <div class="row flex-row-reverse mt-5 pt-5 d-none">
                 <div class="col-5"><img src="/uploads/przystan_rybacka_w_ustroniu_morskim.jpg" alt="Przystań Rybacka w Ustroniu Morskim" width="600" height="400" /></div>
                 <div class="col-7 d-flex align-items-center">
                     <div class="ps-5">
@@ -61,17 +57,7 @@
                 </div>
             </div>
 
-            <div class="row mt-5 pt-5">
-                <div class="col-5"><img src="/uploads/latarnia_w_kolobrzegu.jpg" alt="Latarnia w Kołobrzegu" width="600" height="400" /></div>
-                <div class="col-7 d-flex align-items-center">
-                    <div class="pe-5">
-                        <h3>PRZYSTAŃ RYBACKA W USTRONIU MORSKIM</h3>
-                        <p>Niewątpliwą atrakcją zachodniego wybrzeża jest Przystań Rybacka w Ustroniu Morskim. Kolorowe kutry stanową urokliwą ozdobę plaży, z którą chętnie fotografują się turyści. O poranku rybacy wyruszają na połów, aby popołudniami oraz wieczorami przywozić ze sobą najlepsze bałtyckie ryby, których smakiem można cieszyć się w pobliskich smażalniach lub wędzarniach. To zarazem unikatowa, bo zanikająca pocztówka znad Bałtyku, która z roku na rok powoli znika z polskich plaż. Stąd warto jak najdłużej zachować ją w pamięci.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row flex-row-reverse mt-5 pt-5">
+            <div class="row flex-row-reverse mt-5 pt-5 d-none">
                 <div class="col-5"><img src="/uploads/przystan_rybacka_w_ustroniu_morskim.jpg" alt="Przystań Rybacka w Ustroniu Morskim" width="600" height="400" /></div>
                 <div class="col-7 d-flex align-items-center">
                     <div class="ps-5">
@@ -81,7 +67,7 @@
                 </div>
             </div>
 
-            <div class="row mt-5 pt-5">
+            <div class="row mt-5 pt-5 d-none">
                 <div class="col-5"><img src="/uploads/latarnia_w_kolobrzegu.jpg" alt="Latarnia w Kołobrzegu" width="600" height="400" /></div>
                 <div class="col-7 d-flex align-items-center">
                     <div class="pe-5">
@@ -91,7 +77,7 @@
                 </div>
             </div>
 
-            <div class="row flex-row-reverse mt-5 pt-5">
+            <div class="row flex-row-reverse mt-5 pt-5 d-none">
                 <div class="col-5"><img src="/uploads/przystan_rybacka_w_ustroniu_morskim.jpg" alt="Przystań Rybacka w Ustroniu Morskim" width="600" height="400" /></div>
                 <div class="col-7 d-flex align-items-center">
                     <div class="ps-5">
@@ -101,19 +87,7 @@
                 </div>
             </div>
 
-            <div class="row mt-5 pt-5">
-                <div class="col-5"><img src="/uploads/latarnia_w_kolobrzegu.jpg" alt="Latarnia w Kołobrzegu" width="600" height="400" /></div>
-                <div class="col-7 d-flex align-items-center">
-                    <div class="pe-5">
-                        <h3>CENTRUM ROZRYWKOWO – REKREACYJNE HELIOS W USTRONIU MORSKIM</h3>
-                        <p>Centrum Sportowo – Rekreacyjne Helios to nowoczesny kompleks sportowo rekreacyjny w skład którego wchodzi pływalnia kryta, kąpielisko otwarte, sauny, jacuzzi, kręgielnia, korty tenisowe oraz boisko do siatkówki plażowej. W obiekcie znajduje się również punkt gastronomiczny w którym po wspaniałej zabawie można odpocząć i smacznie zjeść.</p>
-                        <p>&nbsp;</p>
-                        <p>Pływalnia kryta oferuje Państwu min. 6-cio torowy basen pływacki, basen szkoleniowo – rekreacyjny, wydzieloną 2 torową strefę nauki pływania, 2 gejzery powietrzne, 2 kaskady wodne z szeroką wylewką do masażu karku, 2 stacje masażu wodno -powietrznego, 4-stanowiskową ławkę z hydromasażem. W strefie rekreacyjnej znajdują się również zjeżdżalnia wodna (rura zamknięta) o długości około 45m, 3 wanny WHIRLPOOL do hydromasażu oraz 2 sauny (sucha i parowa). Głównym elementem kąpieliska otwartego jest wielofunkcyjna niecka basenowa oraz plaża trawiasta z wydzieloną strefą do opalania i placem zabaw dla dzieci.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row flex-row-reverse mt-5 pt-5">
+            <div class="row flex-row-reverse mt-5 pt-5 d-none">
                 <div class="col-5"><img src="/uploads/przystan_rybacka_w_ustroniu_morskim.jpg" alt="Przystań Rybacka w Ustroniu Morskim" width="600" height="400" /></div>
                 <div class="col-7 d-flex align-items-center">
                     <div class="ps-5">
@@ -125,7 +99,45 @@
 
         </div>
     </section>
+
+    <div class="modal" id="attractionModal">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="las la-times"></i></button>
+                </div>
+                <div class="modal-body" id="modalContent"></div>
+            </div>
+        </div>
+    </div>
+
 @endsection
 @push('scripts')
+<script>
+    $(document).ready(function() {
+        $('.btn-theme').click(function(event) {
+            event.preventDefault();
 
+            const attractionId = $(this).data('id');
+            const modal = new bootstrap.Modal(document.getElementById('attractionModal'));
+
+            $.ajax({
+                url: '/pl/atrakcje-regionalne/'+attractionId,
+                type: 'GET',
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
+                    'Content-Type': 'application/json'
+                },
+                success: function(data) {
+                    // Load the fetched content into the modal
+                    $('#modalContent').html(data);
+                    modal.show();
+                },
+                error: function(error) {
+                    console.error('Error:', error);
+                }
+            });
+        });
+    });
+</script>
 @endpush

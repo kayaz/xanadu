@@ -35,29 +35,22 @@
 
                     <div class="icon-box icon-box-blue">
                         <div>
-                            <img src="{{ asset('/images/icons/icon-maindish.png') }}" alt="" width="70" height="70">
-                            <h3>Serwujemy <br>śniadania i obiady</h3>
+                            <img src="{{ asset('/images/icons/icon-swieze-produkty.png') }}" alt="" width="70" height="70">
+                            <h3>Świeże <br>produkty</h3>
                         </div>
                     </div>
 
                     <div class="icon-box icon-box-blue">
                         <div>
-                            <img src="{{ asset('/images/icons/icon-fish.png') }}" alt="" width="70" height="70">
-                            <h3>8 dań <br>do wyboru na obiad</h3>
+                            <img src="{{ asset('/images/icons/icon-kameralny.png') }}" alt="" width="70" height="70">
+                            <h3>Kameralny <br>klimat</h3>
                         </div>
                     </div>
 
                     <div class="icon-box icon-box-blue">
                         <div>
                             <img src="{{ asset('/images/icons/icon-deser.png') }}" alt="" width="70" height="70">
-                            <h3>Pyszne desery <br>dla smakoszy</h3>
-                        </div>
-                    </div>
-
-                    <div class="icon-box icon-box-blue">
-                        <div>
-                            <img src="{{ asset('/images/icons/icon-pizza.png') }}" alt="" width="70" height="70">
-                            <h3>Włoskia pizzy <br>na cienkim cieście</h3>
+                            <h3>Połączenie tradycji <br>z nowoczesnością</h3>
                         </div>
                     </div>
                 </div>
@@ -94,6 +87,7 @@
                 </div>
                 <div class="col-5 d-flex align-items-center">
                     <div class="section-box text-left">
+                        <h2 class="section-title"><span class="text-blue">Śniadanie</span> <br>w Xanadu Resort</h2>
                         <p class="text-justify">Rezerwując pobyt zapytaj o opcje z wyżywieniem. Oferujemy korzystne pakiety ze śniadaniem i obiadokolacją!</p>
                     </div>
                 </div>
