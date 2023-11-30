@@ -21,8 +21,8 @@
                                 <li><a href="{{ route('animals') }}">Zwierzęta w resorcie</a></li>
                             </ul>
                         </li>
-                        <li><a href="{{ route('front.menu', ['language' => 'pl', 'uri' => 'pokoje']) }}">Pokoje</a></li>
-                        <li><a href="{{ route('front.menu', ['language' => 'pl', 'uri' => 'domki']) }}">Domki</a></li>
+                        <li><a href="#">Pokoje</a></li>
+                        <li><a href="{{ route('houses') }}">Domki</a></li>
                         <li>
                             <a href="#">Restauracja</a>
                             <ul class="nav-sub mb-0">
@@ -37,8 +37,8 @@
                                 <li><a href="#">Wirtualny spacer</a></li>
                             </ul>
                         </li>
-                        <li><a href="{{ route('front.menu', ['language' => 'pl', 'uri' => 'basen']) }}">Basen</a></li>
-                        <li><a href="{{ route('front.menu', ['language' => 'pl', 'uri' => 'cennik']) }}">Cennik</a></li>
+                        <li><a href="{{ route('pool') }}">Basen</a></li>
+                        <li><a href="{{ route('pricelist') }}">Cennik</a></li>
                         <li><a href="{{ route('contact') }}">Kontakt</a></li>
                         <li><a href="https://www.facebook.com/xanadunadmorzem" target="_blank"><i class="lab la-facebook-square"></i></a></li>
                     </ul>
