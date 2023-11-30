@@ -64,8 +64,8 @@
                 <div class="col-7">
                     <div class="sliderWrapper m-0">
                         <ul class="rslides">
-                            <li><img src="{{ asset('section/restauracja-sniadanie.jpg') }}" alt="" width="1120" height="780"></li>
-                            <li><img src="{{ asset('section/restauracja-sniadania.jpg') }}" alt="" width="1120" height="780"></li>
+                            <li><img src="{{ asset('section/restauracja-sniadanie.jpg') }}" alt="" width="870" height="606"></li>
+                            <li><img src="{{ asset('section/restauracja-sniadanie-2.jpg') }}" alt="" width="870" height="606"></li>
                         </ul>
                     </div>
                 </div>
@@ -83,7 +83,12 @@
         <div class="container">
             <div class="row flex-row-reverse">
                 <div class="col-7">
-                    <img src="{{ asset('section/sniadanie-na-stole.jpg') }}" alt="" class="w-100" width="745" height="520">
+                    <div class="sliderWrapper m-0">
+                        <ul class="rslides">
+                            <li><img src="{{ asset('section/restauracja-sniadanie-3.jpg') }}" alt="" width="870" height="606"></li>
+                            <li><img src="{{ asset('section/restauracja-sniadanie-4.jpg') }}" alt="" width="870" height="606"></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="col-5 d-flex align-items-center">
                     <div class="section-box text-left">
