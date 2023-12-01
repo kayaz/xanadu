@@ -39,166 +39,234 @@
                                 <div class="icon-box icon-box-blue">
                                     <div>
                                         <img src="{{ asset('/images/icons/icon-food.png') }}" alt="" width="70" height="70">
-                                        <h3>Ciekawy <br>atut</h3>
+                                        <h3>Centrum <br>Sianożęt</h3>
                                     </div>
                                 </div>
 
                                 <div class="icon-box icon-box-blue">
                                     <div>
                                         <img src="{{ asset('/images/icons/icon-swieze-produkty.png') }}" alt="" width="70" height="70">
-                                        <h3>Ciekawy <br>atut</h3>
+                                        <h3>25 komfortowych domów</h3>
                                     </div>
                                 </div>
 
                                 <div class="icon-box icon-box-blue">
                                     <div>
                                         <img src="{{ asset('/images/icons/icon-kameralny.png') }}" alt="" width="70" height="70">
-                                        <h3>Ciekawy <br>atut</h3>
+                                        <h3>Przestronne <br>wnętrze (60 m<sup>2</sup>)</h3>
                                     </div>
                                 </div>
 
                                 <div class="icon-box icon-box-blue">
                                     <div>
                                         <img src="{{ asset('/images/icons/icon-deser.png') }}" alt="" width="70" height="70">
-                                        <h3>Ciekawy <br>atut</h3>
+                                        <h3>6 <br>osobowe</h3>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <div class="container">
+                        <div class="row mt-5 pt-5">
+                            <div class="col-12">
+                                <h2 class="section-title text-center"><span class="text-blue">Nowoczesne i komfortowe</span> domki!</h2>
+                            </div>
+                            <div class="col-12">
+                                <p>Domki Xanadu Resort zostały wykonane z drewna. Łączna powierzchnia użytkowa każdego z nich wynosi 60 m<sup>2</sup>, dzięki czemu bez obaw zmieści się w nim 6, a nawet 8 osób. Każdy dom posiada dwa tarasy – niewielki, usytuowany na piętrze oraz większy, mieszczący się na parterze, na którym można spędzać wolny czas w dowolny sposób: na porannej kawie lub wieczornych opowieściach. Wewnątrz, oprócz dwóch oddzielnych 3 osobowych sypialni, znajduje się przytulny salon z aneksem kuchennym oraz w łazienka z kabiną prysznicową.</p>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-12">
+                                <div class="mix-nav text-center offer-mix-nav">
+                                    <button type="button" class="btn btn-theme mt-0" data-bs-toggle="modal" data-bs-target="#equipmentModal"><span><i class="las la-file-alt"></i></span>Wyposażenie</button>
+                                    <button type="button" class="btn btn-theme mt-0" data-bs-toggle="modal" data-bs-target="#priceModal"><span><i class="las la-th-list"></i></span>Cennik</button>
+                                    <a href="http://xanaduhotel.test/uploads/gallery/images/203121_dsc-0359.jpeg" class="btn btn-theme mt-0 swipebox" rel="gallery-1"><span><i class="las la-image"></i></span>Galeria</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal" id="equipmentModal">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="las la-times"></i></button>
+                                    </div>
+                                    <div class="modal-body p-4" id="modalContent">
+                                        <p class="mt-0"><b>Salon z Aneksem Kuchennym:</b></p>
+                                        <ul>
+                                            <li>meble w zabudowie stałej, zlewozmywak z baterią,</li>
+                                            <li>lodówka podblatowa,</li>
+                                            <li>płyta 2 palnikowa</li>
+                                            <li>mikrofalówka</li>
+                                            <li>czajnik elektryczny</li>
+                                            <li>komplet naczyń i sztućców dla 8 osobowej rodziny</li>
+                                            <li>rozkładana sofa z funkcją spania dla 2 osób</li>
+                                            <li>stół jadalniany z 6 krzesłami</li>
+                                            <li>telewizor 42&quot;</li>
+                                            <li>stolik kawowy</li>
+                                            <li>parawan + 2 leżaki</li>
+                                            <li>suszarka na ubrania</li>
+                                        </ul>
+                                        <p><b>Sypialnia, każda posiada:</b></p>
+                                        <ul>
+                                            <li>1 łóżko pojedyncze (90x200cm)</li>
+                                            <li>1 łóżko podwójne (140x200cm)</li>
+                                            <li>2 szafki nocne wraz z lampkami</li>
+                                            <li>meble w zabudowie lub komoda</li>
+                                        </ul>
+                                        <p><b>Łazienka:</b></p>
+                                        <ul>
+                                            <li>toaleta</li>
+                                            <li>umywalka z szafką i lustrem</li>
+                                            <li>przestronny prysznic</li>
+                                            <li>grzejnik</li>
+                                            <li>pralka</li>
+                                            <li>pralka</li>
+                                        </ul>
+                                        <p><b>Taras / Ogródek (parter)</b></p>
+                                        <ul>
+                                            <li>meble tarasowe: stół + 4 krzesła</li>
+                                        </ul>
+                                        <p>Na terenie całego obiektu dostęp do bezpłatnej sieci Wi-Fi. <br>Akceptujemy pobyty ze zwierzętami. Opcja dodatkowo płatna.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-theme" data-bs-target="#priceModal" data-bs-toggle="modal">ZOBACZ CENNIK</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal" id="priceModal">
+                            <div class="modal-dialog modal-xl modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="las la-times"></i></button>
+                                    </div>
+                                    <div class="modal-body p-4" id="modalContent">
+                                        <table class="cennik" border="0">
+                                            <thead>
+                                            <tr>
+                                                <td>Od</td>
+                                                <td>Do</td>
+                                                <td>Cena</td>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>28.04.2023</td>
+                                                <td>06.05.2023</td>
+                                                <td>390</td>
+                                            </tr>
+                                            <tr>
+                                                <td>06.05.2023</td>
+                                                <td>27.05.2023</td>
+                                                <td>260</td>
+                                            </tr>
+                                            <tr>
+                                                <td>27.05.2023</td>
+                                                <td>03.06.2023</td>
+                                                <td>310</td>
+                                            </tr>
+                                            <tr>
+                                                <td>03.06.2023</td>
+                                                <td>17.06.2023</td>
+                                                <td>350</td>
+                                            </tr>
+                                            <tr>
+                                                <td>17.06.2023</td>
+                                                <td>24.06.2023</td>
+                                                <td>380</td>
+                                            </tr>
+                                            <tr>
+                                                <td>24.06.2023</td>
+                                                <td>01.07.2023</td>
+                                                <td>470</td>
+                                            </tr>
+                                            <tr>
+                                                <td>01.07.2023</td>
+                                                <td>08.07.2023</td>
+                                                <td>570</td>
+                                            </tr>
+                                            <tr>
+                                                <td>08.07.2023</td>
+                                                <td>12.08.2023</td>
+                                                <td>620</td>
+                                            </tr>
+                                            <tr>
+                                                <td>12.08.2023</td>
+                                                <td>19.08.2023</td>
+                                                <td>570</td>
+                                            </tr>
+                                            <tr>
+                                                <td>19.08.2023</td>
+                                                <td>26.08.2023</td>
+                                                <td>510</td>
+                                            </tr>
+                                            <tr>
+                                                <td>26.08.2023</td>
+                                                <td>02.09.2023</td>
+                                                <td>350</td>
+                                            </tr>
+                                            <tr>
+                                                <td>02.09.2023</td>
+                                                <td>30.09.2023</td>
+                                                <td>260</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-theme" data-bs-target="#equipmentModal" data-bs-toggle="modal">ZOBACZ WYPOSAŻENIE</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-5 d-none">
+                            @include('front.parse.gallery', $list)
+                        </div>
+                    </div>
+
+                    @include('front.partials.good-to-know')
                 </div>
                 <div class="col-3">
-                    <div id="offer-form">
-                        <h3>Rezerwacja on-line</h3>
-                        <p>Już od <strong>450 zł</strong> / noc</p>
-                        <a href="#" class="btn btn-theme w-100">ZAREZERWUJ</a>
+                    <div class="offer-form-track">
+                        <div id="offer-form">
+                            <h3>Rezerwacja on-line</h3>
+                            <p>Już od <strong>450 zł</strong> / noc</p>
+                            <a href="#" class="btn btn-theme w-100">ZAREZERWUJ</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-
-    <section class="cta-section domek-bg">
+    <section class="cta-section domek-bg m-0">
         <div class="container">
             <div class="row justify-content-start">
                 <div class="col-4 text-left">
-                    <h2 class="section-title">Nowoczesne i komfortowe domki!</h2>
+                    <h2 class="section-title">Nasz ośrodek wczasowy zapewnia komfortowe warunki</h2>
                     <p>Oferujemy drewniane, dwupoziomowe domki, będące odzwierciedleniem nowoczesnego podejścia do budownictwa. Zostały wykończone z największą starannością, aby zapewnić idealne warunki do wypoczynku, a zarazem zachwycać funkcjonalnością i prostą formą. Wynajem domku to najlepsza decyzja, jaką można podjąć z myślą o komfortowym i kameralnym wypoczynku w kilka osób.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="p-0">
+    <section>
         <div class="container">
             <div class="row">
-                <div class="col-9">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12">
-                                <h2 class="section-title text-center"><span class="text-blue">Nasz ośrodek wczasowy</span> <br>zapewnia komfortowe warunki</h2>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center text-center">
-                            <div class="col-11">
-                                <p>Każdy obiekt ma dwa tarasy – niewielki, usytuowany na piętrze oraz większy, mieszczący na parterze, na którym można spędzać wolny czas w dowolny sposób: na porannej kawie lub wieczornych opowieściach. Wewnątrz, oprócz dwóch dużych sypialni, znajduje się przytulny salon z kuchnią oraz w luksusowo wyposażona łazienka. Pralka, lodówka, czajnik bezprzewodowy czy telewizor pozwolą na dłuższy pobyt, a darmowe połączenie Wi-Fi zapewni rozrywkę oraz dostęp do najświeższych informacji.</p>
-                            </div>
-                        </div>
-
-                        <div class="row mt-5">
-                            @include('front.parse.gallery', $list)
-                        </div>
-                    </div>
-
-                    <div class="container mt-5">
-                        <div class="row">
-                            <div class="col-12">
-                                <h2 class="section-title text-center">Cennik</h2>
-                            </div>
-                        </div>
-                    </div>
-
-                    <table class="cennik" border="0">
-                        <thead>
-                            <tr>
-                                <td>od</td>
-                                <td>do</td>
-                                <td>cena</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>28.04.2023</td>
-                            <td>06.05.2023</td>
-                            <td>390</td>
-                        </tr>
-                        <tr>
-                            <td>06.05.2023</td>
-                            <td>27.05.2023</td>
-                            <td>260</td>
-                        </tr>
-                        <tr>
-                            <td>27.05.2023</td>
-                            <td>03.06.2023</td>
-                            <td>310</td>
-                        </tr>
-                        <tr>
-                            <td>03.06.2023</td>
-                            <td>17.06.2023</td>
-                            <td>350</td>
-                        </tr>
-                        <tr>
-                            <td>17.06.2023</td>
-                            <td>24.06.2023</td>
-                            <td>380</td>
-                        </tr>
-                        <tr>
-                            <td>24.06.2023</td>
-                            <td>01.07.2023</td>
-                            <td>470</td>
-                        </tr>
-                        <tr>
-                            <td>01.07.2023</td>
-                            <td>08.07.2023</td>
-                            <td>570</td>
-                        </tr>
-                        <tr>
-                            <td>08.07.2023</td>
-                            <td>12.08.2023</td>
-                            <td>620</td>
-                        </tr>
-                        <tr>
-                            <td>12.08.2023</td>
-                            <td>19.08.2023</td>
-                            <td>570</td>
-                        </tr>
-                        <tr>
-                            <td>19.08.2023</td>
-                            <td>26.08.2023</td>
-                            <td>510</td>
-                        </tr>
-                        <tr>
-                            <td>26.08.2023</td>
-                            <td>02.09.2023</td>
-                            <td>350</td>
-                        </tr>
-                        <tr>
-                            <td>02.09.2023</td>
-                            <td>30.09.2023</td>
-                            <td>260</td>
-                        </tr>
-                        </tbody>
-                    </table>
-
-                    @include('front.partials.good-to-know')
+                <div class="col-12">
+                    <h2 class="section-title text-center"><span class="text-blue">Pokoje</span> w Xanadu Resort.</h2>
                 </div>
-                <div class="col-3">
-                    <div id="offer-form" style="margin-top: -210px">
-                        <h3>Rezerwacja on-line</h3>
-                        <p>Już od <strong>450 zł</strong> / noc</p>
-                        <a href="#" class="btn btn-theme w-100">ZAREZERWUJ</a>
-                    </div>
+            </div>
+            <div class="row justify-content-center text-center">
+                <div class="col-8">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur accumsan mauris ac orci convallis, sed sollicitudin urna pharetra. Pellentesque eu pellentesque augue. Nam eget eros dolor.</p>
+                    <a href="#" class="btn btn-theme btn-icon mt-5">ZOBACZ OFERTĘ <i class="las la-arrow-right"></i></a>
                 </div>
             </div>
         </div>
