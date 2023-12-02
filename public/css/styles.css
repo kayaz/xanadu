@@ -329,6 +329,33 @@ section.cta-section.domek-bg {
   left: 0;
   top: 0;
 }
+.features-list {
+  padding: 14px 0 14px 70px;
+  position: relative;
+  border-bottom: 1px solid #e8e8e8;
+  display: flex;
+  align-items: center;
+}
+.features-list:last-child {
+  border-bottom: 0;
+}
+.features-list i {
+  font-size: 32px;
+  color: #1b5582;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #f2f9ff;
+  bottom: 0;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.features-list p {
+  font-size: 15px;
+  line-height: 23px;
+}
 .attraction {
   padding-right: 30px;
 }
@@ -409,6 +436,25 @@ section.cta-section.domek-bg {
   font-size: 17px;
   line-height: 29px;
   margin-top: 20px;
+}
+.modal-body p b {
+  color: #1b5582;
+}
+.modal-body ul {
+  columns: 2;
+  column-gap: 30px;
+  line-height: normal;
+  margin: 0;
+  list-style: none;
+  padding: 5px 0 0;
+}
+.modal-body ul li {
+  line-height: 15px;
+  display: flex;
+  margin-bottom: 10px;
+  font-size: 13px;
+  border: 1px solid #e7e7e7;
+  padding: 7px 10px;
 }
 .modal-header {
   border-top-left-radius: 0;
@@ -559,14 +605,21 @@ table.cennik tr td {
   text-align: center;
 }
 table.cennik tr:nth-child(odd) td {
-  background: #f2f2f2;
+  background: #f7f7f7;
 }
 table.cennik tr:nth-child(even) td {
   background: #eaeaea;
 }
-table.cennik thead td {
-  background: #113f63 !important;
+table.cennik tr:hover td {
+  background: #f2f9ff;
+  font-weight: bold;
+  color: #1b5582;
+}
+table.cennik thead td,
+table.cennik thead tr:hover td {
+  background: #1b5582 !important;
   color: white;
+  font-weight: normal;
 }
 .waves {
   position: relative;
@@ -1221,9 +1274,12 @@ span.label i {
 .offer-mix-nav {
   border: 1px solid #ddd;
   background: white;
-  -webkit-box-shadow: 0px 6px 5px -4px rgba(0, 0, 0, 0.12);
-  -moz-box-shadow: 0px 6px 5px -4px rgba(0, 0, 0, 0.12);
-  box-shadow: 0px 6px 5px -4px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 6px 5px -4px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 6px 5px -4px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 6px 5px -4px rgba(0, 0, 0, 0.12);
+  margin-top: -130px;
+  z-index: 10;
+  position: relative;
 }
 #offer-form {
   background: #1b5582;
