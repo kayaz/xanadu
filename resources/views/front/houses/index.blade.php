@@ -48,35 +48,35 @@
 
                                 <div class="icon-box icon-box-blue m-2">
                                     <div>
-                                        <img src="{{ asset('/images/icons/icon-food.png') }}" alt="" width="70" height="70">
+                                        <img src="{{ asset('/images/icons/icon-location.png') }}" alt="" width="70" height="70">
                                         <h3>Centrum <br>Sianożęt</h3>
                                     </div>
                                 </div>
 
                                 <div class="icon-box icon-box-blue m-2">
                                     <div>
-                                        <img src="{{ asset('/images/icons/icon-swieze-produkty.png') }}" alt="" width="70" height="70">
+                                        <img src="{{ asset('/images/icons/icon-houses.png') }}" alt="" width="70" height="70">
                                         <h3>25 komfortowych domów</h3>
                                     </div>
                                 </div>
 
                                 <div class="icon-box icon-box-blue m-2">
                                     <div>
-                                        <img src="{{ asset('/images/icons/icon-kameralny.png') }}" alt="" width="70" height="70">
+                                        <img src="{{ asset('/images/icons/icon-area.png') }}" alt="" width="70" height="70">
                                         <h3>Przestronne <br>wnętrze (60 m<sup>2</sup>)</h3>
                                     </div>
                                 </div>
 
                                 <div class="icon-box icon-box-blue m-2">
                                     <div>
-                                        <img src="{{ asset('/images/icons/icon-deser.png') }}" alt="" width="70" height="70">
+                                        <img src="{{ asset('/images/icons/icon-6-person.png') }}" alt="" width="70" height="70">
                                         <h3>6 <br>osobowe</h3>
                                     </div>
                                 </div>
 
                                 <div class="icon-box icon-box-blue m-2">
                                     <div>
-                                        <img src="{{ asset('/images/icons/icon-deser.png') }}" alt="" width="70" height="70">
+                                        <img src="{{ asset('/images/icons/icon-food.png') }}" alt="" width="70" height="70">
                                         <h3>Serwujemy śniadania <br>i obiadokolacje</h3>
                                     </div>
                                 </div>
@@ -143,7 +143,7 @@
                                             <li>ręczniki kąpielowe (dodatkowo płatne)</li>
                                             <li>suszarka do włosów</li>
                                         </ul>
-                                        <p>Na terenie całego obiektu dostęp do bezpłatnej sieci Wi-Fi. <br>Akceptujemy pobyty ze zwierzętami. Opcja dodatkowo płatna.</p>
+                                        <p>Na terenie całego obiektu dostęp do <b>bezpłatnej sieci Wi-Fi</b>. <br><b>Akceptujemy pobyty ze zwierzętami</b>. Opcja dodatkowo płatna.</p>
                                     </div>
                                     <div class="modal-footer">
                                         <button class="btn btn-theme" data-bs-target="#priceModal" data-bs-toggle="modal">ZOBACZ CENNIK</button>
