@@ -47,6 +47,9 @@ Route::group(['namespace' => 'Front'], function () {
     // Houses
     Route::get('/pl/domki', 'HousesController@index')->name('houses');
 
+    // Rooms
+    Route::get('/pl/pokoje', 'RoomsController@index')->name('rooms');
+
     // Breakfast
     Route::get('/pl/sniadania', 'BreakfastController@index')->name('breakfast');
 

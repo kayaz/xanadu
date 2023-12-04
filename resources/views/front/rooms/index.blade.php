@@ -7,7 +7,7 @@
 
 @section('content')
     <div id="page-header" class="offer-header">
-        <div class="container" style="background:url({{ asset('section/domki-header.jpg') }}) no-repeat top;background-size: cover">
+        <div class="container" style="background:url({{ asset('section/pokoje-header.jpg') }}) no-repeat top;background-size: cover">
             <div class="row">
                 <div class="col-12">
                     <img src="{{ asset('/images/svg/section-title-icon.svg') }}" alt="{{ $page->title }}">
@@ -34,12 +34,12 @@
 
                         <div class="row mt-5">
                             <div class="col-12">
-                                <h2 class="section-title text-center"><span class="text-blue">Nowoczesne i komfortowe </span><br>domki w Sianożętach</h2>
+                                <h2 class="section-title text-center"><span class="text-blue">Luksusowe i komfortowe </span><br>pokoje w Sianożętach</h2>
                             </div>
                         </div>
                         <div class="row justify-content-center text-center">
                             <div class="col-11">
-                                <p>Planowanie długiego urlopu z całą rodziną lub przyjaciółmi należy zacząć od wyboru idealnego kompleksu noclegowego. Domki Xanadu Resort zostały wykonane z drewna. Łączna powierzchnia użytkowa każdego z nich wynosi 60 m2, dzięki czemu bez obaw zmieści się w nim 6, a nawet 8 osób. Każdy dom posiada dwa tarasy – niewielki, usytuowany na piętrze oraz większy, mieszczący się na parterze, na którym można spędzać wolny czas w dowolny sposób: na porannej kawie lub wieczornych opowieściach. Wewnątrz, oprócz dwóch oddzielnych 3 osobowych sypialni, znajduje się przytulny salon z aneksem kuchennym oraz w łazienka z kabiną prysznicową.</p>
+                                <p>Nasze pokoje zaprojektowano z myślą o tych z Państwa, którzy poszukują przede wszystkim komfortu wysokiej klasy. Wyposażenie każdego pokoju hotelowego o wielkości 21 m<sup>2</sup> obejmuje niezbędne i zarazem luksusowe rozwiązania, dzięki którym czas spędzany w naszym obiekcie będzie należał do przyjemnych. Pokoje zostały przystosowane do obecności maksymalnie 3 osób. Będą zatem idealne nie tylko dla par, ale także rodziców z dzieckiem.</p>
                             </div>
                         </div>
 
@@ -49,35 +49,35 @@
                                 <div class="icon-box icon-box-blue m-2">
                                     <div>
                                         <img src="{{ asset('/images/icons/icon-location.png') }}" alt="" width="70" height="70">
-                                        <h3>Centrum <br>Sianożęt</h3>
+                                        <h3>Centrum Sianożęt <br>(150m do morza)</h3>
                                     </div>
                                 </div>
 
                                 <div class="icon-box icon-box-blue m-2">
                                     <div>
                                         <img src="{{ asset('/images/icons/icon-houses.png') }}" alt="" width="70" height="70">
-                                        <h3>25 komfortowych domów</h3>
+                                        <h3>24 przytulne <br>pokoje</h3>
                                     </div>
                                 </div>
 
                                 <div class="icon-box icon-box-blue m-2">
                                     <div>
                                         <img src="{{ asset('/images/icons/icon-area.png') }}" alt="" width="70" height="70">
-                                        <h3>Przestronne <br>wnętrze (60 m<sup>2</sup>)</h3>
-                                    </div>
-                                </div>
-
-                                <div class="icon-box icon-box-blue m-2">
-                                    <div>
-                                        <img src="{{ asset('/images/icons/icon-6-person.png') }}" alt="" width="70" height="70">
-                                        <h3>6 <br>osobowe</h3>
+                                        <h3>Nowoczesne <br>wnętrze</h3>
                                     </div>
                                 </div>
 
                                 <div class="icon-box icon-box-blue m-2">
                                     <div>
                                         <img src="{{ asset('/images/icons/icon-food.png') }}" alt="" width="70" height="70">
-                                        <h3>Serwujemy śniadania <br>i obiadokolacje</h3>
+                                        <h3>Oferujemy pełne <br>wyżywienie</h3>
+                                    </div>
+                                </div>
+
+                                <div class="icon-box icon-box-blue m-2">
+                                    <div>
+                                        <img src="{{ asset('/images/icons/icon-food.png') }}" alt="" width="70" height="70">
+                                        <h3>Dogodny <br>dojazd</h3>
                                     </div>
                                 </div>
                             </div>
@@ -85,11 +85,11 @@
                     </div>
 
                     <div class="container">
-                      <div class="row">
-                          <div class="col-12">
-                              @include('front.parse.slider', $list)
-                          </div>
-                      </div>
+                        <div class="row">
+                            <div class="col-12">
+                                @include('front.parse.slider', $list)
+                            </div>
+                        </div>
                     </div>
 
                     <div class="container">
@@ -169,18 +169,18 @@
                                             </tr>
                                             </thead>
                                             <tbody>
-                                            <tr><td>27.04.2024</td><td>05.05.2024</td><td>390</td></tr>
-                                            <tr><td>05.05.2024</td><td>26.05.2024</td><td>260</td></tr>
-                                            <tr><td>26.05.2024</td><td>02.06.2024</td><td>390</td></tr>
-                                            <tr><td>02.06.2024</td><td>16.06.2024</td><td>350</td></tr>
-                                            <tr><td>16.06.2024</td><td>23.06.2024</td><td>380</td></tr>
-                                            <tr><td>23.06.2024</td><td>30.06.2024</td><td>470</td></tr>
-                                            <tr><td>30.06.2024</td><td>07.07.2024</td><td>570</td></tr>
-                                            <tr><td>07.07.2024</td><td>18.08.2024</td><td>620</td></tr>
-                                            <tr><td>18.08.2024</td><td>25.08.2024</td><td>510</td></tr>
-                                            <tr><td>25.08.2024</td><td>01.09.2024</td><td>390</td></tr>
-                                            <tr><td>01.09.2024</td><td>08.09.2024</td><td>320</td></tr>
-                                            <tr><td>08.09.2024</td><td>22.09.2024</td><td>260</td></tr>
+                                            <tr><td>27.04.2024</td><td>05.05.2024</td><td>270</td></tr>
+                                            <tr><td>05.05.2024</td><td>26.05.2024</td><td>180</td></tr>
+                                            <tr><td>26.05.2024</td><td>02.06.2024</td><td>270</td></tr>
+                                            <tr><td>02.06.2024</td><td>16.06.2024</td><td>220</td></tr>
+                                            <tr><td>16.06.2024</td><td>23.06.2024</td><td>250</td></tr>
+                                            <tr><td>23.06.2024</td><td>30.06.2024</td><td>270</td></tr>
+                                            <tr><td>30.06.2024</td><td>07.07.2024</td><td>290</td></tr>
+                                            <tr><td>07.07.2024</td><td>18.08.2024</td><td>320</td></tr>
+                                            <tr><td>18.08.2024</td><td>25.08.2024</td><td>290</td></tr>
+                                            <tr><td>25.08.2024</td><td>01.09.2024</td><td>220</td></tr>
+                                            <tr><td>01.09.2024</td><td>08.09.2024</td><td>200</td></tr>
+                                            <tr><td>08.09.2024</td><td>22.09.2024</td><td>180</td></tr>
                                             </tbody>
                                         </table>
                                     </div>
@@ -200,11 +200,12 @@
                                     <h2 class="section-title text-center"><span class="text-blue">Dodatkowe</span> informacje i opłaty</h2>
                                 </div>
                             </div>
+
                             <div class="row">
                                 <div class="col-12">
                                     <div class="features-list">
                                         <i class="las la-concierge-bell"></i>
-                                        <p>Doba hotelowa rozpoczyna się o godzinie 15:00. Po przyjeździe prosimy zameldować się w recepcji, gdzie recepcjonista udzieli Państwu wszelkich niezbędnych informacji oraz zaprowadzi Państwa do domku.</p>
+                                        <p>Doba hotelowa rozpoczyna się o godzinie 15:00. Po przyjeździe prosimy zameldować się w recepcji, gdzie recepcjonista udzieli Państwu wszelkich niezbędnych informacji.</p>
                                     </div>
 
                                     <div class="features-list">
@@ -214,17 +215,12 @@
 
                                     <div class="features-list">
                                         <i class="las la-smoking-ban"></i>
-                                        <p>W domkach obowiązuje <b>bezwzględny zakaz palenia</b>. Możliwość na tarasie.</p>
+                                        <p>W pokojach obowiązuje <b>bezwzględny zakaz palenia</b></p>
                                     </div>
 
                                     <div class="features-list">
                                         <i class="las la-parking"></i>
                                         <p>Miejsca parkingowe przydzielane są przez recepcje Xanadu Resort. Prosimy o niezajmowanie miejsca samodzielnie. Koszt miejsca parkingowego wynosi 10 zł/doba.</p>
-                                    </div>
-
-                                    <div class="features-list">
-                                        <i class="las la-plug"></i>
-                                        <p>Opłata za energie elektryczną według podlicznika, obowiązuje tylko w domach 1,00 zł/ 1 kWh.</p>
                                     </div>
 
                                     <div class="features-list">
@@ -235,11 +231,6 @@
                                     <div class="features-list">
                                         <i class="las la-trash-alt"></i>
                                         <p>W recepcji można bezpłatnie pobrać worki na śmieci oraz papier toaletowy.</p>
-                                    </div>
-
-                                    <div class="features-list">
-                                        <i class="las la-paw"></i>
-                                        <p>Zwierzęta są mile widziane tylko i wyłącznie w DOMACH, koszt pupila 30 zł/doba. Akceptujemy psy do 20 kg!</p>
                                     </div>
 
                                     <div class="features-list">
@@ -255,7 +246,7 @@
                     <div class="offer-form-track">
                         <div id="offer-form">
                             <h3>Rezerwacja on-line</h3>
-                            <p>Już od <strong>260 zł</strong> / noc</p>
+                            <p>Już od <strong>180 zł</strong> / noc</p>
                             <a href="#" class="btn btn-theme w-100">ZAREZERWUJ</a>
                         </div>
                     </div>
@@ -279,7 +270,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="section-title text-center"><span class="text-blue">Pokoje</span> w Xanadu Resort.</h2>
+                    <h2 class="section-title text-center"><span class="text-blue">Domki</span> w Xanadu Resort.</h2>
                 </div>
             </div>
             <div class="row justify-content-center text-center">

@@ -6,12 +6,12 @@ use App\Http\Controllers\Controller;
 use App\Models\Image;
 use App\Models\Page;
 
-class HousesController extends Controller
+class RoomsController extends Controller
 {
     public function index()
     {
-        $page = Page::find(8);
+        $page = Page::find(7);
         $list = Image::where('gallery_id', 1)->get();
-        return view('front.houses.index')->with(['page' => $page, 'list' => $list]);
+        return view('front.rooms.index')->with(['page' => $page, 'list' => $list]);
     }
 }
