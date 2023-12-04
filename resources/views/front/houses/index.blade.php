@@ -27,7 +27,7 @@
                                 <div class="mix-nav text-center offer-mix-nav">
                                     <button type="button" class="btn btn-theme mt-0" data-bs-toggle="modal" data-bs-target="#equipmentModal"><span><i class="las la-file-alt"></i></span>Wyposażenie</button>
                                     <button type="button" class="btn btn-theme mt-0" data-bs-toggle="modal" data-bs-target="#priceModal"><span><i class="las la-th-list"></i></span>Cennik</button>
-                                    <a href="http://xanaduhotel.test/uploads/gallery/images/203121_dsc-0359.jpeg" class="btn btn-theme mt-0 swipebox" rel="gallery-1"><span><i class="las la-image"></i></span>Galeria</a>
+                                    <a href="{{ asset('/uploads/gallery/images/203121_dsc-0359.jpeg') }}" class="btn btn-theme mt-0 swipebox" rel="gallery-1"><span><i class="las la-image"></i></span>Galeria</a>
                                 </div>
                             </div>
                         </div>
