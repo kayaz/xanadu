@@ -84,8 +84,11 @@
                         </div>
                     </div>
 
-                    <div class="container">
+                    <div class="container mt-5">
                       <div class="row">
+                          <div class="col-12">
+                              <h2 class="section-title text-center"><span class="text-blue">Galeria</span></h2>
+                          </div>
                           <div class="col-12">
                               @include('front.parse.slider', $list)
                           </div>

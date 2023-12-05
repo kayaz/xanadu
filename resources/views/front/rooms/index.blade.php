@@ -25,7 +25,6 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="mix-nav text-center offer-mix-nav">
-                                    <button type="button" class="btn btn-theme mt-0" data-bs-toggle="modal" data-bs-target="#equipmentModal"><span><i class="las la-file-alt"></i></span>Wyposażenie</button>
                                     <button type="button" class="btn btn-theme mt-0" data-bs-toggle="modal" data-bs-target="#priceModal"><span><i class="las la-th-list"></i></span>Cennik</button>
                                     <a href="{{ asset('/uploads/gallery/images/203121_dsc-0359.jpeg') }}" class="btn btn-theme mt-0 swipebox" rel="gallery-1"><span><i class="las la-image"></i></span>Galeria</a>
                                 </div>
@@ -55,14 +54,14 @@
 
                                 <div class="icon-box icon-box-blue m-2">
                                     <div>
-                                        <img src="{{ asset('/images/icons/icon-houses.png') }}" alt="" width="70" height="70">
+                                        <img src="{{ asset('/images/icons/icon-key.png') }}" alt="" width="70" height="70">
                                         <h3>24 przytulne <br>pokoje</h3>
                                     </div>
                                 </div>
 
                                 <div class="icon-box icon-box-blue m-2">
                                     <div>
-                                        <img src="{{ asset('/images/icons/icon-area.png') }}" alt="" width="70" height="70">
+                                        <img src="{{ asset('/images/icons/icon-roomdesign.png') }}" alt="" width="70" height="70">
                                         <h3>Nowoczesne <br>wnętrze</h3>
                                     </div>
                                 </div>
@@ -76,8 +75,8 @@
 
                                 <div class="icon-box icon-box-blue m-2">
                                     <div>
-                                        <img src="{{ asset('/images/icons/icon-food.png') }}" alt="" width="70" height="70">
-                                        <h3>Dogodny <br>dojazd</h3>
+                                        <img src="{{ asset('/images/icons/icon-sea.png') }}" alt="" width="70" height="70">
+                                        <h3>Widok <br>na morze</h3>
                                     </div>
                                 </div>
                             </div>
@@ -86,6 +85,29 @@
 
                     <div class="container">
                         <div class="row">
+                            <div class="col-6">
+                                <div class="nocleg text-center">
+                                    <img src="/uploads/nocleg_pokoje.jpg" alt="Pokoje nad morzem do wynajęcia" />
+                                    <h2>Pokój 2-osobowy</h2>
+                                    <a href="#" class="btn btn-theme btn-icon mb-4" data-bs-toggle="modal" data-bs-target="#equipmentModal">WYPOSAŻENIE <i class="las la-file-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="nocleg text-center">
+                                    <img src="/uploads/nocleg_pokoje.jpg" alt="Pokoje nad morzem do wynajęcia" />
+                                    <h2>Pokój 3-osobowy</h2>
+                                    <a href="#" class="btn btn-theme btn-icon mb-4" data-bs-toggle="modal" data-bs-target="#equipmentModal">WYPOSAŻENIE <i class="las la-file-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="container mt-5">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2 class="section-title text-center"><span class="text-blue">Galeria</span></h2>
+                            </div>
                             <div class="col-12">
                                 @include('front.parse.slider', $list)
                             </div>
@@ -100,39 +122,33 @@
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="las la-times"></i></button>
                                     </div>
                                     <div class="modal-body p-4" id="modalContent">
-                                        <p class="mt-0"><b>Salon z Aneksem Kuchennym:</b></p>
+
+
+                                        <p class="mt-0"><b>Wyposażenie pokoju:</b></p>
                                         <ul>
-                                            <li>meble w zabudowie stałej, zlewozmywak z baterią,</li>
-                                            <li>lodówka podblatowa,</li>
-                                            <li>płyta 2 palnikowa</li>
-                                            <li>mikrofalówka</li>
-                                            <li>czajnik elektryczny</li>
-                                            <li>komplet naczyń i sztućców dla 8 osobowej rodziny</li>
-                                            <li>rozkładana sofa z funkcją spania dla 2 osób</li>
-                                            <li>stół jadalniany z 6 krzesłami</li>
+                                            <li>2 komplety ręczników (duży i mały)</li>
+                                            <li>biurko oraz siedziskiem</li>
                                             <li>telewizor 42&quot;</li>
-                                            <li>stolik kawowy</li>
+                                            <li>szafa,</li>
+                                            <li>2 lampki nocne</li>
+                                            <li>szafka nocna</li>
+                                            <li>lodówka</li>
+                                            <li>czajnik elektryczny</li>
+                                            <li>komplet talerzy, kubków i sztućców dla 3 osób</li>
                                             <li>parawan + 2 leżaki</li>
                                             <li>suszarka na ubrania</li>
-                                        </ul>
-                                        <p><b>Sypialnia, każda posiada:</b></p>
-                                        <ul>
-                                            <li>1 łóżko pojedyncze (90x200cm)</li>
-                                            <li>1 łóżko podwójne (140x200cm)</li>
-                                            <li>2 szafki nocne wraz z lampkami</li>
-                                            <li>meble w zabudowie lub komoda</li>
                                         </ul>
                                         <p><b>Łazienka:</b></p>
                                         <ul>
                                             <li>toaleta</li>
-                                            <li>umywalka z szafką i lustrem</li>
+                                            <li>umywalka</li>
+                                            <li>lustro</li>
                                             <li>przestronny prysznic</li>
                                             <li>grzejnik</li>
-                                            <li>pralka</li>
                                         </ul>
-                                        <p><b>Taras / Ogródek (parter)</b></p>
+                                        <p><b>Balkon</b></p>
                                         <ul>
-                                            <li>meble tarasowe: stół + 4 krzesła</li>
+                                            <li>meble tarasowe: stół + 2 krzesła</li>
                                         </ul>
                                         <p><b>Udogodnienia dodatkowe (do wypożyczenia w Recepcji)</b></p>
                                         <ul>
@@ -143,7 +159,7 @@
                                             <li>ręczniki kąpielowe (dodatkowo płatne)</li>
                                             <li>suszarka do włosów</li>
                                         </ul>
-                                        <p>Na terenie całego obiektu dostęp do <b>bezpłatnej sieci Wi-Fi</b>. <br><b>Akceptujemy pobyty ze zwierzętami</b>. Opcja dodatkowo płatna.</p>
+                                        <p>Na terenie całego obiektu dostęp do <b>bezpłatnej sieci Wi-Fi</b>. <br><b>Zwierzęta w budynku hotelowym NIE są akceptowane</b>.</p>
                                     </div>
                                     <div class="modal-footer">
                                         <button class="btn btn-theme" data-bs-target="#priceModal" data-bs-toggle="modal">ZOBACZ CENNIK</button>
