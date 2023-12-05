@@ -21,7 +21,7 @@
                                 <li><a href="{{ route('animals') }}">Zwierzęta w resorcie</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Pokoje</a></li>
+                        <li><a href="{{ route('rooms') }}">Pokoje</a></li>
                         <li><a href="{{ route('houses') }}">Domki</a></li>
                         <li>
                             <a href="#">Restauracja</a>
