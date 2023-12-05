@@ -21,7 +21,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('/css/styles.min.css?date=0301') }}" rel="stylesheet">
+    <link href="{{ asset('/css/styles.min.css?date=0512') }}" rel="stylesheet">
 
     @stack('style')
 </head>
@@ -39,7 +39,7 @@
 <!-- jQuery -->
 <script src="{{ asset('/js/jquery.min.js') }}" charset="utf-8"></script>
 <script src="{{ asset('/js/owl.js') }}" charset="utf-8"></script>
-<script src="{{ asset('/js/app.js') }}" charset="utf-8"></script>
+<script src="{{ asset('/js/app.js?date=0512') }}" charset="utf-8"></script>
 
 @stack('scripts')
 
