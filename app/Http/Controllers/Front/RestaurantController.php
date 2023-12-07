@@ -9,7 +9,7 @@ class RestaurantController extends Controller
 {
     public function index()
     {
-        $page = Page::find(1);
+        $page = Page::find(12);
         return view('front.restaurnat.index')->with(['page' => $page]);
     }
 }

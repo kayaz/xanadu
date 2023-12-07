@@ -1,4 +1,4 @@
-@extends('layouts.page', ['body_class' => 'homepage no-bottom'])
+@extends('layouts.page', ['body_class' => 'restaurant no-bottom'])
 
 @section('meta_title', $page->title)
 @section('seo_title', $page->meta_title)
@@ -6,7 +6,7 @@
 @section('seo_robots', $page->meta_robots)
 
 @section('pageheader')
-    @include('layouts.partials.page-header', ['title' => 'O nas', 'header_file' => 'pageheader.jpg'])
+    @include('layouts.partials.page-header', ['title' => $page->title, 'header_file' => $page->file])
 @stop
 
 @section('content')
