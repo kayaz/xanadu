@@ -6,7 +6,7 @@
 @section('seo_robots', $page->meta_robots)
 
 @section('pageheader')
-    @include('layouts.partials.page-header', ['title' => 'Galeria', 'header_file' => 'pageheader.jpg'])
+    @include('layouts.partials.page-header', ['title' => $page->title, 'header_file' => $page->file])
 @stop
 
 @section('content')

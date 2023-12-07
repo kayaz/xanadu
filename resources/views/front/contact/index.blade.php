@@ -43,7 +43,7 @@
             </div>
 
             <div class="row">
-                <div class="col-5 text-justify">
+                <div class="col-5 text-left">
                     <h2 class="section-title mb-3">Xanadu Resort</h2>
                     <h4>Lotnicza 17</h4>
                     <h4>78-111 Sianożęty</h4>
