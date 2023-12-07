@@ -78,7 +78,7 @@
                 <div class="icon-box icon-box-blue">
                     <div>
                         <img src="{{ asset('/images/icons/icon-beach.png') }}" alt="" width="70" height="70">
-                        <h3>Nadmorski <br>klimat</h3>
+                        <h3>Nadmorski klimat <br>(150m do morza)</h3>
                     </div>
                 </div>
             </div>
@@ -98,7 +98,7 @@
                 </div>
             </div>
             <div class="col-5 d-flex align-items-center">
-                <div class="section-box text-left">
+                <div class="section-box text-justify">
                     <h2 class="section-title"><span class="text-blue">Luksusowy domek</span> letniskowy blisko morza to znakomity pomysł na nocleg!</h2>
                     <p>Planowanie długiego urlopu z całą rodziną lub przyjaciółmi należy zacząć od wyboru idealnego kompleksu noclegowego. A nie ma nic lepszego niż przestronny domek letniskowy, w którym znajdzie się miejsce aż dla 6 osób.</p>
                     <p>&nbsp;</p>
@@ -122,7 +122,7 @@
                 </div>
             </div>
             <div class="col-5 d-flex align-items-center">
-                <div class="section-box text-left">
+                <div class="section-box text-justify">
                     <h2 class="section-title"><span class="text-blue">Zaplanuj urlop</span> nad morzem w naszych pokojach.</h2>
                     <p>Wiemy, jak ważne jest, aby wczasy nad morzem okazały się udaną inwestycją. Pokój noclegowy powinien spełniać podstawową funkcję, ale jednocześnie odpowiadać wygórowanym oczekiwaniom Gości.</p>
                     <p>&nbsp;</p>
@@ -137,10 +137,10 @@
 <section class="cta-section">
     <div class="container">
         <div class="row justify-content-end">
-            <div class="col-4 text-left">
+            <div class="col-4 text-justify">
                 <h2 class="section-title">Rozpocznij dzień od pysznego śniadania!</h2>
                 <p>Nasza oferta śniadaniowa to doskonały sposób na rozpoczęcie dnia w pełni energii. Wybierz spośród różnorodnych świeżych produktów i ciesz się smakiem, który pobudzi Twoje zmysły. Niech każde śniadanie będzie wyjątkowym momentem. Dołącz do nas i odkryj magię poranka!</p>
-                <a href="" class="btn btn-theme btn-icon mt-5">CZYTAJ WIĘCEJ <i class="las la-arrow-right"></i></a>
+                <a href="{{ route('breakfast') }}" class="btn btn-theme btn-icon mt-5">CZYTAJ WIĘCEJ <i class="las la-arrow-right"></i></a>
             </div>
         </div>
     </div>
@@ -150,7 +150,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-3 p-0">
-                <div class="section-box text-left pe-5 ps-5">
+                <div class="section-box text-justify pe-5 ps-5">
                     <h2 class="section-title"><span class="text-blue">Atrakcje</span> w okolicy</h2>
                     <p>W sąsiadującym Ustroniu Morskim znajduje się "Wesołe Miasteczko", mini ZOO, galeria, biblioteka, kino, boiska i korty tenisowe. W samym Ustroniu Morskim w okresie letnim odbywa się wiele imprez cyklicznych.</p>
                     <a href="{{ route('front.menu', ['language' => 'pl', 'uri' => 'atrakcje-regionalne']) }}" class="btn btn-theme btn-icon mt-5">CZYTAJ WIĘCEJ <i class="las la-arrow-right"></i></a>
@@ -161,7 +161,7 @@
                     <li>
                         <div class="attraction">
                             <img src="https://placehold.co/375x250" alt="">
-                            <div class="attraction-text">
+                            <div class="attraction-text text-justify">
                                 <h3>Wędkarstwo morskie - rejsy na dorsza</h3>
                                 <p>Polecamy wędkarskie rejsy na Morzu Bałtyckim jachtem motorowym typ Rodman 1120 o długości 11,5 m i konstrukcji turystyczno-rekreacyjnej.</p>
                             </div>
@@ -170,7 +170,7 @@
                     <li>
                         <div class="attraction">
                             <img src="https://placehold.co/375x250" alt="">
-                            <div class="attraction-text">
+                            <div class="attraction-text text-justify">
                                 <h3>Wędkarstwo morskie - rejsy na dorsza</h3>
                                 <p>Polecamy wędkarskie rejsy na Morzu Bałtyckim jachtem motorowym typ Rodman 1120 o długości 11,5 m i konstrukcji turystyczno-rekreacyjnej.</p>
                             </div>
@@ -179,7 +179,7 @@
                     <li>
                         <div class="attraction">
                             <img src="https://placehold.co/375x250" alt="">
-                            <div class="attraction-text">
+                            <div class="attraction-text text-justify">
                                 <h3>Wędkarstwo morskie - rejsy na dorsza</h3>
                                 <p>Polecamy wędkarskie rejsy na Morzu Bałtyckim jachtem motorowym typ Rodman 1120 o długości 11,5 m i konstrukcji turystyczno-rekreacyjnej.</p>
                             </div>
@@ -188,7 +188,7 @@
                     <li>
                         <div class="attraction">
                             <img src="https://placehold.co/375x250" alt="">
-                            <div class="attraction-text">
+                            <div class="attraction-text text-justify">
                                 <h3>Wędkarstwo morskie - rejsy na dorsza</h3>
                                 <p>Polecamy wędkarskie rejsy na Morzu Bałtyckim jachtem motorowym typ Rodman 1120 o długości 11,5 m i konstrukcji turystyczno-rekreacyjnej.</p>
                             </div>
@@ -197,7 +197,7 @@
                     <li>
                         <div class="attraction">
                             <img src="https://placehold.co/375x250" alt="">
-                            <div class="attraction-text">
+                            <div class="attraction-text text-justify">
                                 <h3>Wędkarstwo morskie - rejsy na dorsza</h3>
                                 <p>Polecamy wędkarskie rejsy na Morzu Bałtyckim jachtem motorowym typ Rodman 1120 o długości 11,5 m i konstrukcji turystyczno-rekreacyjnej.</p>
                             </div>
@@ -206,7 +206,7 @@
                     <li>
                         <div class="attraction">
                             <img src="https://placehold.co/375x250" alt="">
-                            <div class="attraction-text">
+                            <div class="attraction-text text-justify">
                                 <h3>Wędkarstwo morskie - rejsy na dorsza</h3>
                                 <p>Polecamy wędkarskie rejsy na Morzu Bałtyckim jachtem motorowym typ Rodman 1120 o długości 11,5 m i konstrukcji turystyczno-rekreacyjnej.</p>
                             </div>
@@ -215,7 +215,7 @@
                     <li>
                         <div class="attraction">
                             <img src="https://placehold.co/375x250" alt="">
-                            <div class="attraction-text">
+                            <div class="attraction-text text-justify">
                                 <h3>Wędkarstwo morskie - rejsy na dorsza</h3>
                                 <p>Polecamy wędkarskie rejsy na Morzu Bałtyckim jachtem motorowym typ Rodman 1120 o długości 11,5 m i konstrukcji turystyczno-rekreacyjnej.</p>
                             </div>
@@ -235,7 +235,7 @@
                     <img src="{{ asset('/images/mapa.png') }}" alt="Mapa lokalizacji" width="1178" height="738">
                 </div>
                 <div class="col-5 p-0">
-                    <div class="map-text">
+                    <div class="map-text text-justify">
                         <div>
                             <h2>Nasza lokalizacja, <br>bliskość morza i spokoju.</h2>
                             <p>Nasze noclegi stwarzają możliwość spokojnego wypoczynku połączonego z aktywnościami na świeżym powietrzu. W pobliżu ośrodka Xanadu znajdą Państwo promenadę dla pieszych i rowerzystów, która łączy łączący Sianożęty z Ustroniem Morskim oraz Sianożęty z Kołobrzegiem.</p>

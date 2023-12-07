@@ -77,11 +77,11 @@
                     </div>
                 </div>
                 <div class="col-5 d-flex align-items-center">
-                    <div class="section-box text-left">
+                    <div class="section-box text-justify">
                         <h2 class="section-title"><span class="text-blue">Filozofia</span> smaku!</h2>
                         <p class="text-justify">Bliskość morza powoduje, że w menu pojawiają się oprócz wielu doskonałych potraw bałtyckie ryby, a także dania o niespotykanym nigdzie dotąd smaku. Świeżość, niezwykły smak, potrawy regionalne i z lokalnych produktów coraz częściej poszukiwane przez miłośników dobrego, zdrowego odżywiania na co dzień goszczą w naszym obiekcie.</p>
                         <p>&nbsp;</p>
-                        <p>Restauracja jest również dostępna dla gości zewnątrz.</p>
+                        <p>Restauracja jest również dostępna dla Gości spoza obiektu</p>
                     </div>
                 </div>
             </div>
@@ -101,7 +101,7 @@
                     </div>
                 </div>
                 <div class="col-5 d-flex align-items-center">
-                    <div class="section-box text-left">
+                    <div class="section-box text-justify">
                         <h2 class="section-title"><span class="text-blue">Doskonała </span> obsługa!</h2>
                         <p class="text-justify">Dopełnieniem wypoczynku w obiekcie Xanadu Resort jest wyjątkowa kuchnia i potrawy przygotowane z niezwykłą starannością przez naszych kucharzy. Oferujemy menu oparte na tradycji kuchni polskiej, włoskiej, a także regionalnej. Jego bogactwo z pewnością zaspokoi gust każdego Gościa, a unikalna atmosfera i klimat panujący w naszej restauracji sprawi, że każdy posiłek stanie się dla Państwa wyjątkowy.</p>
                     </div>
@@ -119,7 +119,7 @@
             </div>
             <div class="row justify-content-center text-center">
                 <div class="col-8">
-                    <p>Śniadanie traktujemy szczególnie, ponieważ jest ono nie tylko pierwszym, lecz jednocześnie najważniejszym posiłkiem dnia.</p>
+                    <p>Śniadanie traktujemy szczególnie, ponieważ jest ono nie tylko pierwszym, <br>lecz jednocześnie najważniejszym posiłkiem dnia.</p>
                     <a href="{{ route('breakfast') }}" class="btn btn-theme btn-icon mt-5">ZOBACZ OFERTĘ <i class="las la-arrow-right"></i></a>
                 </div>
             </div>

@@ -13,7 +13,7 @@
     <section class="p-0">
         <div class="container">
             <div class="row">
-                <div class="col-4">
+                <div class="col-4 text-justify">
                     <img src="/images/recepcja.jpg" alt="">
                     <p>&nbsp;</p>
                     <p>Rezerwacja będzie dokonana po potwierdzeniu przyjęcia przez biuro rezerwacji i wpłaceniu w terminie 7 dni wymaganej zaliczki. Po tym terminie rezerwację uważamy za nieaktualną.</p>

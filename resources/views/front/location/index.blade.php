@@ -119,7 +119,7 @@
                     <div class="col-7 p-0">
                         <div class="position-relative">
                             <img src="{{ asset('/images/mapa.png') }}" alt="Mapa lokalizacji" width="1178" height="738">
-                            <a href="#" target="_blank" class="btn btn-theme btn-icon">WSKAZÓWKI DOJAZDU<i class="las la-map-marker"></i></a>
+                            <a href="https://maps.app.goo.gl/jaWf75Q1rqin9oKv9" target="_blank" class="btn btn-theme btn-icon">WSKAZÓWKI DOJAZDU<i class="las la-map-marker"></i></a>
                         </div>
                     </div>
                     <div class="col-5 p-0">

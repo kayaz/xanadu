@@ -621,6 +621,9 @@ table.cennik thead tr:hover td {
   color: white;
   font-weight: normal;
 }
+.tablethumb {
+  width: 500px;
+}
 .waves {
   position: relative;
   width: 100%;
@@ -629,6 +632,7 @@ table.cennik thead tr:hover td {
   /*Fix for safari gap*/
   min-height: 100px;
   max-height: 150px;
+  background: #bfe3ff;
 }
 .parallax > use {
   animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
@@ -1420,6 +1424,9 @@ html.swipebox-html.swipebox-touch {
   display: block;
   width: 100%;
   text-align: center;
+  font-family: 'Merriweather', serif;
+  font-size: 40px;
+  margin-top: 40px;
 }
 #swipebox-close {
   border: none!important;
@@ -1677,6 +1684,21 @@ section#page {
   font-size: 17px;
   line-height: 28px;
   margin-top: 30px;
+}
+.majowka {
+  display: flex;
+  background: #9f2525;
+  align-items: center;
+  color: white;
+  font-size: 17px;
+  justify-content: center;
+  padding: 7px 0;
+  font-weight: bold;
+}
+.majowka img {
+  width: 36px;
+  height: 36px;
+  margin: 0 15px;
 }
 .transport i {
   font-size: 32px;

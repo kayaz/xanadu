@@ -118,11 +118,11 @@
                                             <li>parawan + 2 leżaki</li>
                                             <li>suszarka na ubrania</li>
                                         </ul>
-                                        <p><b>Sypialnia, każda posiada:</b></p>
+                                        <p><b>2 sypialnie, każda z nich posiada:</b></p>
                                         <ul>
                                             <li>1 łóżko pojedyncze (90x200cm)</li>
                                             <li>1 łóżko podwójne (140x200cm)</li>
-                                            <li>2 szafki nocne wraz z lampkami</li>
+                                            <li>jedna szafka nocna wraz z lampką</li>
                                             <li>meble w zabudowie lub komoda</li>
                                         </ul>
                                         <p><b>Łazienka:</b></p>
@@ -163,6 +163,7 @@
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="las la-times"></i></button>
                                     </div>
                                     <div class="modal-body p-4" id="modalContent">
+                                        <div class="majowka"><img src="{{ asset('/images/grill.png') }}" width="42" height="42" alt="Ikonka grilla"> Majówka 270 zł/doba, przy pobycie powyżej 5 dób cena wynosi 230 zł/doba <img src="{{ asset('/images/grill.png') }}" width="42" height="42" alt="Ikonka grilla"></div>
                                         <table class="cennik" border="0">
                                             <thead>
                                             <tr>
@@ -259,7 +260,7 @@
                         <div id="offer-form">
                             <h3>Rezerwacja on-line</h3>
                             <p>Już od <strong>260 zł</strong> / noc</p>
-                            <a href="#" class="btn btn-theme w-100">ZAREZERWUJ</a>
+                            <a href="{{ route('reservation') }}" class="btn btn-theme w-100">ZAREZERWUJ</a>
                         </div>
                     </div>
                 </div>
@@ -270,9 +271,9 @@
     <section class="cta-section domek-bg m-0">
         <div class="container">
             <div class="row justify-content-start">
-                <div class="col-6 text-left">
+                <div class="col-6">
                     <h2 class="section-title">Nasz ośrodek wczasowy zapewnia komfortowe warunki</h2>
-                    <p>Oferujemy drewniane, dwupoziomowe domki, będące odzwierciedleniem nowoczesnego podejścia do budownictwa. Zostały wykończone z największą starannością, aby zapewnić idealne warunki do wypoczynku, a zarazem zachwycać funkcjonalnością i prostą formą. Wynajem domku to najlepsza decyzja, jaką można podjąć z myślą o komfortowym i kameralnym wypoczynku w kilka osób.</p>
+                    <p class="text-justify">Oferujemy drewniane, dwupoziomowe domki, będące odzwierciedleniem nowoczesnego podejścia do budownictwa. Zostały wykończone z największą starannością, aby zapewnić idealne warunki do wypoczynku, a zarazem zachwycać funkcjonalnością i prostą formą. Wynajem domku to najlepsza decyzja, jaką można podjąć z myślą o komfortowym i kameralnym wypoczynku w kilka osób.</p>
                 </div>
             </div>
         </div>
@@ -287,8 +288,8 @@
             </div>
             <div class="row justify-content-center text-center">
                 <div class="col-8">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur accumsan mauris ac orci convallis, sed sollicitudin urna pharetra. Pellentesque eu pellentesque augue. Nam eget eros dolor.</p>
-                    <a href="#" class="btn btn-theme btn-icon mt-5">ZOBACZ OFERTĘ <i class="las la-arrow-right"></i></a>
+                    <p>Nasze pokoje zaprojektowano z myślą o tych z Państwa, którzy poszukują przede wszystkim komfortu wysokiej klasy. Wyposażenie każdego pokoju hotelowego o wielkości 21 m<sup>2</sup> obejmuje niezbędne i zarazem luksusowe rozwiązania, dzięki którym czas spędzany w naszym obiekcie będzie należał do przyjemnych.</p>
+                    <a href="{{ route('rooms') }}" class="btn btn-theme btn-icon mt-5">ZOBACZ OFERTĘ <i class="las la-arrow-right"></i></a>
                 </div>
             </div>
         </div>

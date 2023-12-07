@@ -1,4 +1,4 @@
-@extends('layouts.page', ['body_class' => 'pricelist'])
+@extends('layouts.page', ['body_class' => 'pricelist no-bottom'])
 
 @section('meta_title', $page->title)
 @section('seo_title', $page->meta_title)
@@ -20,11 +20,9 @@
                     <p>&nbsp;</p>
                     <h2 class="section-title section-title-border mb-4">Terminy i ceny na rok 2023</h2>
                     <p>Poniższe ceny obejmują tylko kwotę zakwaterowania. Oferujemy korzystne pakiety ze śniadaniem i obiadokolacją. Rezerwując pobyt zapytaj o opcję z wyżywieniem!</p>
-                    <table class="cennik mt-5" border="0">
+                    <div class="majowka mt-5"><img src="{{ asset('/images/grill.png') }}" width="42" height="42" alt="Ikonka grilla"> Majówka 390 zł/doba, przy pobycie powyżej 5 dób cena wynosi 350 zł/doba <img src="{{ asset('/images/grill.png') }}" width="42" height="42" alt="Ikonka grilla"></div>
+                    <table class="cennik" border="0">
                         <thead>
-                        <tr>
-                            <td class="majowka" colspan="4">Maj&oacute;wka 270 zł/doba, przy pobycie powyżej 5 d&oacute;b cena wynosi 230 zł</td>
-                        </tr>
                         <tr>
                             <td>Pok&oacute;j do 3 os&oacute;b *</td>
                             <td>od</td>
@@ -37,9 +35,10 @@
                             <td class="tablethumb" rowspan="11">
                                 <div class="sliderWrapper">
                                     <ul class="list-unstyled mb-0 rslides">
-                                        <li><img src="https://placehold.co/600x400" alt="Dom 6 osobowy" /></li>
+                                        <li><img src="/section/pokoje-nad-morzem.jpg" alt="Dom 6 osobowy" /></li>
                                     </ul>
                                 </div>
+                                <a href="{{ route('reservation') }}" class="btn btn-theme btn-icon mb-3">REZERWACJA <i class="las la-concierge-bell"></i></a>
                             </td>
                             <td>28.04.2023</td>
                             <td>06.05.2023</td>
@@ -101,14 +100,13 @@
                         <li>
                             <div class="sliderWrapper">
                                 <ul class="list-unstyled mb-0 rslides">
-                                    <li><img src="https://placehold.co/600x400" alt="Dom 6 osobowy" /></li>
+                                    <li><img src="/section/pokoje-nad-morzem.jpg" alt="Dom 6 osobowy" /></li>
                                 </ul>
                             </div>
                         </li>
                         <li>
                             <h2 class="section-title">Pok&oacute;j do 3 os&oacute;b *</h2>
                         </li>
-                        <li class="limaj">Maj&oacute;wka 270 zł/doba, przy pobycie powyżej 5 d&oacute;b cena wynosi 230 zł</li>
                         <li>28.04.2023 - 06.05.2023: <strong>270 zł</strong></li>
                         <li>06.05.2023 - 27.05.2023: <strong>180 zł</strong></li>
                         <li>27.05.2023 - 03.06.2023: <strong>200 zł</strong></li>
@@ -123,11 +121,9 @@
                     </ul>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
+                    <div class="majowka"><img src="{{ asset('/images/grill.png') }}" width="42" height="42" alt="Ikonka grilla"> Majówka 270 zł/doba, przy pobycie powyżej 5 dób cena wynosi 230 zł/doba <img src="{{ asset('/images/grill.png') }}" width="42" height="42" alt="Ikonka grilla"></div>
                     <table class="cennik" border="0">
                         <thead>
-                        <tr>
-                            <td class="majowka" colspan="4">Maj&oacute;wka 390 zł/doba, przy pobycie powyżej 5 d&oacute;b cena wynosi 350 zł</td>
-                        </tr>
                         <tr>
                             <td>Dom 6 osobowy</td>
                             <td>od</td>
@@ -140,9 +136,10 @@
                             <td class="tablethumb" rowspan="12">
                                 <div class="sliderWrapper">
                                     <ul class="list-unstyled mb-0 rslides">
-                                        <li><img src="https://placehold.co/600x400" alt="Dom 6 osobowy" /></li>
+                                        <li><img src="/section/domki-nad-morzem.jpg" alt="Dom 6 osobowy" /></li>
                                     </ul>
                                 </div>
+                                <a href="{{ route('reservation') }}" class="btn btn-theme btn-icon mb-3">REZERWACJA <i class="las la-concierge-bell"></i></a>
                             </td>
                             <td>28.04.2023</td>
                             <td>06.05.2023</td>
@@ -210,14 +207,13 @@
                         <li>
                             <div class="sliderWrapper">
                                 <ul class="list-unstyled mb-0 rslides">
-                                    <li><img src="https://placehold.co/600x400" alt="Dom 6 osobowy" /></li>
+                                    <li><img src="/section/pokoje-nad-morzem.jpg" alt="Dom 6 osobowy" /></li>
                                 </ul>
                             </div>
                         </li>
                         <li>
                             <h2 class="section-title">Dom 6 osobowy</h2>
                         </li>
-                        <li class="limaj">Maj&oacute;wka 390 zł/doba, przy pobycie powyżej 5 d&oacute;b cena wynosi 350 zł</li>
                         <li>28.04.2023 - 06.05.2023: <strong>390 zł</strong></li>
                         <li>06.05.2023 - 27.05.2023: <strong>260 zł</strong></li>
                         <li>27.05.2023 - 03.06.2023: <strong>310 zł</strong></li>
@@ -242,7 +238,7 @@
                         <p><b>W tytule przelewu proszę podać: Imię i nazwisko</b></p>
                         <div class="hr mt-5 mb-5"><img src="https://xanaduhotel.test/images/svg/section-title-icon.svg" alt=""></div>
                     </div>
-                    <p style="text-align: center;"><strong>UWAGA!!!</strong><br /><strong>Jeżeli prowadzisz działalność gospodarczą i chcesz otrzymać fakturę za dokonane zakupy lub świadczone usługi, <span style="text-decoration: underline;">poinformuj o tym przed dokonaniem transakcji</span> i podaj numer NIP. </strong><strong>Od 1 stycznia 2020 roku nie wystawiamy faktur do paragonu bez numeru NIP dla firm i os&oacute;b prowadzących działalność gospodarczą.</strong></p>
+                    <p style="text-align: center;"><strong>UWAGA!!!</strong><br /><strong>Jeżeli prowadzisz działalność gospodarczą i chcesz otrzymać fakturę za dokonane zakupy <br>lub świadczone usługi, <span style="text-decoration: underline;">poinformuj o tym przed dokonaniem transakcji</span> i podaj numer NIP. <br></strong><strong>Od 1 stycznia 2020 roku nie wystawiamy faktur do paragonu bez numeru NIP <br>dla firm i os&oacute;b prowadzących działalność gospodarczą.</strong></p>
                     <p>&nbsp;</p>
                     <section>
                         <div class="container">
@@ -300,14 +296,14 @@
                                     <div class="features-box">
                                         <i class="las la-leaf"></i>
                                         <h3>OPŁATA KLIMATYCZNA</h3>
-                                        <p>2 zł / doba osoba dorosła. Dzieci od 0 do 3 roku życia zwolnione z opłat. Brak ulgi dla seniorów, rencistów i dzieci powyżej 3 roku życia</p>
+                                        <p class="text-justify">2 zł / doba osoba dorosła. Dzieci od 0 do 3 roku życia zwolnione z opłat. Brak ulgi dla seniorów, rencistów i dzieci powyżej 3 roku życia</p>
                                     </div>
                                 </div>
                                 <div class="col-4">
                                     <div class="features-box">
                                         <i class="las la-user-plus"></i>
                                         <h3>DODATKOWA OSOBA</h3>
-                                        <p>Przy zakwaterowaniu powyżej 6 osób w domach, każda kolejna osoba 50 zł / doba, dziecko do 3 lat gratis</p>
+                                        <p class="text-justify">Przy zakwaterowaniu powyżej 6 osób w domach, każda kolejna osoba 50 zł / doba, dziecko do 3 lat gratis</p>
                                     </div>
                                 </div>
                             </div>
@@ -337,6 +333,51 @@
                         <li>W przypadku rezygnacji z pobytu, kiedy została już wpłacona opłata rezerwacyjna (przedpłata), należy powiadomić nas najp&oacute;źniej na 30 dni przed terminem rozpoczęcia pobytu, w&oacute;wczas opłata rezerwacyjna (przedpłata) zostanie zwr&oacute;cona po odjęciu koszt&oacute;w manipulacyjnych w kwocie 100 zł.</li>
                         <li>Jeżeli rezerwacja jest dokonana w terminie kr&oacute;tszym niż 30 dni przed planowanym przyjazdem, to wpłacona zaliczka (przedpłata) nie podlega zwrotowi przy rezygnacji.</li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ask-form" class="mb-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Wyślij zapytanie o dostępność</h2>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-2">
+                    <div class="position-relative">
+                        <label for="form_data_1"><i class="las la-calendar"></i></label>
+                        <input type="text" name="" value="" id="form_data_1" placeholder="Data przyjazdu">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="position-relative">
+                        <label for="form_data_1"><i class="las la-calendar"></i></label>
+                        <input type="text" name="" value="" id="form_data_1" placeholder="Data odjazdu">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="position-relative">
+                        <label for="form_data_1"><i class="las la-user"></i></label>
+                        <input type="text" name="" value="" id="form_data_1" placeholder="Dorośli">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="position-relative">
+                        <label for="form_data_1"><i class="las la-user"></i></label>
+                        <input type="text" name="" value="" id="form_data_1" placeholder="Dzieci">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="position-relative">
+                        <label for="form_data_1"><i class="las la-key"></i></label>
+                        <input type="text" name="" value="" id="form_data_1" placeholder="Domek / pokój">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <button>WYŚLIJ ZAPYTANIE</button>
                 </div>
             </div>
         </div>
