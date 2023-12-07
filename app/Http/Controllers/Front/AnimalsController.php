@@ -9,7 +9,7 @@ class AnimalsController extends Controller
 {
     public function index()
     {
-        $page = Page::find(1);
+        $page = Page::find(11);
         return view('front.animals.index')->with(['page' => $page]);
     }
 }
