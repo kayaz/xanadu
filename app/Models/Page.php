@@ -20,6 +20,7 @@ class Page extends Model
         'title',
         'content',
         'content_header',
+        'file',
         'meta_title',
         'meta_description',
         'meta_robots'

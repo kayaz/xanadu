@@ -1,11 +1,12 @@
 @extends('layouts.page', ['body_class' => 'contactpage no-bottom'])
 
-@section('meta_title', 'Kontakt')
-@section('seo_title', '')
-@section('seo_description', '')
+@section('meta_title', $page->title)
+@section('seo_title', $page->meta_title)
+@section('seo_description', $page->meta_description)
+@section('seo_robots', $page->meta_robots)
 
 @section('pageheader')
-    @include('layouts.partials.page-header', ['title' => 'Kontakt', 'header_file' => 'pageheader.jpg'])
+    @include('layouts.partials.page-header', ['title' => $page->title, 'header_file' => $page->file])
 @stop
 
 @section('content')
