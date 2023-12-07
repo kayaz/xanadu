@@ -87,10 +87,10 @@
 </section>
 
 <section>
-    <div class="container-fluid p-0">
+    <div class="container-fluid">
         <div class="row g-0">
             <div class="col-7">
-                <div class="sliderWrapper">
+                <div class="sliderWrapper m-0">
                     <ul class="rslides">
                         <li><img src="{{ asset('section/domki_1.jpg') }}" alt="" width="1120" height="780"></li>
                         <li><img src="{{ asset('section/domki_2.jpg') }}" alt="" width="1120" height="780"></li>
@@ -98,7 +98,7 @@
                 </div>
             </div>
             <div class="col-5 d-flex align-items-center">
-                <div class="section-box text-justify">
+                <div class="section-box text-left">
                     <h2 class="section-title"><span class="text-blue">Luksusowy domek</span> letniskowy blisko morza to znakomity pomysł na nocleg!</h2>
                     <p>Planowanie długiego urlopu z całą rodziną lub przyjaciółmi należy zacząć od wyboru idealnego kompleksu noclegowego. A nie ma nic lepszego niż przestronny domek letniskowy, w którym znajdzie się miejsce aż dla 6 osób.</p>
                     <p>&nbsp;</p>
@@ -111,10 +111,10 @@
 </section>
 
 <section>
-    <div class="container-fluid p-0">
+    <div class="container-fluid">
         <div class="row g-0 flex-row-reverse">
             <div class="col-7">
-                <div class="sliderWrapper">
+                <div class="sliderWrapper m-0">
                     <ul class="rslides">
                         <li><img src="{{ asset('section/pokoje_1.jpg') }}" alt="" width="1120" height="780"></li>
                         <li><img src="{{ asset('section/pokoje_2.jpg') }}" alt="" width="1120" height="780"></li>
@@ -122,7 +122,7 @@
                 </div>
             </div>
             <div class="col-5 d-flex align-items-center">
-                <div class="section-box text-justify">
+                <div class="section-box text-left">
                     <h2 class="section-title"><span class="text-blue">Zaplanuj urlop</span> nad morzem w naszych pokojach.</h2>
                     <p>Wiemy, jak ważne jest, aby wczasy nad morzem okazały się udaną inwestycją. Pokój noclegowy powinien spełniać podstawową funkcję, ale jednocześnie odpowiadać wygórowanym oczekiwaniom Gości.</p>
                     <p>&nbsp;</p>
@@ -161,7 +161,7 @@
                     <li>
                         <div class="attraction">
                             <img src="https://placehold.co/375x250" alt="">
-                            <div class="attraction-text text-justify">
+                            <div class="attraction-text text-left">
                                 <h3>Wędkarstwo morskie - rejsy na dorsza</h3>
                                 <p>Polecamy wędkarskie rejsy na Morzu Bałtyckim jachtem motorowym typ Rodman 1120 o długości 11,5 m i konstrukcji turystyczno-rekreacyjnej.</p>
                             </div>
@@ -170,7 +170,7 @@
                     <li>
                         <div class="attraction">
                             <img src="https://placehold.co/375x250" alt="">
-                            <div class="attraction-text text-justify">
+                            <div class="attraction-text text-left">
                                 <h3>Wędkarstwo morskie - rejsy na dorsza</h3>
                                 <p>Polecamy wędkarskie rejsy na Morzu Bałtyckim jachtem motorowym typ Rodman 1120 o długości 11,5 m i konstrukcji turystyczno-rekreacyjnej.</p>
                             </div>
@@ -179,7 +179,7 @@
                     <li>
                         <div class="attraction">
                             <img src="https://placehold.co/375x250" alt="">
-                            <div class="attraction-text text-justify">
+                            <div class="attraction-text text-left">
                                 <h3>Wędkarstwo morskie - rejsy na dorsza</h3>
                                 <p>Polecamy wędkarskie rejsy na Morzu Bałtyckim jachtem motorowym typ Rodman 1120 o długości 11,5 m i konstrukcji turystyczno-rekreacyjnej.</p>
                             </div>
@@ -188,7 +188,7 @@
                     <li>
                         <div class="attraction">
                             <img src="https://placehold.co/375x250" alt="">
-                            <div class="attraction-text text-justify">
+                            <div class="attraction-text text-left">
                                 <h3>Wędkarstwo morskie - rejsy na dorsza</h3>
                                 <p>Polecamy wędkarskie rejsy na Morzu Bałtyckim jachtem motorowym typ Rodman 1120 o długości 11,5 m i konstrukcji turystyczno-rekreacyjnej.</p>
                             </div>
@@ -197,7 +197,7 @@
                     <li>
                         <div class="attraction">
                             <img src="https://placehold.co/375x250" alt="">
-                            <div class="attraction-text text-justify">
+                            <div class="attraction-text text-left">
                                 <h3>Wędkarstwo morskie - rejsy na dorsza</h3>
                                 <p>Polecamy wędkarskie rejsy na Morzu Bałtyckim jachtem motorowym typ Rodman 1120 o długości 11,5 m i konstrukcji turystyczno-rekreacyjnej.</p>
                             </div>
@@ -206,7 +206,7 @@
                     <li>
                         <div class="attraction">
                             <img src="https://placehold.co/375x250" alt="">
-                            <div class="attraction-text text-justify">
+                            <div class="attraction-text text-left">
                                 <h3>Wędkarstwo morskie - rejsy na dorsza</h3>
                                 <p>Polecamy wędkarskie rejsy na Morzu Bałtyckim jachtem motorowym typ Rodman 1120 o długości 11,5 m i konstrukcji turystyczno-rekreacyjnej.</p>
                             </div>
@@ -215,7 +215,7 @@
                     <li>
                         <div class="attraction">
                             <img src="https://placehold.co/375x250" alt="">
-                            <div class="attraction-text text-justify">
+                            <div class="attraction-text text-left">
                                 <h3>Wędkarstwo morskie - rejsy na dorsza</h3>
                                 <p>Polecamy wędkarskie rejsy na Morzu Bałtyckim jachtem motorowym typ Rodman 1120 o długości 11,5 m i konstrukcji turystyczno-rekreacyjnej.</p>
                             </div>
@@ -235,7 +235,7 @@
                     <img src="{{ asset('/images/mapa.png') }}" alt="Mapa lokalizacji" width="1178" height="738">
                 </div>
                 <div class="col-5 p-0">
-                    <div class="map-text text-justify">
+                    <div class="map-text text-left">
                         <div>
                             <h2>Nasza lokalizacja, <br>bliskość morza i spokoju.</h2>
                             <p>Nasze noclegi stwarzają możliwość spokojnego wypoczynku połączonego z aktywnościami na świeżym powietrzu. W pobliżu ośrodka Xanadu znajdą Państwo promenadę dla pieszych i rowerzystów, która łączy łączący Sianożęty z Ustroniem Morskim oraz Sianożęty z Kołobrzegiem.</p>

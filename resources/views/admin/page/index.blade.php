@@ -27,6 +27,7 @@
                             <th class="text-center">Status</th>
                             <th class="text-center">Typ</th>
                             <th>Ścieżka</th>
+                            <th>Nagłówek</th>
                             <th class="text-center">Data utworzenia</th>
                             <th></th>
                         </tr>
@@ -42,10 +43,19 @@
                                 @else
                                     <td>{{$page->url}}@if($page->url_target) ({{$page->url_target}})@endif</td>
                                 @endif
+                                <td class="text-center">
+                                @if($page->file)
+                                    <img src="{{ asset('/uploads/headers/'.$page->file) }}" alt="" style="width: 400px">
+                                @endif
+                                </td>
                                 <td class="text-center">{{$page->created_at->format('Y-m-d H:i')}}</td>
                                 <td class="option-120">
                                     <div class="btn-group">
+                                        @if($page->type == 1)
                                         <a href="{{route('admin.page.edit', $page->id)}}" class="btn action-button me-1" data-toggle="tooltip" data-placement="top" title="Edytuj"><i class="fe-edit"></i></a>
+                                        @else
+                                            <a href="{{route('admin.url.edit', $page->id)}}" class="btn action-button me-1" data-toggle="tooltip" data-placement="top" title="Edytuj"><i class="fe-edit"></i></a>
+                                        @endif
                                     </div>
                                 </td>
                             </tr>

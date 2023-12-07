@@ -9,7 +9,7 @@ class LocationController extends Controller
 {
     public function index()
     {
-        $page = Page::find(1);
+        $page = Page::find(10);
         return view('front.location.index')->with(['page' => $page]);
     }
 }

@@ -1,5 +1,5 @@
 <div id="page-header">
-    <div class="container" style="background:url({{ asset('/images/pageheader-bg.jpg') }})">
+    <div class="container" @if($page->file) style="background:url({{ asset('/uploads/headers/'.$page->file) }}) no-repeat center;background-size: cover" @endif>
         <div class="row">
             <div class="col-12">
                 <img src="{{ asset('/images/svg/section-title-icon.svg') }}" alt="{{ $page->title }}">

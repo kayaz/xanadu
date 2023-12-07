@@ -3,10 +3,10 @@
 
 @section('content')
     @if(Route::is('admin.url.edit'))
-        <form method="POST" action="{{route('admin.url.update', $entry->id)}}">
+        <form method="POST" action="{{route('admin.url.update', $entry->id)}}" enctype="multipart/form-data">
             @method('PUT')
             @else
-        <form method="POST" action="{{route('admin.url.store')}}">
+        <form method="POST" action="{{route('admin.url.store')}}" enctype="multipart/form-data">
             @endif
             @csrf
             <div class="container">
@@ -38,6 +38,7 @@
                                 @include('form-elements.html-input-text', ['label' => 'Nagłówek strony', 'sublabel'=> 'Meta tag - title', 'name' => 'meta_title', 'value' => $entry->meta_title])
                                 @include('form-elements.html-input-text', ['label' => 'Opis strony', 'sublabel'=> 'Meta tag - description', 'name' => 'meta_description', 'value' => $entry->meta_description])
                                 @include('form-elements.html-input-text', ['label' => 'Indeksowanie', 'sublabel'=> 'Meta tag - robots', 'name' => 'meta_robots', 'value' => $entry->meta_robots])
+                                @include('form-elements.html-input-file', ['label' => 'Obrazek nagłówka', 'sublabel' => '(wymiary: 1920 px /  600 px)', 'name' => 'file'])
                             </div>
                         </div>
                     </div>

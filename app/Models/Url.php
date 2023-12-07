@@ -29,6 +29,7 @@ class Url extends Model
         'uri',
         'url',
         'url_target',
+        'file',
         'content_header',
         'meta_title',
         'meta_description',
