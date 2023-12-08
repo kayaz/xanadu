@@ -54,7 +54,7 @@
             <div class="row justify-content-center text-center">
                 <div class="col-8">
                     <p class="text-danger"><sup>*</sup> Uwaga! <b>Akceptujemy psy do 20 kg</b>. Podczas rezerwacji pobytu poinformuj nas o przyjeździe ze zwierzakiem. Prosimy również o zapoznanie się z regulaminem dostępnym poniżej.</p>
-                    <a href="{{ asset('/uploads/files/regulamin-zwierzeta.pdf') }}" class="btn btn-theme btn-icon mt-5" target="_blank">POBIERZ REGULAMIN <i class="las la-download"></i></a>
+                    <a href="{{ asset('/uploads/files/regulamin-zwierzeta.pdf') }}" class="btn btn-theme btn-icon mt-5" target="_blank">POBIERZ REGULAMIN POBYTU ZWIERZĄT <i class="las la-download"></i></a>
                 </div>
             </div>
         </div>

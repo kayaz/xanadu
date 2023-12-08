@@ -19,8 +19,8 @@
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
                     <h2 class="section-title section-title-border mb-4">Terminy i ceny na rok 2023</h2>
-                    <p>Poniższe ceny obejmują tylko kwotę zakwaterowania. Oferujemy korzystne pakiety ze śniadaniem i obiadokolacją. Rezerwując pobyt zapytaj o opcję z wyżywieniem!</p>
-                    <div class="majowka mt-5"><img src="{{ asset('/images/grill.png') }}" width="42" height="42" alt="Ikonka grilla"> Majówka 390 zł/doba, przy pobycie powyżej 5 dób cena wynosi 350 zł/doba <img src="{{ asset('/images/grill.png') }}" width="42" height="42" alt="Ikonka grilla"></div>
+                    <p><b>Poniższe ceny obejmują tylko kwotę zakwaterowania. Oferujemy korzystne pakiety ze śniadaniem i obiadokolacją. Rezerwując pobyt zapytaj o opcję z wyżywieniem!</b></p>
+                    <div class="majowka mt-5"><img src="{{ asset('/images/grill.png') }}" width="42" height="42" alt="Ikonka grilla"> Majówka 270 zł/doba, przy pobycie powyżej 5 dób cena wynosi 230 zł/doba <img src="{{ asset('/images/grill.png') }}" width="42" height="42" alt="Ikonka grilla"></div>
                     <table class="cennik" border="0">
                         <thead>
                         <tr>
@@ -121,7 +121,7 @@
                     </ul>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
-                    <div class="majowka"><img src="{{ asset('/images/grill.png') }}" width="42" height="42" alt="Ikonka grilla"> Majówka 270 zł/doba, przy pobycie powyżej 5 dób cena wynosi 230 zł/doba <img src="{{ asset('/images/grill.png') }}" width="42" height="42" alt="Ikonka grilla"></div>
+                    <div class="majowka"><img src="{{ asset('/images/grill.png') }}" width="42" height="42" alt="Ikonka grilla"> Majówka 390 zł/doba, przy pobycie powyżej 5 dób cena wynosi 350 zł/doba <img src="{{ asset('/images/grill.png') }}" width="42" height="42" alt="Ikonka grilla"></div>
                     <table class="cennik" border="0">
                         <thead>
                         <tr>
@@ -314,7 +314,7 @@
                             <div class="row justify-content-center text-center">
                                 <div class="col-8">
                                     <p class="text-danger"><sup>*</sup> Uwaga! <b>Akceptujemy psy do 20 kg</b>. Podczas rezerwacji pobytu poinformuj nas o przyjeździe ze zwierzakiem. Prosimy również o zapoznanie się z regulaminem dostępnym poniżej.</p>
-                                    <a href="" class="btn btn-theme btn-icon mt-5">POBIERZ REGULAMIN XANADU RESORT <i class="las la-download"></i></a>
+                                    <a href="{{ asset('/uploads/files/regulamin-zwierzeta.pdf') }}" class="btn btn-theme btn-icon mt-5" target="_blank">POBIERZ REGULAMIN POBYTU ZWIERZĄT <i class="las la-download"></i></a>
                                 </div>
                             </div>
                         </div>

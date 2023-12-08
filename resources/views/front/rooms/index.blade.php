@@ -163,7 +163,7 @@
                                     </div>
                                     <div class="modal-footer">
                                         <button class="btn btn-theme" data-bs-target="#priceModal" data-bs-toggle="modal">ZOBACZ CENNIK</button>
-                                        <button class="btn btn-theme" data-bs-target="#equipmentModal3" data-bs-toggle="modal">WYPOSAŻENIE 3-POKOJE</button>
+                                        <button class="btn btn-theme" data-bs-target="#equipmentModal3" data-bs-toggle="modal">WYPOSAŻENIE POKÓJ 3 OS.</button>
                                     </div>
 
                                 </div>
@@ -218,7 +218,7 @@
                                     </div>
                                     <div class="modal-footer">
                                         <button class="btn btn-theme" data-bs-target="#priceModal" data-bs-toggle="modal">ZOBACZ CENNIK</button>
-                                        <button class="btn btn-theme" data-bs-target="#equipmentModal2" data-bs-toggle="modal">WYPOSAŻENIE 2-POKOJE</button>
+                                        <button class="btn btn-theme" data-bs-target="#equipmentModal2" data-bs-toggle="modal">WYPOSAŻENIE POKÓJ 2 OS.</button>
                                     </div>
 
                                 </div>
@@ -258,8 +258,8 @@
                                         </table>
                                     </div>
                                     <div class="modal-footer">
-                                        <button class="btn btn-theme" data-bs-target="#equipmentModal2" data-bs-toggle="modal">WYPOSAŻENIE 2-POKOJE</button>
-                                        <button class="btn btn-theme" data-bs-target="#equipmentModal3" data-bs-toggle="modal">WYPOSAŻENIE 3-POKOJE</button>
+                                        <button class="btn btn-theme" data-bs-target="#equipmentModal2" data-bs-toggle="modal">WYPOSAŻENIE POKÓJ 2 OS.</button>
+                                        <button class="btn btn-theme" data-bs-target="#equipmentModal3" data-bs-toggle="modal">WYPOSAŻENIE POKÓJ 3 OS.</button>
                                     </div>
 
                                 </div>
@@ -333,8 +333,8 @@
         <div class="container">
             <div class="row justify-content-start">
                 <div class="col-6 text-left">
-                    <h2 class="section-title">Nasz ośrodek wczasowy zapewnia komfortowe warunki</h2>
-                    <p>Oferujemy drewniane, dwupoziomowe domki, będące odzwierciedleniem nowoczesnego podejścia do budownictwa. Zostały wykończone z największą starannością, aby zapewnić idealne warunki do wypoczynku, a zarazem zachwycać funkcjonalnością i prostą formą. Wynajem domku to najlepsza decyzja, jaką można podjąć z myślą o komfortowym i kameralnym wypoczynku w kilka osób.</p>
+                    <h2 class="section-title">Nasz obiekt zapewnia przytulne i nowoczesne wnętrza</h2>
+                    <p>Xanadu to obiekt zlokalizowany blisko morza w Sianożętach. Pokoje zostały zaprojektowane z myślą o tych z Państwa, którzy poszukują przede wszystkim komfortu wysokiej klasy. Tutaj Goście chcą zatrzymywać się jak najdłużej. Nic dziwnego, ponieważ na wszystkich odwiedzających czekają aż <b>24 luksusowo wykończone</b>, przestronne wnętrza z licznymi udogodnieniami. Nasz obiekt w Sianożętach to kwintesencja dobrze spędzonego urlopu nad morzem. Zachęcamy do tego, by zapomnieli Państwo na chwilę o stresie i troskach codziennego dnia i oddali się błogim, relaksującym chwilom w resorcie Xanadu. Zapraszamy do rezerwowania pobytu!</p>
                 </div>
             </div>
         </div>
