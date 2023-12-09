@@ -158,69 +158,20 @@
             </div>
             <div class="col-9 p-0">
                 <ul class="mb-0 list-unstyled attraction-carousel">
+                    @foreach($attractions as $a)
                     <li>
                         <div class="attraction">
-                            <img src="https://placehold.co/375x250" alt="">
+                            <div class="attraction-image">
+                                <img src="{{ asset('/uploads/attractions/'.$a->file) }}" alt="{{ $a->name }}">
+                                <h3>{{ $a->name }}</h3>
+                            </div>
                             <div class="attraction-text text-left">
-                                <h3>Wędkarstwo morskie - rejsy na dorsza</h3>
-                                <p>Polecamy wędkarskie rejsy na Morzu Bałtyckim jachtem motorowym typ Rodman 1120 o długości 11,5 m i konstrukcji turystyczno-rekreacyjnej.</p>
+                                <p>{{ mb_strimwidth($a->short, 0, 160, '...') }}
+                                </p>
                             </div>
                         </div>
                     </li>
-                    <li>
-                        <div class="attraction">
-                            <img src="https://placehold.co/375x250" alt="">
-                            <div class="attraction-text text-left">
-                                <h3>Wędkarstwo morskie - rejsy na dorsza</h3>
-                                <p>Polecamy wędkarskie rejsy na Morzu Bałtyckim jachtem motorowym typ Rodman 1120 o długości 11,5 m i konstrukcji turystyczno-rekreacyjnej.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="attraction">
-                            <img src="https://placehold.co/375x250" alt="">
-                            <div class="attraction-text text-left">
-                                <h3>Wędkarstwo morskie - rejsy na dorsza</h3>
-                                <p>Polecamy wędkarskie rejsy na Morzu Bałtyckim jachtem motorowym typ Rodman 1120 o długości 11,5 m i konstrukcji turystyczno-rekreacyjnej.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="attraction">
-                            <img src="https://placehold.co/375x250" alt="">
-                            <div class="attraction-text text-left">
-                                <h3>Wędkarstwo morskie - rejsy na dorsza</h3>
-                                <p>Polecamy wędkarskie rejsy na Morzu Bałtyckim jachtem motorowym typ Rodman 1120 o długości 11,5 m i konstrukcji turystyczno-rekreacyjnej.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="attraction">
-                            <img src="https://placehold.co/375x250" alt="">
-                            <div class="attraction-text text-left">
-                                <h3>Wędkarstwo morskie - rejsy na dorsza</h3>
-                                <p>Polecamy wędkarskie rejsy na Morzu Bałtyckim jachtem motorowym typ Rodman 1120 o długości 11,5 m i konstrukcji turystyczno-rekreacyjnej.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="attraction">
-                            <img src="https://placehold.co/375x250" alt="">
-                            <div class="attraction-text text-left">
-                                <h3>Wędkarstwo morskie - rejsy na dorsza</h3>
-                                <p>Polecamy wędkarskie rejsy na Morzu Bałtyckim jachtem motorowym typ Rodman 1120 o długości 11,5 m i konstrukcji turystyczno-rekreacyjnej.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="attraction">
-                            <img src="https://placehold.co/375x250" alt="">
-                            <div class="attraction-text text-left">
-                                <h3>Wędkarstwo morskie - rejsy na dorsza</h3>
-                                <p>Polecamy wędkarskie rejsy na Morzu Bałtyckim jachtem motorowym typ Rodman 1120 o długości 11,5 m i konstrukcji turystyczno-rekreacyjnej.</p>
-                            </div>
-                        </div>
-                    </li>
+                    @endforeach
                 </ul>
             </div>
         </div>
@@ -261,6 +212,8 @@
                 slidesToScroll: 1,
                 dots: false,
                 arrows: false,
+                autoplay: true,
+                autoplaySpeed: 4000,
                 responsive: [
                     {
                         breakpoint: 1930,

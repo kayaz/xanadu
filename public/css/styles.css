@@ -360,8 +360,9 @@ section.cta-section.domek-bg {
   padding-right: 30px;
 }
 .attraction-text {
-  padding: 25px;
+  padding: 18px;
   background: #f7f7f7;
+  height: 135px;
 }
 .attraction-text h3 {
   font-size: 30px;
@@ -370,7 +371,22 @@ section.cta-section.domek-bg {
 }
 .attraction-text p {
   font-size: 13px;
-  line-height: 22px;
+  line-height: 19px;
+}
+.attraction-image {
+  position: relative;
+}
+.attraction-image h3 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  font-size: 15px;
+  color: #fff;
+  margin: 0;
+  background: rgba(27, 85, 130, 0.8);
+  padding: 6px;
+  line-height: normal;
 }
 .attraction-item {
   position: relative;
