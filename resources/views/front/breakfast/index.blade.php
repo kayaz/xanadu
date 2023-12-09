@@ -6,7 +6,7 @@
 @section('seo_robots', $page->meta_robots)
 
 @section('pageheader')
-    @include('layouts.partials.page-header', ['title' => 'O nas', 'header_file' => 'pageheader.jpg'])
+    @include('layouts.partials.page-header', ['title' => $page->title, 'header_file' => $page->file])
 @stop
 
 @section('content')
@@ -49,7 +49,7 @@
 
                     <div class="icon-box icon-box-blue">
                         <div>
-                            <img src="{{ asset('/images/icons/icon-deser.png') }}" alt="" width="70" height="70">
+                            <img src="{{ asset('/images/icons/icon-chef.png') }}" alt="" width="70" height="70">
                             <h3>Połączenie tradycji <br>z nowoczesnością</h3>
                         </div>
                     </div>
