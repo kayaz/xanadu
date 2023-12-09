@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Front;
 use App\Http\Controllers\Controller;
 use App\Models\Image;
 use App\Models\Page;
+use App\Models\Pricelist;
 
 class RoomsController extends Controller
 {
@@ -12,6 +13,7 @@ class RoomsController extends Controller
     {
         $page = Page::find(7);
         $list = Image::where('gallery_id', 1)->get();
-        return view('front.rooms.index')->with(['page' => $page, 'list' => $list]);
+        $entry = Pricelist::find(1);
+        return view('front.rooms.index')->with(['page' => $page, 'list' => $list, 'pricelist' => $entry]);
     }
 }

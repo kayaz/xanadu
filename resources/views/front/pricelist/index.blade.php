@@ -20,7 +20,7 @@
                     <p>&nbsp;</p>
                     <h2 class="section-title section-title-border mb-4">Terminy i ceny na rok 2023</h2>
                     <p><b>Poniższe ceny obejmują tylko kwotę zakwaterowania. Oferujemy korzystne pakiety ze śniadaniem i obiadokolacją. Rezerwując pobyt zapytaj o opcję z wyżywieniem!</b></p>
-                    <div class="majowka mt-5"><img src="{{ asset('/images/grill.png') }}" width="42" height="42" alt="Ikonka grilla"> Majówka 270 zł/doba, przy pobycie powyżej 5 dób cena wynosi 230 zł/doba <img src="{{ asset('/images/grill.png') }}" width="42" height="42" alt="Ikonka grilla"></div>
+                    <div class="majowka mt-5"><img src="{{ asset('/images/grill.png') }}" width="42" height="42" alt="Ikonka grilla"> {{ $pricelist->rooms_may }} <img src="{{ asset('/images/grill.png') }}" width="42" height="42" alt="Ikonka grilla"></div>
                     <table class="cennik" border="0">
                         <thead>
                         <tr>
@@ -32,68 +32,19 @@
                         </thead>
                         <tbody>
                         <tr>
-                            <td class="tablethumb" rowspan="11">
+                            <td class="tablethumb" rowspan="12">
                                 <div class="sliderWrapper">
                                     <ul class="list-unstyled mb-0 rslides">
-                                        <li><img src="/section/pokoje-nad-morzem.jpg" alt="Dom 6 osobowy" /></li>
+                                        <li><img src="/section/pokoje-nad-morzem.jpg" alt="Pokoje 2 i 3 osobowe nad morzem" /></li>
                                     </ul>
                                 </div>
                                 <a href="{{ route('reservation') }}" class="btn btn-theme btn-icon mb-3">REZERWACJA <i class="las la-concierge-bell"></i></a>
                             </td>
-                            <td>28.04.2023</td>
-                            <td>06.05.2023</td>
-                            <td>270</td>
+                            {!! tableFirstDatesAndPrices($pricelist->rooms_prices) !!}
                         </tr>
-                        <tr>
-                            <td>06.05.2023</td>
-                            <td>27.05.2023</td>
-                            <td>180</td>
-                        </tr>
-                        <tr>
-                            <td>27.05.2023</td>
-                            <td>03.06.2023</td>
-                            <td>200</td>
-                        </tr>
-                        <tr>
-                            <td>03.06.2023</td>
-                            <td>17.06.2023</td>
-                            <td>220</td>
-                        </tr>
-                        <tr>
-                            <td>17.06.2023</td>
-                            <td>24.06.2023</td>
-                            <td>250</td>
-                        </tr>
-                        <tr>
-                            <td>24.06.2023</td>
-                            <td>01.07.2023</td>
-                            <td>270</td>
-                        </tr>
-                        <tr>
-                            <td>01.07.2023</td>
-                            <td>08.07.2023</td>
-                            <td>290</td>
-                        </tr>
-                        <tr>
-                            <td>08.07.2023</td>
-                            <td>12.08.2023</td>
-                            <td>320</td>
-                        </tr>
-                        <tr>
-                            <td>12.08.2023</td>
-                            <td>26.08.2023</td>
-                            <td>270</td>
-                        </tr>
-                        <tr>
-                            <td>26.08.2023</td>
-                            <td>02.09.2023</td>
-                            <td>220</td>
-                        </tr>
-                        <tr>
-                            <td>02.09.2023</td>
-                            <td>30.09.2023</td>
-                            <td>180</td>
-                        </tr>
+
+                        {!! tableDatesAndPrices($pricelist->rooms_prices, 1) !!}
+
                         </tbody>
                     </table>
                     <ul class="list-unstyled mb-0 cenniklist d-none">
@@ -107,21 +58,11 @@
                         <li>
                             <h2 class="section-title">Pok&oacute;j do 3 os&oacute;b *</h2>
                         </li>
-                        <li>28.04.2023 - 06.05.2023: <strong>270 zł</strong></li>
-                        <li>06.05.2023 - 27.05.2023: <strong>180 zł</strong></li>
-                        <li>27.05.2023 - 03.06.2023: <strong>200 zł</strong></li>
-                        <li>03.06.2023 - 17-06.2023: <strong>220 zł</strong></li>
-                        <li>17.06.2023 - 24.06.2023: <strong>250 zł</strong></li>
-                        <li>24.06.2023 - 01.07.2023: <strong>270 zł</strong></li>
-                        <li>01.07.2023 - 08.07.2023: <strong>290 zł</strong></li>
-                        <li>08.07.2023 - 12.08.2023: <strong>320 zł</strong></li>
-                        <li>12.08.2023 - 26.08.2023: <strong>270 zł</strong></li>
-                        <li>26.08.2023 - 02.09.2023: <strong>220 zł</strong></li>
-                        <li>02.09.2023 - 30.09.2023: <strong>180 zł</strong></li>
+                        {!! formatDatesAndPrices($pricelist->rooms_prices) !!}
                     </ul>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
-                    <div class="majowka"><img src="{{ asset('/images/grill.png') }}" width="42" height="42" alt="Ikonka grilla"> Majówka 390 zł/doba, przy pobycie powyżej 5 dób cena wynosi 350 zł/doba <img src="{{ asset('/images/grill.png') }}" width="42" height="42" alt="Ikonka grilla"></div>
+                    <div class="majowka"><img src="{{ asset('/images/grill.png') }}" width="42" height="42" alt="Ikonka grilla"> {{ $pricelist->houses_may }} <img src="{{ asset('/images/grill.png') }}" width="42" height="42" alt="Ikonka grilla"></div>
                     <table class="cennik" border="0">
                         <thead>
                         <tr>
@@ -141,65 +82,11 @@
                                 </div>
                                 <a href="{{ route('reservation') }}" class="btn btn-theme btn-icon mb-3">REZERWACJA <i class="las la-concierge-bell"></i></a>
                             </td>
-                            <td>28.04.2023</td>
-                            <td>06.05.2023</td>
-                            <td>390</td>
+                            {!! tableFirstDatesAndPrices($pricelist->houses_prices) !!}
                         </tr>
-                        <tr>
-                            <td>06.05.2023</td>
-                            <td>27.05.2023</td>
-                            <td>260</td>
-                        </tr>
-                        <tr>
-                            <td>27.05.2023</td>
-                            <td>03.06.2023</td>
-                            <td>310</td>
-                        </tr>
-                        <tr>
-                            <td>03.06.2023</td>
-                            <td>17.06.2023</td>
-                            <td>350</td>
-                        </tr>
-                        <tr>
-                            <td>17.06.2023</td>
-                            <td>24.06.2023</td>
-                            <td>380</td>
-                        </tr>
-                        <tr>
-                            <td>24.06.2023</td>
-                            <td>01.07.2023</td>
-                            <td>470</td>
-                        </tr>
-                        <tr>
-                            <td>01.07.2023</td>
-                            <td>08.07.2023</td>
-                            <td>570</td>
-                        </tr>
-                        <tr>
-                            <td>08.07.2023</td>
-                            <td>12.08.2023</td>
-                            <td>620</td>
-                        </tr>
-                        <tr>
-                            <td>12.08.2023</td>
-                            <td>19.08.2023</td>
-                            <td>570</td>
-                        </tr>
-                        <tr>
-                            <td>19.08.2023</td>
-                            <td>26.08.2023</td>
-                            <td>510</td>
-                        </tr>
-                        <tr>
-                            <td>26.08.2023</td>
-                            <td>02.09.2023</td>
-                            <td>350</td>
-                        </tr>
-                        <tr>
-                            <td>02.09.2023</td>
-                            <td>30.09.2023</td>
-                            <td>260</td>
-                        </tr>
+
+                        {!! tableDatesAndPrices($pricelist->houses_prices, 1) !!}
+
                         </tbody>
                     </table>
                     <p>&nbsp;</p>
@@ -214,18 +101,7 @@
                         <li>
                             <h2 class="section-title">Dom 6 osobowy</h2>
                         </li>
-                        <li>28.04.2023 - 06.05.2023: <strong>390 zł</strong></li>
-                        <li>06.05.2023 - 27.05.2023: <strong>260 zł</strong></li>
-                        <li>27.05.2023 - 03.06.2023: <strong>310 zł</strong></li>
-                        <li>03.06.2023 - 17-06.2023: <strong>350 zł</strong></li>
-                        <li>17.06.2023 - 24.06.2023: <strong>380 zł</strong></li>
-                        <li>24.06.2023 - 01.07.2023: <strong>470 zł</strong></li>
-                        <li>01.07.2023 - 08.07.2023: <strong>570 zł</strong></li>
-                        <li>08.07.2023 - 12.08.2023: <strong>620 zł</strong></li>
-                        <li>12.08.2023 - 19.08.2023: <strong>570 zł</strong></li>
-                        <li>19.08.2023 - 26.08.2023: <strong>510 zł</strong></li>
-                        <li>26.08.2023 - 02.09.2023: <strong>350 zł</strong></li>
-                        <li>02.09.2023 - 30.09.2023: <strong>260 zł</strong></li>
+                        {!! formatDatesAndPrices($pricelist->houses_prices) !!}
                     </ul>
                     <div class="text-center">
                         <p>&nbsp;</p>

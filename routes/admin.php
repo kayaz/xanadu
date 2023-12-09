@@ -30,6 +30,7 @@ Route::group([
         'url' => 'Url\IndexController',
         'file' => 'File\IndexController',
         'attraction' => 'Attraction\IndexController',
+        'pricelist' => 'Pricelist\IndexController',
     ]);
 
     // Settings

@@ -232,7 +232,7 @@
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="las la-times"></i></button>
                                     </div>
                                     <div class="modal-body p-4" id="modalContent">
-                                        <div class="majowka"><img src="{{ asset('/images/grill.png') }}" width="42" height="42" alt="Ikonka grilla"> Majówka 390 zł/doba, przy pobycie powyżej 5 dób cena wynosi 350 zł/doba <img src="{{ asset('/images/grill.png') }}" width="42" height="42" alt="Ikonka grilla"></div>
+                                        <div class="majowka"><img src="{{ asset('/images/grill.png') }}" width="42" height="42" alt="Ikonka grilla"> {{ $pricelist->rooms_may }} <img src="{{ asset('/images/grill.png') }}" width="42" height="42" alt="Ikonka grilla"></div>
                                         <table class="cennik" border="0">
                                             <thead>
                                             <tr>
@@ -242,18 +242,7 @@
                                             </tr>
                                             </thead>
                                             <tbody>
-                                            <tr><td>27.04.2024</td><td>05.05.2024</td><td>270</td></tr>
-                                            <tr><td>05.05.2024</td><td>26.05.2024</td><td>180</td></tr>
-                                            <tr><td>26.05.2024</td><td>02.06.2024</td><td>270</td></tr>
-                                            <tr><td>02.06.2024</td><td>16.06.2024</td><td>220</td></tr>
-                                            <tr><td>16.06.2024</td><td>23.06.2024</td><td>250</td></tr>
-                                            <tr><td>23.06.2024</td><td>30.06.2024</td><td>270</td></tr>
-                                            <tr><td>30.06.2024</td><td>07.07.2024</td><td>290</td></tr>
-                                            <tr><td>07.07.2024</td><td>18.08.2024</td><td>320</td></tr>
-                                            <tr><td>18.08.2024</td><td>25.08.2024</td><td>290</td></tr>
-                                            <tr><td>25.08.2024</td><td>01.09.2024</td><td>220</td></tr>
-                                            <tr><td>01.09.2024</td><td>08.09.2024</td><td>200</td></tr>
-                                            <tr><td>08.09.2024</td><td>22.09.2024</td><td>180</td></tr>
+                                            {!! tableDatesAndPrices($pricelist->houses_prices) !!}
                                             </tbody>
                                         </table>
                                     </div>
