@@ -338,7 +338,7 @@
             </div>
             <div class="row justify-content-center text-center">
                 <div class="col-8">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur accumsan mauris ac orci convallis, sed sollicitudin urna pharetra. Pellentesque eu pellentesque augue. Nam eget eros dolor.</p>
+                    <p>Oferujemy drewniane, dwupoziomowe domki, będące odzwierciedleniem nowoczesnego podejścia do budownictwa. Zostały wykończone z największą starannością, aby zapewnić idealne warunki do wypoczynku, a zarazem zachwycać funkcjonalnością i prostą formą.</p>
                     <a href="#" class="btn btn-theme btn-icon mt-4 mt-xxl-5">ZOBACZ OFERTĘ <i class="las la-arrow-right"></i></a>
                 </div>
             </div>

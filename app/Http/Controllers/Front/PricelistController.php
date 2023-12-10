@@ -10,7 +10,7 @@ class PricelistController extends Controller
 {
     public function index()
     {
-        $page = Page::find(1);
+        $page = Page::find(4);
         $pricelist = Pricelist::find(1);
         return view('front.pricelist.index', compact('page', 'pricelist'));
     }
