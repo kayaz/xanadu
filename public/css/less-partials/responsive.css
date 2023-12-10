@@ -1,0 +1,71 @@
+/* Responsive
+================================================== */
+.closemenu {
+  width: 40px;
+  height: 40px;
+  background: var(--main-color-blue);
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  border-radius: 50%;
+  display: none;
+  z-index: 999;
+  color: var(--main-color-orange);
+}
+#triggermenu {
+  display: none;
+  float: right;
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 2px 0 0;
+  padding: 5px 12px;
+  transition: all 200ms linear;
+  background: #222;
+  cursor: pointer;
+}
+#triggermenu:hover {
+  background: var(--main-color-blue);
+  color: var(--main-color-orange);
+}
+.openmenu #triggermenu {
+  color: #fff;
+}
+.openmenu #triggermenu:hover {
+  color: white;
+}
+@media (max-width: 1929.98px) {
+  header .top p {
+    font-size: 16px;
+    margin-right: 46px;
+  }
+  header .top p .bttn {
+    font-size: 20px;
+    padding: 10px 30px;
+  }
+  header #logo {
+    width: 220px;
+    height: 150px;
+    padding: 0 20px;
+  }
+  header .container-fluid {
+    width: calc(100% - 220px);
+    margin: 0;
+  }
+  header nav ul li a,
+  header .top {
+    height: 75px;
+  }
+  #slider {
+    margin-top: 75px;
+  }
+}
+/* end of 1399.98 */
+/* end of 1199.98 */
+/* end of 991.98 */
+/* end of 767.98 */
+/* end of 575.98 */
+/* end of 480 */
+/* end of 359.98 */
+/*# sourceMappingURL=responsive.css.map */

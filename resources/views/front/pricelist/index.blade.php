@@ -172,14 +172,14 @@
                                     <div class="features-box">
                                         <i class="las la-leaf"></i>
                                         <h3>OPŁATA KLIMATYCZNA</h3>
-                                        <p class="text-justify">2 zł / doba osoba dorosła. Dzieci od 0 do 3 roku życia zwolnione z opłat. Brak ulgi dla seniorów, rencistów i dzieci powyżej 3 roku życia</p>
+                                        <p>2 zł / doba osoba dorosła. Dzieci od 0 do 3 roku życia zwolnione z opłat. Brak ulgi dla seniorów, rencistów i dzieci powyżej 3 roku życia</p>
                                     </div>
                                 </div>
                                 <div class="col-4">
                                     <div class="features-box">
                                         <i class="las la-user-plus"></i>
                                         <h3>DODATKOWA OSOBA</h3>
-                                        <p class="text-justify">Przy zakwaterowaniu powyżej 6 osób w domach, każda kolejna osoba 50 zł / doba, dziecko do 3 lat gratis</p>
+                                        <p>Przy zakwaterowaniu powyżej 6 osób w domach, każda kolejna osoba 50 zł / doba, dziecko do 3 lat gratis</p>
                                     </div>
                                 </div>
                             </div>
@@ -188,7 +188,7 @@
                     <section class="pt-0">
                         <div class="container">
                             <div class="row justify-content-center text-center">
-                                <div class="col-8">
+                                <div class="col-12 col-xxl-8">
                                     <p class="text-danger"><sup>*</sup> Uwaga! <b>Akceptujemy psy do 20 kg</b>. Podczas rezerwacji pobytu poinformuj nas o przyjeździe ze zwierzakiem. Prosimy również o zapoznanie się z regulaminem dostępnym poniżej.</p>
                                     <a href="{{ asset('/uploads/files/regulamin-zwierzeta.pdf') }}" class="btn btn-theme btn-icon mt-5" target="_blank">POBIERZ REGULAMIN POBYTU ZWIERZĄT <i class="las la-download"></i></a>
                                 </div>

@@ -72,7 +72,7 @@
                 <div class="col-5 d-flex align-items-center">
                     <div class="section-box text-left">
                         <h2 class="section-title"><span class="text-blue">Tradycyjne</span> śniadania!</h2>
-                        <p class="text-justify">Zapraszamy na noclegi ze śniadaniem do Xanadu Resort w Sianożętach. Codziennie dla naszych gości przygotowujemy bogaty bufet śniadaniowy. Znaleźć w nim można pożywne dania na ciepło, pyszne sałatki, świeże owoce oraz różnorodne dodatki, w tym chrupiące pieczywo, lokalne sery, wyborne wędliny oraz słodkie wypieki.</p>
+                        <p>Zapraszamy na noclegi ze śniadaniem do Xanadu Resort w Sianożętach. Codziennie dla naszych gości przygotowujemy bogaty bufet śniadaniowy. Znaleźć w nim można pożywne dania na ciepło, pyszne sałatki, świeże owoce oraz różnorodne dodatki, w tym chrupiące pieczywo, lokalne sery, wyborne wędliny oraz słodkie wypieki.</p>
                     </div>
                 </div>
             </div>
@@ -93,7 +93,7 @@
                 <div class="col-5 d-flex align-items-center">
                     <div class="section-box text-left">
                         <h2 class="section-title"><span class="text-blue">Śniadanie</span> <br>w Xanadu Resort</h2>
-                        <p class="text-justify">Rezerwując pobyt zapytaj o opcje z wyżywieniem. Oferujemy korzystne pakiety ze śniadaniem i obiadokolacją!</p>
+                        <p>Rezerwując pobyt zapytaj o opcje z wyżywieniem. Oferujemy korzystne pakiety ze śniadaniem i obiadokolacją!</p>
                     </div>
                 </div>
             </div>

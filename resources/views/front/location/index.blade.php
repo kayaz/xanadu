@@ -18,7 +18,7 @@
                 </div>
             </div>
             <div class="row justify-content-center text-center">
-                <div class="col-8">
+                <div class="col-12 col-xxl-8">
                     <p>Obiekt znajduję się w niewielkiej odległości od Morza Bałtyckiego (150m), jest nowoczesnym i luksusowym kompleksem wypoczynkowym. Ze względu na swoje zaciszne położenie i przepiękną panoramę nadmorską jest doskonałym miejscem głębokiego relaksu w sezonie letnim.</p>
                     <p>&nbsp;</p>
                     <p>Spragnionych spokojnego wypoczynku w komfortowych domkach, czy przytulnych pokojach gościmy pod adresem: <br><b>ul. Lotnicza 17, 78 -111 Sianożęty.</b></p>

@@ -44,7 +44,7 @@
             </div>
         </div>
         <div class="row justify-content-center text-center">
-            <div class="col-8">
+            <div class="col-12 col-xxl-8">
                 <p>Ośrodek wczasowy Xanadu w Sianożętach (12 km od centrum Kołobrzegu) to nowoczesny i luksusowy kompleks wypoczynkowy zlokalizowany nad Morzem Bałtyckim, który został oddany do użytku w kwietniu 2016 roku. Ze względu na swoje położenie i przepiękną panoramę nadmorską jest doskonałym miejscem wypoczynku w sezonie letnim.</p>
             </div>
         </div>
@@ -87,7 +87,7 @@
 </section>
 
 <section>
-    <div class="container-fluid">
+    <div class="container-fluid p-0">
         <div class="row g-0">
             <div class="col-7">
                 <div class="sliderWrapper m-0">
@@ -103,7 +103,7 @@
                     <p>Planowanie długiego urlopu z całą rodziną lub przyjaciółmi należy zacząć od wyboru idealnego kompleksu noclegowego. A nie ma nic lepszego niż przestronny domek letniskowy, w którym znajdzie się miejsce aż dla 6 osób.</p>
                     <p>&nbsp;</p>
                     <p>Ośrodek wypoczynkowy Xanadu w Sianożętach zapewni gościom wszystko, co niezbędne podczas urlopu nam morzem. Przytulne, nowoczesne, luksusowo wykończone wnętrza czekają.</p>
-                    <a href="{{ route('front.menu', ['language' => 'pl', 'uri' => 'domki']) }}" class="btn btn-theme btn-icon mt-5">CZYTAJ WIĘCEJ <i class="las la-arrow-right"></i></a>
+                    <a href="{{ route('front.menu', ['language' => 'pl', 'uri' => 'domki']) }}" class="btn btn-theme btn-icon mt-3 mt-xxl-5">CZYTAJ WIĘCEJ <i class="las la-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -127,7 +127,7 @@
                     <p>Wiemy, jak ważne jest, aby wczasy nad morzem okazały się udaną inwestycją. Pokój noclegowy powinien spełniać podstawową funkcję, ale jednocześnie odpowiadać wygórowanym oczekiwaniom Gości.</p>
                     <p>&nbsp;</p>
                     <p>Urlop jest przecież tym wyjątkowym momentem w roku, podczas którego jedyną troską powinno być planowanie czasu wolnego, nie zaś zamartwianie się o warunki noclegowe.</p>
-                    <a href="{{ route('front.menu', ['language' => 'pl', 'uri' => 'pokoje']) }}" class="btn btn-theme btn-icon mt-5">CZYTAJ WIĘCEJ <i class="las la-arrow-right"></i></a>
+                    <a href="{{ route('front.menu', ['language' => 'pl', 'uri' => 'pokoje']) }}" class="btn btn-theme btn-icon mt-4 mt-xxl-5">CZYTAJ WIĘCEJ <i class="las la-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -137,10 +137,10 @@
 <section class="cta-section">
     <div class="container">
         <div class="row justify-content-end">
-            <div class="col-4 text-justify">
+            <div class="col-5 col-xxl-4 text-left">
                 <h2 class="section-title">Rozpocznij dzień od pysznego śniadania!</h2>
                 <p>Nasza oferta śniadaniowa to doskonały sposób na rozpoczęcie dnia w pełni energii. Wybierz spośród różnorodnych świeżych produktów i ciesz się smakiem, który pobudzi Twoje zmysły. Niech każde śniadanie będzie wyjątkowym momentem. Dołącz do nas i odkryj magię poranka!</p>
-                <a href="{{ route('breakfast') }}" class="btn btn-theme btn-icon mt-5">CZYTAJ WIĘCEJ <i class="las la-arrow-right"></i></a>
+                <a href="{{ route('breakfast') }}" class="btn btn-theme btn-icon mt-4 mt-xxl-5">CZYTAJ WIĘCEJ <i class="las la-arrow-right"></i></a>
             </div>
         </div>
     </div>
@@ -150,10 +150,10 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-3 p-0">
-                <div class="section-box text-justify pe-5 ps-5">
+                <div class="section-box text-left pe-5 ps-5">
                     <h2 class="section-title"><span class="text-blue">Atrakcje</span> w okolicy</h2>
                     <p>W sąsiadującym Ustroniu Morskim znajduje się "Wesołe Miasteczko", mini ZOO, galeria, biblioteka, kino, boiska i korty tenisowe. W samym Ustroniu Morskim w okresie letnim odbywa się wiele imprez cyklicznych.</p>
-                    <a href="{{ route('front.menu', ['language' => 'pl', 'uri' => 'atrakcje-regionalne']) }}" class="btn btn-theme btn-icon mt-5">CZYTAJ WIĘCEJ <i class="las la-arrow-right"></i></a>
+                    <a href="{{ route('front.menu', ['language' => 'pl', 'uri' => 'atrakcje-regionalne']) }}" class="btn btn-theme btn-icon mt-4 mt-xxl-5">CZYTAJ WIĘCEJ <i class="las la-arrow-right"></i></a>
                 </div>
             </div>
             <div class="col-9 p-0">
@@ -190,7 +190,7 @@
                         <div>
                             <h2>Nasza lokalizacja, <br>bliskość morza i spokoju.</h2>
                             <p>Nasze noclegi stwarzają możliwość spokojnego wypoczynku połączonego z aktywnościami na świeżym powietrzu. W pobliżu ośrodka Xanadu znajdą Państwo promenadę dla pieszych i rowerzystów, która łączy łączący Sianożęty z Ustroniem Morskim oraz Sianożęty z Kołobrzegiem.</p>
-                            <a href="https://maps.app.goo.gl/jaWf75Q1rqin9oKv9" class="btn btn-theme btn-icon mt-5" target="_blank">WYZNACZ TRASĘ <i class="las la-arrow-right"></i></a>
+                            <a href="https://maps.app.goo.gl/jaWf75Q1rqin9oKv9" class="btn btn-theme btn-icon mt-4 mt-xxl-5" target="_blank">WYZNACZ TRASĘ <i class="las la-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>

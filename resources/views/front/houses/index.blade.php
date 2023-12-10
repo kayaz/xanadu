@@ -197,12 +197,12 @@
                                 <div class="col-12">
                                     <div class="features-list">
                                         <i class="las la-concierge-bell"></i>
-                                        <p>Doba hotelowa rozpoczyna się o godzinie 15:00. Po przyjeździe prosimy zameldować się w recepcji, gdzie recepcjonista udzieli Państwu wszelkich niezbędnych informacji oraz zaprowadzi Państwa do domku.</p>
+                                        <p>Doba hotelowa rozpoczyna się o godzinie <b>15:00</b>. Po przyjeździe prosimy zameldować się w recepcji, gdzie recepcjonista udzieli Państwu wszelkich niezbędnych informacji oraz zaprowadzi Państwa do domku.</p>
                                     </div>
 
                                     <div class="features-list">
                                         <i class="las la-concierge-bell"></i>
-                                        <p>Doba hotelowa kończy się o godzinie 10:00.</p>
+                                        <p>Doba hotelowa kończy się o godzinie <b>10:00</b>.</p>
                                     </div>
 
                                     <div class="features-list">
@@ -212,17 +212,17 @@
 
                                     <div class="features-list">
                                         <i class="las la-parking"></i>
-                                        <p>Miejsca parkingowe przydzielane są przez recepcje Xanadu Resort. Prosimy o niezajmowanie miejsca samodzielnie. Koszt miejsca parkingowego wynosi 10 zł/doba.</p>
+                                        <p>Miejsca parkingowe przydzielane są przez recepcje Xanadu Resort. Prosimy o niezajmowanie miejsca samodzielnie. Koszt miejsca parkingowego wynosi <b>10 zł/doba</b>.</p>
                                     </div>
 
                                     <div class="features-list">
                                         <i class="las la-plug"></i>
-                                        <p>Opłata za energie elektryczną według podlicznika, obowiązuje tylko w domach 1,00 zł/ 1 kWh.</p>
+                                        <p>Opłata za energię elektryczną według podlicznika, obowiązuje tylko w domach <b>1,00 zł/ 1 kWh</b>.</p>
                                     </div>
 
                                     <div class="features-list">
                                         <i class="las la-leaf"></i>
-                                        <p>Opłata klimatyczna – 2 zł/doba osoba dorosła. Dzieci od 0 do 3 roku życia zwolnione z opłat. Brak ulgi dla seniorów, rencistów i dzieci powyżej 3 roku życia.</p>
+                                        <p>Opłata klimatyczna – <b>2 zł/doba osoba dorosła</b>. Dzieci od 0 do 3 roku życia <b>zwolnione z opłat</b>. Brak ulgi dla seniorów, rencistów i dzieci powyżej 3 roku życia.</p>
                                     </div>
 
                                     <div class="features-list">
@@ -232,12 +232,12 @@
 
                                     <div class="features-list">
                                         <i class="las la-paw"></i>
-                                        <p>Zwierzęta są mile widziane tylko i wyłącznie w DOMACH, koszt pupila 30 zł/doba. Akceptujemy psy do 20 kg!</p>
+                                        <p>Zwierzęta są mile widziane tylko i wyłącznie w DOMACH, <b>koszt pupila 30 zł / doba</b>. Akceptujemy psy <b>do 20 kg</b>!</p>
                                     </div>
 
                                     <div class="features-list">
                                         <i class="las la-wallet"></i>
-                                        <p>Rezerwacja będzie dokonana po wpłaceniu zadatku w wysokości 30% od naliczonej kwoty pobytu w terminie 7 dni od momentu wysłania przez biuro rezerwacji (reszta kwoty w dniu przyjazdu w kasie ośrodka).</p>
+                                        <p>Rezerwacja będzie dokonana po wpłaceniu <b>zadatku w wysokości 30%</b> od naliczonej kwoty pobytu w terminie 7 dni od momentu wysłania przez biuro rezerwacji (reszta kwoty w dniu przyjazdu w kasie ośrodka).</p>
                                     </div>
                                 </div>
                             </div>
@@ -262,7 +262,7 @@
             <div class="row justify-content-start">
                 <div class="col-6">
                     <h2 class="section-title">Nasz ośrodek wczasowy zapewnia komfortowe warunki</h2>
-                    <p class="text-justify">Oferujemy drewniane, dwupoziomowe domki, będące odzwierciedleniem nowoczesnego podejścia do budownictwa. Zostały wykończone z największą starannością, aby zapewnić idealne warunki do wypoczynku, a zarazem zachwycać funkcjonalnością i prostą formą. Wynajem domku to najlepsza decyzja, jaką można podjąć z myślą o komfortowym i kameralnym wypoczynku w kilka osób.</p>
+                    <p>Oferujemy drewniane, dwupoziomowe domki, będące odzwierciedleniem nowoczesnego podejścia do budownictwa. Zostały wykończone z największą starannością, aby zapewnić idealne warunki do wypoczynku, a zarazem zachwycać funkcjonalnością i prostą formą. Wynajem domku to najlepsza decyzja, jaką można podjąć z myślą o komfortowym i kameralnym wypoczynku w kilka osób.</p>
                 </div>
             </div>
         </div>

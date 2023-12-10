@@ -18,7 +18,7 @@
                 </div>
             </div>
             <div class="row justify-content-center text-center">
-                <div class="col-8">
+                <div class="col-12 col-xxl-8">
                     <p>Z dumą informujemy, że jesteśmy resortem przyjaznym Gościom podróżującym ze swoimi pupilami. Dla wielu Gości ich pupile są jak rodzina i również zasługują na wypoczynek. Oferujemy zakwaterowanie w przestronnych domach. <br><b>Koszt pobytu zwierzęcia 30 zł / doba</b></p>
                 </div>
             </div>
@@ -29,7 +29,7 @@
         <div class="container-fluid p-0">
             <div class="row g-0">
                 <div class="col-7">
-                    <div class="section-img pe-5">
+                    <div class="section-img pe-0 pe-xxl-5">
                         <picture>
                             <source type="image/webp" srcset="{{ asset('/uploads/zwierzeta-na-plazy.webp') }}">
                             <source type="image/jpeg" srcset="{{ asset('/uploads/zwierzeta-na-plazy.jpg') }}">
@@ -38,7 +38,7 @@
                     </div>
                 </div>
                 <div class="col-5 d-flex align-items-center">
-                    <div class="section-box text-justify">
+                    <div class="section-box text-left">
                         <h2 class="section-title">Czy na plażę w Sianożętach <br><span class="text-blue">wolno wchodzić z psem?</span></h2>
                         <p>Pies na plaży w Sianożętach jest zawsze mile widziany, pod warunkiem, że nie stanowi zagrożenia dla innych użytkowników plaży. Właściciel rzecz jasna musi posprzątać po swoim pupilu, jeżeli zajdzie taka potrzeba. W Sianożętach właściciele czworonogów z pewnością poczują się jak w domu i nie odczują dyskomfortu z tak błahego powodu, jakim jest przyjazd z psem na wakacje.</p>
                         <p>&nbsp;</p>
@@ -52,9 +52,9 @@
     <section class="pt-0">
         <div class="container">
             <div class="row justify-content-center text-center">
-                <div class="col-8">
+                <div class="col-12 col-xxl-8">
                     <p class="text-danger"><sup>*</sup> Uwaga! <b>Akceptujemy psy do 20 kg</b>. Podczas rezerwacji pobytu poinformuj nas o przyjeździe ze zwierzakiem. Prosimy również o zapoznanie się z regulaminem dostępnym poniżej.</p>
-                    <a href="{{ asset('/uploads/files/regulamin-zwierzeta.pdf') }}" class="btn btn-theme btn-icon mt-5" target="_blank">POBIERZ REGULAMIN POBYTU ZWIERZĄT <i class="las la-download"></i></a>
+                    <a href="{{ asset('/uploads/files/regulamin-zwierzeta.pdf') }}" class="btn btn-theme btn-icon mt-4 mt-xxl-5" target="_blank">POBIERZ REGULAMIN POBYTU ZWIERZĄT <i class="las la-download"></i></a>
                 </div>
             </div>
         </div>

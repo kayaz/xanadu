@@ -36,7 +36,7 @@
                             </div>
                         </div>
                         <div class="row justify-content-center text-center">
-                            <div class="col-11">
+                            <div class="col-12 col-xxl-11">
                                 <p>Nasze pokoje zaprojektowano z myślą o tych z Państwa, którzy poszukują przede wszystkim komfortu wysokiej klasy. Wyposażenie każdego pokoju hotelowego o wielkości 21 m<sup>2</sup> obejmuje niezbędne i zarazem luksusowe rozwiązania, dzięki którym czas spędzany w naszym obiekcie będzie należał do przyjemnych. Pokoje zostały przystosowane do obecności maksymalnie 3 osób. Będą zatem idealne nie tylko dla par, ale także rodziców z dzieckiem.</p>
                             </div>
                         </div>
@@ -268,12 +268,12 @@
                                 <div class="col-12">
                                     <div class="features-list">
                                         <i class="las la-concierge-bell"></i>
-                                        <p>Doba hotelowa rozpoczyna się o godzinie 15:00. Po przyjeździe prosimy zameldować się w recepcji, gdzie recepcjonista udzieli Państwu wszelkich niezbędnych informacji.</p>
+                                        <p>Doba hotelowa rozpoczyna się o godzinie <b>15:00</b>. Po przyjeździe prosimy zameldować się w recepcji, gdzie recepcjonista udzieli Państwu wszelkich niezbędnych informacji.</p>
                                     </div>
 
                                     <div class="features-list">
                                         <i class="las la-concierge-bell"></i>
-                                        <p>Doba hotelowa kończy się o godzinie 10:00.</p>
+                                        <p>Doba hotelowa kończy się o godzinie <b>10:00</b>.</p>
                                     </div>
 
                                     <div class="features-list">
@@ -283,12 +283,12 @@
 
                                     <div class="features-list">
                                         <i class="las la-parking"></i>
-                                        <p>Miejsca parkingowe przydzielane są przez recepcje Xanadu Resort. Prosimy o niezajmowanie miejsca samodzielnie. Koszt miejsca parkingowego wynosi 10 zł/doba.</p>
+                                        <p>Miejsca parkingowe przydzielane są przez recepcje Xanadu Resort. Prosimy o niezajmowanie miejsca samodzielnie. Koszt miejsca parkingowego wynosi <b>10 zł/doba</b>.</p>
                                     </div>
 
                                     <div class="features-list">
                                         <i class="las la-leaf"></i>
-                                        <p>Opłata klimatyczna – 2 zł/doba osoba dorosła. Dzieci od 0 do 3 roku życia zwolnione z opłat. Brak ulgi dla seniorów, rencistów i dzieci powyżej 3 roku życia.</p>
+                                        <p>Opłata klimatyczna – <b>2 zł/doba osoba dorosła</b>. Dzieci od 0 do 3 roku życia <b>zwolnione z opłat</b>. Brak ulgi dla seniorów, rencistów i dzieci powyżej 3 roku życia.</p>
                                     </div>
 
                                     <div class="features-list">
@@ -298,7 +298,7 @@
 
                                     <div class="features-list">
                                         <i class="las la-wallet"></i>
-                                        <p>Rezerwacja będzie dokonana po wpłaceniu zadatku w wysokości 30% od naliczonej kwoty pobytu w terminie 7 dni od momentu wysłania przez biuro rezerwacji (reszta kwoty w dniu przyjazdu w kasie ośrodka).</p>
+                                        <p>Rezerwacja będzie dokonana po wpłaceniu <b>zadatku w wysokości 30%</b> od naliczonej kwoty pobytu w terminie 7 dni od momentu wysłania przez biuro rezerwacji (reszta kwoty w dniu przyjazdu w kasie ośrodka).</p>
                                     </div>
                                 </div>
                             </div>
@@ -339,7 +339,7 @@
             <div class="row justify-content-center text-center">
                 <div class="col-8">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur accumsan mauris ac orci convallis, sed sollicitudin urna pharetra. Pellentesque eu pellentesque augue. Nam eget eros dolor.</p>
-                    <a href="#" class="btn btn-theme btn-icon mt-5">ZOBACZ OFERTĘ <i class="las la-arrow-right"></i></a>
+                    <a href="#" class="btn btn-theme btn-icon mt-4 mt-xxl-5">ZOBACZ OFERTĘ <i class="las la-arrow-right"></i></a>
                 </div>
             </div>
         </div>
