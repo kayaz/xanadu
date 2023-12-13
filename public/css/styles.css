@@ -301,6 +301,11 @@ section.cta-section .section-title {
 }
 section.cta-section.domek-bg {
   background: #222 url("../images/domek-bg.jpg") no-repeat fixed center;
+  background-size: 100% auto;
+}
+section.cta-section.pokoje-bg {
+  background: #222 url("../images/pokoje-bg.jpg") no-repeat fixed center;
+  background-size: 100% auto;
 }
 .text-blue {
   color: #4079a5 !important;
@@ -2085,6 +2090,11 @@ footer .copyrights {
 .openmenu #triggermenu:hover {
   color: white;
 }
+@media (max-width: 1579.98px) {
+  .attraction-item:hover .attraction-item-desc {
+    top: 290px;
+  }
+}
 @media (max-width: 1460px) {
   .page-text li,
   p {
@@ -2189,6 +2199,30 @@ footer .copyrights {
   .contact-box a,
   .contact-box p {
     font-size: 20px;
+  }
+}
+@media (max-width: 1399.98px) {
+  .attraction-item h3 {
+    font-size: 17px;
+  }
+  .attraction-item-desc p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .attraction-item:hover .attraction-item-desc {
+    top: 235px;
+  }
+  #page-header {
+    height: 270px;
+  }
+  #page-header .container .row {
+    margin-top: 90px;
+  }
+  #page-header img {
+    width: 90px;
+  }
+  #page-header h1 {
+    font-size: 32px;
   }
 }
 /* end of 1399.98 */

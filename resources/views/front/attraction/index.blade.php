@@ -18,7 +18,7 @@
                 </div>
             </div>
             <div class="row justify-content-center text-center">
-                <div class="col-8">
+                <div class="col-12 col-xl-8">
                     <p>Zwiedzaj, poznawaj, odkrywaj...</p>
                     <p>Xanadu Resort to doskonała baza wypadowa do pobliskich atrakcji regionu.</p>
                     <p>Sprawdź, co warto zobaczyć będąc w okolicy:</p>

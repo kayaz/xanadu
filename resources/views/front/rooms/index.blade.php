@@ -318,9 +318,9 @@
         </div>
     </section>
 
-    <section class="cta-section domek-bg m-0">
+    <section class="cta-section pokoje-bg m-0">
         <div class="container">
-            <div class="row justify-content-start">
+            <div class="row justify-content-end">
                 <div class="col-6 text-left">
                     <h2 class="section-title">Nasz obiekt zapewnia przytulne i nowoczesne wnętrza</h2>
                     <p>Xanadu to obiekt zlokalizowany blisko morza w Sianożętach. Pokoje zostały zaprojektowane z myślą o tych z Państwa, którzy poszukują przede wszystkim komfortu wysokiej klasy. Tutaj Goście chcą zatrzymywać się jak najdłużej. Nic dziwnego, ponieważ na wszystkich odwiedzających czekają aż <b>24 luksusowo wykończone</b>, przestronne wnętrza z licznymi udogodnieniami. Nasz obiekt w Sianożętach to kwintesencja dobrze spędzonego urlopu nad morzem. Zachęcamy do tego, by zapomnieli Państwo na chwilę o stresie i troskach codziennego dnia i oddali się błogim, relaksującym chwilom w resorcie Xanadu. Zapraszamy do rezerwowania pobytu!</p>

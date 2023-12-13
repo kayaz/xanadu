@@ -18,8 +18,14 @@
 .openmenu #triggermenu {color: #fff}
 .openmenu #triggermenu:hover {color:white}
 
-@media (max-width: 1929.98px) {
-
+@media (max-width: 1579.98px) {
+  .attraction-item {
+    &:hover {
+      .attraction-item-desc {
+        top: 290px
+      }
+    }
+  }
 }
 
 @media (max-width: 1460px) {
@@ -146,6 +152,33 @@
 }
 
 @media (max-width: 1399.98px) {
+  .attraction-item {
+    h3 {
+      font-size: 17px;
+    }
+  }
+  .attraction-item-desc p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .attraction-item:hover .attraction-item-desc {
+    top: 235px;
+  }
+
+  #page-header {
+    height: 270px;
+    .container {
+      .row {
+        margin-top: 90px;
+      }
+    }
+    img {
+      width: 90px
+    }
+    h1 {
+      font-size: 32px;
+    }
+  }
 
 }
 /* end of 1399.98 */
