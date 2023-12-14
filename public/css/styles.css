@@ -1019,6 +1019,11 @@ span.label i {
 .offer h2 {
   font-size: 48px;
 }
+.form-select:focus {
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0 rgba(13, 110, 253, 0);
+}
 #ask-form {
   padding: 120px 0;
   margin: 70px 0;
@@ -1031,6 +1036,14 @@ span.label i {
   text-align: center;
 }
 #ask-form input {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  border: 0;
+  border-bottom: 1px solid #333333;
+  color: white;
+  padding: 13px 15px 13px 45px;
+}
+#ask-form select {
   width: 100%;
   background: rgba(0, 0, 0, 0.9);
   border: 0;

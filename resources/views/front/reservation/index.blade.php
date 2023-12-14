@@ -31,27 +31,52 @@
                             <h2 class="section-title section-title-border">Formularz wstępnej rezerwacji</h2>
                         </div>
                     </div>
-                    <form action="" class="row">
+
+                    @if (session('success'))
+                        <div class="alert alert-success border-0">
+                            {{ session('success') }}
+                        </div>
+                    @endif
+                    @if (session('warning'))
+                        <div class="alert alert-warning border-0">
+                            {{ session('warning') }}
+                        </div>
+                    @endif
+
+                    <form action="{{ route("reservation.form") }}" class="row" method="post" class="validateForm">
+                    {{ csrf_field() }}
                         <div class="col-4">
                             <div class="mb-5">
                                 <label for="dataStart" class="form-label">Data przyjazdu</label>
-                                <input type="text" class="form-control datepicker" id="dataStart" name="form_data_start">
+                                <input type="text" class="form-control datepicker @error('form_data_start') is-invalid @enderror" id="dataStart" name="form_data_start" value="{{ request('form_data_start') }}">
+
+                                @error('form_data_start')
+                                <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
+                                @enderror
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="mb-5">
                                 <label for="dataEnd" class="form-label">Data wyjazdu</label>
-                                <input type="text" class="form-control datepicker" id="dataEnd" name="form_data_end">
+                                <input type="text" class="form-control datepicker @error('form_data_end') is-invalid @enderror" id="dataEnd" name="form_data_end" value="{{ request('form_data_end') }}">
+
+                                @error('form_data_end')
+                                <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
+                                @enderror
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="mb-5">
                                 <label for="roomType" class="form-label">Pokój / domek</label>
-                                <select class="form-select" name="form_room_type" id="roomType">
+                                <select class="form-select @error('form_room_type') is-invalid @enderror" name="form_room_type" id="roomType">
                                     <option selected>Wybierz</option>
-                                    <option value="1">Pokój</option>
-                                    <option value="2">Domek</option>
+                                    <option value="1" @if(request('form_room_type') == 1) selected @endif>Pokój</option>
+                                    <option value="2" @if(request('form_room_type') == 2) selected @endif>Domek</option>
                                 </select>
+
+                                @error('form_room_type')
+                                <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
+                                @enderror
                             </div>
                         </div>
                         <div class="col-3">
@@ -69,9 +94,13 @@
                                 <label class="form-label w-100 text-center" for="adultCount">Dorośli</label>
                                 <div class="input-group number-spinner">
                                     <span class="input-group-btn"><button class="btn-input" data-dir="dwn" type="button"><i class="las la-minus"></i></button></span>
-                                    <input type="text" class="form-control text-center" value="1" id="adultCount" data-count="1">
+                                    <input type="text" class="form-control text-center @error('form_adult_count') is-invalid @enderror" value="1" id="adultCount" data-count="1" name="form_adult_count">
                                     <span class="input-group-btn"><button class="btn-input" data-dir="up" type="button"><i class="las la-plus"></i></button></span>
                                 </div>
+
+                                @error('form_adult_count')
+                                <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
+                                @enderror
                             </div>
                         </div>
 
@@ -80,9 +109,13 @@
                                 <label class="form-label w-100 text-center" for="childCount">Dziecko 3-12 lat</label>
                                 <div class="input-group number-spinner">
                                     <span class="input-group-btn"><button class="btn-input" data-dir="dwn" type="button"><i class="las la-minus"></i></button></span>
-                                    <input type="text" class="form-control text-center" value="0" id="childCount" data-count="0">
+                                    <input type="text" class="form-control text-center @error('form_child_count') is-invalid @enderror" value="0" id="childCount" data-count="0" name="form_child_count">
                                     <span class="input-group-btn"><button class="btn-input" data-dir="up" type="button"><i class="las la-plus"></i></button></span>
                                 </div>
+
+                                @error('form_child_count')
+                                <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
+                                @enderror
                             </div>
                         </div>
                         <div class="col-3">
@@ -90,38 +123,58 @@
                                 <label class="form-label w-100 text-center" for="kidCount">Dziecko 0-3 lat</label>
                                 <div class="input-group number-spinner">
                                     <span class="input-group-btn"><button class="btn-input" data-dir="dwn" type="button"><i class="las la-minus"></i></button></span>
-                                    <input type="text" class="form-control text-center" value="0" id="kidCount" data-count="0">
+                                    <input type="text" class="form-control text-center @error('form_kid_count') is-invalid @enderror" value="0" id="kidCount" data-count="0" name="form_kid_count">
                                     <span class="input-group-btn"><button class="btn-input" data-dir="up" type="button"><i class="las la-plus"></i></button></span>
                                 </div>
+
+                                @error('form_kid_count')
+                                <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
+                                @enderror
                             </div>
                         </div>
 
                         <div class="col-4">
                             <div class="mb-5">
                                 <label for="formName" class="form-label" >Imię</label>
-                                <input type="text" class="form-control" id="formName" name="form_name">
+                                <input type="text" class="form-control @error('form_name') is-invalid @enderror" id="formName" name="form_name" value="{{ old('form_name') }}">
+
+                                @error('form_name')
+                                <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
+                                @enderror
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="mb-5">
                                 <label for="formEmail" class="form-label">E-mail</label>
-                                <input type="email" class="form-control" id="formEmail" name="form_email">
+                                <input type="email" class="form-control @error('form_email') is-invalid @enderror" id="formEmail" name="form_email" value="{{ old('form_email') }}">
+
+                                @error('form_email')
+                                <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
+                                @enderror
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="mb-5">
                                 <label for="formPhone" class="form-label">Telefon</label>
-                                <input type="tel" class="form-control" id="formPhone" name="form_phone">
+                                <input type="tel" class="form-control @error('form_phone') is-invalid @enderror" id="formPhone" name="form_phone" value="{{ old('form_phone') }}">
+
+                                @error('form_phone')
+                                <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
+                                @enderror
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="">
                                 <label for="formMessage" class="form-label">Treść wiadomości</label>
-                                <textarea class="form-control" id="formMessage" rows="3" name="form_messgae"></textarea>
+                                <textarea class="form-control @error('form_message') is-invalid @enderror" id="formMessage" rows="3" name="form_message"></textarea>
+
+                                @error('form_message')
+                                <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
+                                @enderror
                             </div>
                         </div>
                         <div class="col-12">
-                            <a href="" class="btn btn-theme btn-icon mt-5">WYŚLIJ ZAPYTANIE <i class="las la-envelope"></i></a>
+                            <button class="btn btn-theme btn-icon mt-5">WYŚLIJ ZAPYTANIE <i class="las la-envelope"></i></button>
                         </div>
                     </form>
                 </div>

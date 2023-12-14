@@ -61,41 +61,33 @@
                     <h2>Wyślij zapytanie o dostępność</h2>
                 </div>
             </div>
-            <div class="row mt-5">
+            <form class="row mt-5 justify-content-center" method="get" action="{{ route('reservation') }}">
                 <div class="col-2">
                     <div class="position-relative">
-                        <label for="form_data_1"><i class="las la-calendar"></i></label>
-                        <input type="text" name="" value="" id="form_data_1" placeholder="Data przyjazdu">
+                        <label for="dataStart"><i class="las la-calendar"></i></label>
+                        <input type="text" name="form_data_start" value="" id="dataStart" placeholder="Data przyjazdu" class="datepicker">
                     </div>
                 </div>
                 <div class="col-2">
                     <div class="position-relative">
-                        <label for="form_data_1"><i class="las la-calendar"></i></label>
-                        <input type="text" name="" value="" id="form_data_1" placeholder="Data odjazdu">
+                        <label for="dataEnd"><i class="las la-calendar"></i></label>
+                        <input type="text" name="form_data_end" value="" id="dataEnd" placeholder="Data odjazdu" class="datepicker">
                     </div>
                 </div>
                 <div class="col-2">
                     <div class="position-relative">
-                        <label for="form_data_1"><i class="las la-user"></i></label>
-                        <input type="text" name="" value="" id="form_data_1" placeholder="Dorośli">
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="position-relative">
-                        <label for="form_data_1"><i class="las la-user"></i></label>
-                        <input type="text" name="" value="" id="form_data_1" placeholder="Dzieci">
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="position-relative">
-                        <label for="form_data_1"><i class="las la-key"></i></label>
-                        <input type="text" name="" value="" id="form_data_1" placeholder="Domek / pokój">
+                        <label for="roomType"><i class="las la-key"></i></label>
+                        <select class="form-select" name="form_room_type" id="roomType">
+                            <option value="" selected>Domek / pokój</option>
+                            <option value="1">Pokój</option>
+                            <option value="2">Domek</option>
+                        </select>
                     </div>
                 </div>
                 <div class="col-2">
                     <button>WYŚLIJ ZAPYTANIE</button>
                 </div>
-            </div>
+            </form>
         </div>
     </section>
 @endsection

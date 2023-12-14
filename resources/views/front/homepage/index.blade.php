@@ -13,14 +13,13 @@
 
     <div class="booking">
         <form action="{{ route('reservation') }}" method="get">
-            {{ csrf_field() }}
             <div id="checkin">
                 <span class="label">PRZYJAZD</span>
                 <span class="date_day">09</span>
                 <span class="date_month">11</span>
                 <span class="date_year">2023</span>
                 <button class="date_change checkin" type="button">ZMIEŃ DATĘ</button>
-                <input type="hidden" name="checkin" value="">
+                <input type="hidden" name="form_data_start" value="">
             </div>
 
             <div id="checkout">
@@ -29,7 +28,7 @@
                 <span class="date_month">11</span>
                 <span class="date_year">2023</span>
                 <button class="date_change checkout" type="button">ZMIEŃ DATĘ</button>
-                <input type="hidden" name="checkout" value="">
+                <input type="hidden" name="form_data_end" value="">
             </div>
             <button type="submit" class="date_check">SPRAWDŹ DOSTĘPNOŚĆ</button>
         </form>

@@ -34,6 +34,7 @@ Route::group(['namespace' => 'Front'], function () {
 
     // Reservation
     Route::get('/pl/rezerwacja', 'ReservationController@index')->name('reservation');
+    Route::post('/pl/rezerwacja', 'ReservationController@form')->name('reservation.form');
 
     // Pool
     Route::get('/pl/basen', 'PoolController@index')->name('pool');
