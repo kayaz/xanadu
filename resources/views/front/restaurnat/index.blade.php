@@ -77,9 +77,9 @@
                     </div>
                 </div>
                 <div class="col-5 d-flex align-items-center">
-                    <div class="section-box">
+                    <div class="section-box text-left">
                         <h2 class="section-title"><span class="text-blue">Filozofia</span> smaku!</h2>
-                        <p class="text-left">Bliskość morza powoduje, że w menu pojawiają się oprócz wielu doskonałych potraw bałtyckie ryby, a także dania o niespotykanym nigdzie dotąd smaku. Świeżość, niezwykły smak, potrawy regionalne i z lokalnych produktów coraz częściej poszukiwane przez miłośników dobrego, zdrowego odżywiania na co dzień goszczą w naszym obiekcie.</p>
+                        <p>Bliskość morza powoduje, że w menu pojawiają się oprócz wielu doskonałych potraw bałtyckie ryby, a także dania o niespotykanym nigdzie dotąd smaku. Świeżość, niezwykły smak, potrawy regionalne i z lokalnych produktów coraz częściej poszukiwane przez miłośników dobrego, zdrowego odżywiania na co dzień goszczą w naszym obiekcie.</p>
                         <p>&nbsp;</p>
                         <p>Restauracja jest również dostępna dla Gości spoza obiektu</p>
                     </div>
@@ -101,9 +101,9 @@
                     </div>
                 </div>
                 <div class="col-5 d-flex align-items-center">
-                    <div class="section-box">
+                    <div class="section-box text-left">
                         <h2 class="section-title"><span class="text-blue">Doskonała </span> obsługa!</h2>
-                        <p class="text-left">Dopełnieniem wypoczynku w obiekcie Xanadu Resort jest wyjątkowa kuchnia i potrawy przygotowane z niezwykłą starannością przez naszych kucharzy. Oferujemy menu oparte na tradycji kuchni polskiej, włoskiej, a także regionalnej. Jego bogactwo z pewnością zaspokoi gust każdego Gościa, a unikalna atmosfera i klimat panujący w naszej restauracji sprawi, że każdy posiłek stanie się dla Państwa wyjątkowy.</p>
+                        <p>Dopełnieniem wypoczynku w obiekcie Xanadu Resort jest wyjątkowa kuchnia i potrawy przygotowane z niezwykłą starannością przez naszych kucharzy. Oferujemy menu oparte na tradycji kuchni polskiej, włoskiej, a także regionalnej. Jego bogactwo z pewnością zaspokoi gust każdego Gościa, a unikalna atmosfera i klimat panujący w naszej restauracji sprawi, że każdy posiłek stanie się dla Państwa wyjątkowy.</p>
                     </div>
                 </div>
             </div>

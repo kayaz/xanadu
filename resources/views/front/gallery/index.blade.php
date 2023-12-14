@@ -18,7 +18,7 @@
                 </div>
             </div>
             <div class="row justify-content-center text-center">
-                <div class="col-8">
+                <div class="col-12 col-xl-8">
                     <p>Serdecznie zachęcamy do zapoznania się z galerią zdjęć z naszego obiektu. <br>Dzięki nim lepiej poczują Państwo klimat, jaki u nas panuje.</p>
                 </div>
             </div>
@@ -38,7 +38,7 @@
                             <button type="button" class="btn btn-theme mt-0" data-filter=".category-{{ $g->id }}"><span>{!! $g->text !!}</span>{{ $g->name }}</button>
                         @endforeach
                     </div>
-                    <div class="mix-container row mt-5">
+                    <div class="mix-container row mt-3 mt-xxl-5">
                         <div class="col-4 mix category-1"><img src="https://placehold.co/600x400/orange/white" alt=""></div>
                         <div class="col-4 mix category-2"><img src="https://placehold.co/600x400/blue/white" alt=""></div>
                         <div class="col-4 mix category-1"><img src="https://placehold.co/600x400/orange/white" alt=""></div>

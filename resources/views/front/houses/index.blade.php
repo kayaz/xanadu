@@ -276,7 +276,7 @@
                 </div>
             </div>
             <div class="row justify-content-center text-center">
-                <div class="col-8">
+                <div class="col-12 col-xxl-8">
                     <p>Nasze pokoje zaprojektowano z myślą o tych z Państwa, którzy poszukują przede wszystkim komfortu wysokiej klasy. Wyposażenie każdego pokoju hotelowego o wielkości 21 m<sup>2</sup> obejmuje niezbędne i zarazem luksusowe rozwiązania, dzięki którym czas spędzany w naszym obiekcie będzie należał do przyjemnych.</p>
                     <a href="{{ route('rooms') }}" class="btn btn-theme btn-icon mt-5">ZOBACZ OFERTĘ <i class="las la-arrow-right"></i></a>
                 </div>

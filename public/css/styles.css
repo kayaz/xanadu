@@ -2215,6 +2215,14 @@ footer .copyrights {
   }
 }
 @media (max-width: 1399.98px) {
+  .btn-theme {
+    font-size: 19px;
+    padding: 10px 12px;
+  }
+  .btn-theme.btn-icon i {
+    margin-left: 18px;
+    color: #e77918;
+  }
   .attraction-item h3 {
     font-size: 17px;
   }
@@ -2236,6 +2244,27 @@ footer .copyrights {
   }
   #page-header h1 {
     font-size: 32px;
+  }
+  .mix-nav .btn-theme {
+    padding: 8px 10px;
+    font-size: 19px;
+  }
+  .mix-nav .btn-theme span {
+    font-size: 26px;
+    margin-bottom: 5px;
+  }
+  .icon-box img {
+    width: 46px;
+  }
+  #page-header.offer-header {
+    height: 510px;
+  }
+  .offer-mix-nav,
+  #offer-form {
+    margin-top: -90px;
+  }
+  #offer-form {
+    top: 80px;
   }
 }
 /* end of 1399.98 */
