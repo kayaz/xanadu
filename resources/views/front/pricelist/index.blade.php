@@ -38,7 +38,7 @@
                                         <li><img src="/section/pokoje-nad-morzem.jpg" alt="Pokoje 2 i 3 osobowe nad morzem" /></li>
                                     </ul>
                                 </div>
-                                <a href="{{ route('reservation') }}" class="btn btn-theme btn-icon mb-3">REZERWACJA <i class="las la-concierge-bell"></i></a>
+                                <a href="{{ route('reservation') }}?form_room_type=1" class="btn btn-theme btn-icon mb-3">REZERWACJA <i class="las la-concierge-bell"></i></a>
                             </td>
                             {!! tableFirstDatesAndPrices($pricelist->rooms_prices) !!}
                         </tr>
@@ -80,7 +80,7 @@
                                         <li><img src="/section/domki-nad-morzem.jpg" alt="Dom 6 osobowy" /></li>
                                     </ul>
                                 </div>
-                                <a href="{{ route('reservation') }}" class="btn btn-theme btn-icon mb-3">REZERWACJA <i class="las la-concierge-bell"></i></a>
+                                <a href="{{ route('reservation') }}?form_room_type=2" class="btn btn-theme btn-icon mb-3">REZERWACJA <i class="las la-concierge-bell"></i></a>
                             </td>
                             {!! tableFirstDatesAndPrices($pricelist->houses_prices) !!}
                         </tr>
@@ -215,42 +215,6 @@
     </section>
 
     <section id="ask-form" class="mb-0">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h2>Wyślij zapytanie o dostępność</h2>
-                </div>
-            </div>
-            <form class="row mt-5 justify-content-center" method="get" action="{{ route('reservation') }}">
-                <div class="col-2">
-                    <div class="position-relative">
-                        <label for="dataStart"><i class="las la-calendar"></i></label>
-                        <input type="text" name="form_data_start" value="" id="dataStart" placeholder="Data przyjazdu" class="datepicker">
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="position-relative">
-                        <label for="dataEnd"><i class="las la-calendar"></i></label>
-                        <input type="text" name="form_data_end" value="" id="dataEnd" placeholder="Data odjazdu" class="datepicker">
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="position-relative">
-                        <label for="roomType"><i class="las la-key"></i></label>
-                        <select class="form-select" name="form_room_type" id="roomType">
-                            <option value="" selected>Domek / pokój</option>
-                            <option value="1">Pokój</option>
-                            <option value="2">Domek</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <button>WYŚLIJ ZAPYTANIE</button>
-                </div>
-            </form>
-        </div>
+        @include('front.partials.askform')
     </section>
 @endsection
-@push('scripts')
-
-@endpush

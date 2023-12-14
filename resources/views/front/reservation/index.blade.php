@@ -47,7 +47,7 @@
                     {{ csrf_field() }}
                         <div class="col-4">
                             <div class="mb-5">
-                                <label for="dataStart" class="form-label">Data przyjazdu</label>
+                                <label for="dataStart" class="form-label">Data przyjazdu <span>*</span></label>
                                 <input type="text" class="form-control datepicker @error('form_data_start') is-invalid @enderror" id="dataStart" name="form_data_start" value="{{ request('form_data_start') }}">
 
                                 @error('form_data_start')
@@ -57,7 +57,7 @@
                         </div>
                         <div class="col-4">
                             <div class="mb-5">
-                                <label for="dataEnd" class="form-label">Data wyjazdu</label>
+                                <label for="dataEnd" class="form-label">Data wyjazdu <span>*</span></label>
                                 <input type="text" class="form-control datepicker @error('form_data_end') is-invalid @enderror" id="dataEnd" name="form_data_end" value="{{ request('form_data_end') }}">
 
                                 @error('form_data_end')
@@ -67,7 +67,7 @@
                         </div>
                         <div class="col-4">
                             <div class="mb-5">
-                                <label for="roomType" class="form-label">Pokój / domek</label>
+                                <label for="roomType" class="form-label">Pokój / domek <span>*</span></label>
                                 <select class="form-select @error('form_room_type') is-invalid @enderror" name="form_room_type" id="roomType">
                                     <option selected>Wybierz</option>
                                     <option value="1" @if(request('form_room_type') == 1) selected @endif>Pokój</option>
@@ -81,7 +81,7 @@
                         </div>
                         <div class="col-3">
                             <div class="mb-5">
-                                <label for="foodType" class="form-label">Wyżywienie</label>
+                                <label for="foodType" class="form-label">Wyżywienie <span>*</span></label>
                                 <select class="form-select" name="form_food" id="foodType">
                                     <option selected>Brak</option>
                                     <option value="1">Śniadanie</option>
@@ -135,7 +135,7 @@
 
                         <div class="col-4">
                             <div class="mb-5">
-                                <label for="formName" class="form-label" >Imię</label>
+                                <label for="formName" class="form-label" >Imię <span>*</span></label>
                                 <input type="text" class="form-control @error('form_name') is-invalid @enderror" id="formName" name="form_name" value="{{ old('form_name') }}">
 
                                 @error('form_name')
@@ -145,7 +145,7 @@
                         </div>
                         <div class="col-4">
                             <div class="mb-5">
-                                <label for="formEmail" class="form-label">E-mail</label>
+                                <label for="formEmail" class="form-label">E-mail <span>*</span></label>
                                 <input type="email" class="form-control @error('form_email') is-invalid @enderror" id="formEmail" name="form_email" value="{{ old('form_email') }}">
 
                                 @error('form_email')
@@ -155,7 +155,7 @@
                         </div>
                         <div class="col-4">
                             <div class="mb-5">
-                                <label for="formPhone" class="form-label">Telefon</label>
+                                <label for="formPhone" class="form-label">Telefon <span>*</span></label>
                                 <input type="tel" class="form-control @error('form_phone') is-invalid @enderror" id="formPhone" name="form_phone" value="{{ old('form_phone') }}">
 
                                 @error('form_phone')
@@ -171,6 +171,9 @@
                                 @error('form_message')
                                 <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
                                 @enderror
+                            </div>
+                            <div class="required-info">
+                                <span>*</span> - pola wymagane
                             </div>
                         </div>
                         <div class="col-12">
@@ -190,7 +193,7 @@
         $('.datepicker').datepicker({
             format: 'yyyy-mm-dd',
             language: 'pl',
-            startDate: new Date(2024, 4, 1), // Use startDate instead of minDate
+            startDate: new Date(2024, 3, 26), // Use startDate instead of minDate
             endDate: new Date(2024, 8, 30)     // Use endDate instead of maxDate
         });
 

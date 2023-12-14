@@ -249,7 +249,7 @@
                         <div id="offer-form">
                             <h3>Rezerwacja on-line</h3>
                             <p>Już od <strong>260 zł</strong> / noc</p>
-                            <a href="{{ route('reservation') }}" class="btn btn-theme w-100">ZAREZERWUJ</a>
+                            <a href="{{ route('reservation') }}?form_room_type=2" class="btn btn-theme w-100">ZAREZERWUJ</a>
                         </div>
                     </div>
                 </div>

@@ -2018,6 +2018,15 @@ section#page {
   font-weight: 400;
   font-size: 12px;
 }
+.form-label span {
+  color: red !important;
+}
+.required-info {
+  display: block;
+  color: red !important;
+  font-size: 12px;
+  margin-top: 10px;
+}
 #contact-form {
   background: #113f63 url("../../images/footer-bg.jpg") no-repeat top center;
   background-size: cover;
