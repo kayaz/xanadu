@@ -5,19 +5,19 @@
         </div>
     </div>
     <form class="row mt-4 mt-lg-5 justify-content-center" method="get" action="{{ route('reservation') }}">
-        <div class="col-4 col-lg-3 col-xxl-2">
+        <div class="col-12 col-md-4 col-lg-3 col-xxl-2">
             <div class="position-relative">
                 <label for="dataStart"><i class="las la-calendar"></i></label>
                 <input type="text" name="form_data_start" value="" id="dataStart" placeholder="Data przyjazdu" class="datepicker">
             </div>
         </div>
-        <div class="col-4 col-lg-3 col-xxl-2">
+        <div class="mt-3 mt-md-0 col-12 col-md-4 col-lg-3 col-xxl-2">
             <div class="position-relative">
                 <label for="dataEnd"><i class="las la-calendar"></i></label>
                 <input type="text" name="form_data_end" value="" id="dataEnd" placeholder="Data odjazdu" class="datepicker">
             </div>
         </div>
-        <div class="col-4 col-lg-3 col-xxl-2">
+        <div class="mt-3 mt-md-0 col-12 col-md-4 col-lg-3 col-xxl-2">
             <div class="position-relative">
                 <label for="roomType"><i class="las la-key"></i></label>
                 <select class="form-select" name="form_room_type" id="roomType">

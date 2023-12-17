@@ -59,6 +59,9 @@
                             <h2 class="section-title">Pok&oacute;j do 3 os&oacute;b *</h2>
                         </li>
                         {!! formatDatesAndPrices($pricelist->rooms_prices) !!}
+                        <li>
+                            <a href="{{ route('reservation') }}?form_room_type=1" class="btn btn-theme btn-icon w-100">REZERWACJA <i class="las la-concierge-bell"></i></a>
+                        </li>
                     </ul>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
@@ -101,6 +104,9 @@
                             <h2 class="section-title">Dom 6 osobowy</h2>
                         </li>
                         {!! formatDatesAndPrices($pricelist->houses_prices) !!}
+                        <li>
+                            <a href="{{ route('reservation') }}?form_room_type=2" class="btn btn-theme btn-icon w-100">REZERWACJA <i class="las la-concierge-bell"></i></a>
+                        </li>
                     </ul>
                     <div class="text-center">
                         <p>&nbsp;</p>

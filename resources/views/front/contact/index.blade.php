@@ -36,8 +36,8 @@
                         <div class="contact-box-icon">
                             <img src="/images/icons/icon-location.png" alt="" width="70" height="70">
                         </div>
-                        <p>Lotnicza 17</p>
-                        <p>78-111 Sianożęty</p>
+                        <p><a href="https://maps.app.goo.gl/jaWf75Q1rqin9oKv9" target="_blank">Lotnicza 17</a></p>
+                        <p><a href="https://maps.app.goo.gl/jaWf75Q1rqin9oKv9" target="_blank">78-111 Sianożęty</a></p>
                     </div>
                 </div>
             </div>

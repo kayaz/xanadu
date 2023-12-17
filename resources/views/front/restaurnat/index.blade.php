@@ -57,7 +57,7 @@
                     <div class="icon-box icon-box-blue">
                         <div>
                             <img src="{{ asset('/images/icons/icon-pizza.png') }}" alt="" width="70" height="70">
-                            <h3>Włoskia pizzy <br>na cienkim cieście</h3>
+                            <h3>Włoska pizzy <br>na cienkim cieście</h3>
                         </div>
                     </div>
                 </div>
