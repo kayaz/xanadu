@@ -13,8 +13,8 @@
     <section class="p-0">
         <div class="container">
             <div class="row">
-                <div class="col-4">
-                    <img src="/images/recepcja.jpg" alt="">
+                <div class="order-2 order-lg-1 col-12 col-lg-4">
+                    <img src="/images/recepcja.jpg" alt="Recepcja Xanadu Restort" class="d-none d-lg-block">
                     <p>&nbsp;</p>
                     <p>Rezerwacja będzie dokonana po potwierdzeniu przyjęcia przez biuro rezerwacji i wpłaceniu w terminie 7 dni wymaganej zaliczki. Po tym terminie rezerwację uważamy za nieaktualną.</p>
                     <p>&nbsp;</p>
@@ -25,7 +25,7 @@
                     <p>Nr konta: 27 9376 0001 2006 00162463 0002</p>
                     <p><b>W tytule przelewu proszę podać: Imię i nazwisko</b></p>
                 </div>
-                <div class="col-8 ps-5">
+                <div class="col-12 col-lg-8 ps-3 ps-lg-5 order-1 order-lg-2">
                     <div class="row">
                         <div class="col-12 text-left">
                             <h2 class="section-title section-title-border">Formularz wstępnej rezerwacji</h2>
@@ -45,8 +45,8 @@
 
                     <form action="{{ route("reservation.form") }}" class="row" method="post" class="validateForm">
                     {{ csrf_field() }}
-                        <div class="col-4">
-                            <div class="mb-5">
+                        <div class="col-6 col-xl-4">
+                            <div class="mb-3 mb-sm-4 mb-xl-5">
                                 <label for="dataStart" class="form-label">Data przyjazdu <span>*</span></label>
                                 <input type="text" class="form-control datepicker @error('form_data_start') is-invalid @enderror" id="dataStart" name="form_data_start" value="{{ request('form_data_start') }}">
 
@@ -55,8 +55,8 @@
                                 @enderror
                             </div>
                         </div>
-                        <div class="col-4">
-                            <div class="mb-5">
+                        <div class="col-6 col-xl-4">
+                            <div class="mb-3 mb-sm-4 mb-xl-5">
                                 <label for="dataEnd" class="form-label">Data wyjazdu <span>*</span></label>
                                 <input type="text" class="form-control datepicker @error('form_data_end') is-invalid @enderror" id="dataEnd" name="form_data_end" value="{{ request('form_data_end') }}">
 
@@ -65,8 +65,8 @@
                                 @enderror
                             </div>
                         </div>
-                        <div class="col-4">
-                            <div class="mb-5">
+                        <div class="col-12 col-sm-6 col-xl-4">
+                            <div class="mb-3 mb-sm-4 mb-xl-5">
                                 <label for="roomType" class="form-label">Pokój / domek <span>*</span></label>
                                 <select class="form-select @error('form_room_type') is-invalid @enderror" name="form_room_type" id="roomType">
                                     <option selected>Wybierz</option>
@@ -79,8 +79,8 @@
                                 @enderror
                             </div>
                         </div>
-                        <div class="col-3">
-                            <div class="mb-5">
+                        <div class="col-12 col-sm-6 col-xl-3">
+                            <div class="mb-3 mb-sm-4 mb-xl-5">
                                 <label for="foodType" class="form-label">Wyżywienie <span>*</span></label>
                                 <select class="form-select" name="form_food" id="foodType">
                                     <option selected>Brak</option>
@@ -89,8 +89,8 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="col-3">
-                            <div class="mb-5">
+                        <div class="col-12 col-md-4 col-xl-3">
+                            <div class="mb-4 mb-xl-5">
                                 <label class="form-label w-100 text-center" for="adultCount">Dorośli</label>
                                 <div class="input-group number-spinner">
                                     <span class="input-group-btn"><button class="btn-input" data-dir="dwn" type="button"><i class="las la-minus"></i></button></span>
@@ -104,8 +104,8 @@
                             </div>
                         </div>
 
-                        <div class="col-3">
-                            <div class="mb-5">
+                        <div class="col-12 col-md-4 col-xl-3">
+                            <div class="mb-4 mb-xl-5">
                                 <label class="form-label w-100 text-center" for="childCount">Dziecko 3-12 lat</label>
                                 <div class="input-group number-spinner">
                                     <span class="input-group-btn"><button class="btn-input" data-dir="dwn" type="button"><i class="las la-minus"></i></button></span>
@@ -118,8 +118,8 @@
                                 @enderror
                             </div>
                         </div>
-                        <div class="col-3">
-                            <div class="mb-5">
+                        <div class="col-12 col-md-4 col-xl-3">
+                            <div class="mb-4 mb-xl-5">
                                 <label class="form-label w-100 text-center" for="kidCount">Dziecko 0-3 lat</label>
                                 <div class="input-group number-spinner">
                                     <span class="input-group-btn"><button class="btn-input" data-dir="dwn" type="button"><i class="las la-minus"></i></button></span>
@@ -133,8 +133,8 @@
                             </div>
                         </div>
 
-                        <div class="col-4">
-                            <div class="mb-5">
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div class="mb-3 mb-sm-4 mb-xl-5">
                                 <label for="formName" class="form-label" >Imię <span>*</span></label>
                                 <input type="text" class="form-control @error('form_name') is-invalid @enderror" id="formName" name="form_name" value="{{ old('form_name') }}">
 
@@ -143,8 +143,8 @@
                                 @enderror
                             </div>
                         </div>
-                        <div class="col-4">
-                            <div class="mb-5">
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div class="mb-3 mb-sm-4 mb-xl-5">
                                 <label for="formEmail" class="form-label">E-mail <span>*</span></label>
                                 <input type="email" class="form-control @error('form_email') is-invalid @enderror" id="formEmail" name="form_email" value="{{ old('form_email') }}">
 
@@ -153,8 +153,8 @@
                                 @enderror
                             </div>
                         </div>
-                        <div class="col-4">
-                            <div class="mb-5">
+                        <div class="col-12 col-md-4">
+                            <div class="mb-3 mb-sm-4 mb-xl-5">
                                 <label for="formPhone" class="form-label">Telefon <span>*</span></label>
                                 <input type="tel" class="form-control @error('form_phone') is-invalid @enderror" id="formPhone" name="form_phone" value="{{ old('form_phone') }}">
 
@@ -177,7 +177,7 @@
                             </div>
                         </div>
                         <div class="col-12">
-                            <button class="btn btn-theme btn-icon mt-5">WYŚLIJ ZAPYTANIE <i class="las la-envelope"></i></button>
+                            <button class="btn btn-theme btn-icon mt-3 mt-xl-5">WYŚLIJ ZAPYTANIE <i class="las la-envelope"></i></button>
                         </div>
                     </form>
                 </div>

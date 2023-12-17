@@ -23,8 +23,8 @@
                 </div>
             </div>
 
-            <div class="row mt-5 pt-3">
-                <div class="col-12 d-flex justify-content-center">
+            <div class="row mt-3 mt-lg-5 pt-3">
+                <div class="col-12 d-flex justify-content-center icon-box-row">
                     <div class="icon-box icon-box-blue">
                         <div>
                             <img src="{{ asset('/images/icons/icon-houses.png') }}" alt="" width="70" height="70">
@@ -69,14 +69,14 @@
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <div class="offer text-center">
                         <a href=""><img src="{{ asset('section/domki-nad-morzem.jpg') }}" alt="Domki nad morzem 6-osobowe" width="750" height="520"></a>
                         <h2 class="m-0 mt-4"><a href=""><span class="text-blue">Domki nad morzem</span> <br>6-osobowe</a></h2>
                         <a href="{{ route('front.menu', ['language' => 'pl', 'uri' => 'domki']) }}" class="btn btn-theme btn-icon mt-4">PEŁNA OFERTA <i class="las la-arrow-right"></i></a>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6 mt-5 mt-md-0">
                     <div class="offer text-center">
                         <a href=""><img src="{{ asset('section/pokoje-nad-morzem.jpg') }}" alt="Pokoje nad morzem 3-osobowe" width="750" height="520"></a>
                         <h2 class="m-0 mt-4"><a href=""><span class="text-blue">Pokoje nad morzem</span> <br>3-osobowe</a></h2>
@@ -87,67 +87,69 @@
         </div>
     </section>
 
-    <section id="ask-form">
+    <section id="ask-form" class="rwd-section">
         @include('front.partials.askform')
     </section>
 
-    <section>
-        <div class="container-fluid p-0">
-            <div class="row g-0 flex-row-reverse">
-                <div class="col-7">
-                    <img src="{{ asset('/section/restauracja.jpg') }}" alt="" class="w-100" width="1120" height="780">
-                </div>
-                <div class="col-5 d-flex align-items-center">
-                    <div class="section-box text-left">
-                        <h2 class="section-title"><span class="text-blue">Pełne wyżywienie</span> w naszej restauracji.</h2>
-                        <div class="text-left">
-                            <p>W naszej restauracji dla gości dostępne są śniadania oraz obiady. Obiady serwujemy w formie ciepłego bufetu (8 dań, do wyboru). Mamy też coś specjalnego dla smakoszy deserów i włoskiej pizzy na cienkim cieście.</p>
-                            <a href="{{ route('restaurant') }}" class="btn btn-theme btn-icon mt-4 mt-xxl-5">ZOBACZ WIĘCEJ <i class="las la-arrow-right"></i></a>
+    <div class="section-rwd">
+        <section>
+            <div class="container container-lg-fluid p-0">
+                <div class="row g-0 flex-row-reverse">
+                    <div class="col-12 col-lg-7">
+                        <img src="{{ asset('/section/restauracja.jpg') }}" alt="" class="w-100" width="1120" height="780">
+                    </div>
+                    <div class="col-12 col-lg-5 d-flex align-items-center">
+                        <div class="section-box text-left">
+                            <h2 class="section-title"><span class="text-blue">Pełne wyżywienie</span> w naszej restauracji.</h2>
+                            <div class="text-left">
+                                <p>W naszej restauracji dla gości dostępne są śniadania oraz obiady. Obiady serwujemy w formie ciepłego bufetu (8 dań, do wyboru). Mamy też coś specjalnego dla smakoszy deserów i włoskiej pizzy na cienkim cieście.</p>
+                                <a href="{{ route('restaurant') }}" class="btn btn-theme btn-icon mt-4 mt-xxl-5">ZOBACZ WIĘCEJ <i class="las la-arrow-right"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section>
-        <div class="container-fluid p-0">
-            <div class="row g-0">
-                <div class="col-7">
-                    <img src="{{ asset('/section/plac-zabaw.jpg') }}" alt="" class="w-100" width="1120" height="780">
-                </div>
-                <div class="col-5 d-flex align-items-center">
-                    <div class="section-box text-left">
-                        <h2 class="section-title"><span class="text-blue">Nasz plac zabaw czeka</span> <br>na małych odkrywców!</h2>
-                        <div class="text-left">
-                            <p>Nasz ośrodek wypoczynkowy to wyjątkowe miejsce, które stworzyliśmy z myślą o dzieciach i ich rodzicach. Tutaj każdy znajdzie coś dla siebie, a nuda nie ma u nas szans! Plac zabaw to miejsce, w którym dzieci mogą w pełni wyrazić swoją kreatywność i energię. Huśtawki, zjeżdżalnie, karuzele – u nas dzieci zawsze znajdą coś ciekawego do zrobienia.</p>
+        <section>
+            <div class="container container-lg-fluid p-0 mt-3 mt-lg-0">
+                <div class="row g-0">
+                    <div class="col-12 col-lg-7">
+                        <img src="{{ asset('/section/plac-zabaw.jpg') }}" alt="" class="w-100" width="1120" height="780">
+                    </div>
+                    <div class="col-12 col-lg-5 d-flex align-items-center">
+                        <div class="section-box text-left">
+                            <h2 class="section-title"><span class="text-blue">Nasz plac zabaw czeka</span> <br>na małych odkrywców!</h2>
+                            <div class="text-left">
+                                <p>Nasz ośrodek wypoczynkowy to wyjątkowe miejsce, które stworzyliśmy z myślą o dzieciach i ich rodzicach. Tutaj każdy znajdzie coś dla siebie, a nuda nie ma u nas szans! Plac zabaw to miejsce, w którym dzieci mogą w pełni wyrazić swoją kreatywność i energię. Huśtawki, zjeżdżalnie, karuzele – u nas dzieci zawsze znajdą coś ciekawego do zrobienia.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section>
-        <div class="container-fluid p-0">
-            <div class="row g-0 flex-row-reverse">
-                <div class="col-7">
-                    <img src="{{ asset('/section/basen.jpg') }}" alt="" class="w-100" width="1120" height="780">
-                </div>
-                <div class="col-5 d-flex align-items-center">
-                    <div class="section-box text-left">
-                        <h2 class="section-title"><span class="text-blue">Basen w ośrodku</span> <br>wczasowym w Sianożętach.</h2>
-                        <div class="text-left">
-                            <p>Za dodatkową opłatą do dyspozycji naszych gości, na terenie zaprzyjaźnionego ośrodka wczasowego oddalonego od Xanadu o zaledwie 100 metrów, dostępny jest basen zewnętrzny z podgrzewaną wodą i atrakcjami dla dzieci i dorosłych. Znajdują się tu między innymi: zjeżdżalnia dwutorowa o długości ośmiu metrów, wylewnica do masażu, przeciwprąd. Na wielkość basenu 20 m x 10 m składa się basen rekreacyjny o głębokości 140 cm oraz brodzik o głębokości 50 cm. W obu częściach woda jest podgrzewana.
-                            <p>&nbsp;</p>
-                            <p>Basen czynny jest od 23 maja do 4 września.</p>
-                            <a href="{{ route('pool') }}" class="btn btn-theme btn-icon mt-4 mt-xxl-5">ZOBACZ WIĘCEJ <i class="las la-arrow-right"></i></a>
+        <section>
+            <div class="container container-lg-fluid p-0 mt-3 mt-lg-0">
+                <div class="row g-0 flex-row-reverse">
+                    <div class="col-12 col-lg-7">
+                        <img src="{{ asset('/section/basen.jpg') }}" alt="" class="w-100" width="1120" height="780">
+                    </div>
+                    <div class="col-12 col-lg-5 d-flex align-items-center">
+                        <div class="section-box text-left">
+                            <h2 class="section-title"><span class="text-blue">Basen w ośrodku</span> <br>wczasowym w Sianożętach.</h2>
+                            <div class="text-left">
+                                <p>Za dodatkową opłatą do dyspozycji naszych gości, na terenie zaprzyjaźnionego ośrodka wczasowego oddalonego od Xanadu o zaledwie 100 metrów, dostępny jest basen zewnętrzny z podgrzewaną wodą i atrakcjami dla dzieci i dorosłych. Znajdują się tu między innymi: zjeżdżalnia dwutorowa o długości ośmiu metrów, wylewnica do masażu, przeciwprąd. Na wielkość basenu 20 m x 10 m składa się basen rekreacyjny o głębokości 140 cm oraz brodzik o głębokości 50 cm. W obu częściach woda jest podgrzewana.
+                                <p>&nbsp;</p>
+                                <p>Basen czynny jest od 23 maja do 4 września.</p>
+                                <a href="{{ route('pool') }}" class="btn btn-theme btn-icon mt-4 mt-xxl-5">ZOBACZ WIĘCEJ <i class="las la-arrow-right"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
     @include('front.partials.good-to-know')
 
