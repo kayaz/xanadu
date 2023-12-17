@@ -12,7 +12,7 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-4">
+            <div class="col-12 col-sm-4 text-center text-sm-start">
                 <p>Ośrodek wypoczynkowy Xanadu</p>
                 <p>&nbsp;</p>
                 <p>Lotnicza 17</p>
@@ -22,9 +22,9 @@
                 <p>&nbsp;</p>
                 <p>e-mail: <a href="mailto:rezerwacje@xanaduhotel.pl">rezerwacje@xanaduhotel.pl</a></p>
             </div>
-            <div class="col-8 position-relative">
+            <div class="col-12 col-sm-8 position-relative mt-4 mt-sm-0">
                 <nav>
-                    <ul class="mb-0 list-unstyled row justify-content-end">
+                    <ul class="mb-0 list-unstyled row justify-content-center justify-content-sm-end">
                         <li><a href="/">Strona główna</a></li>
                         <li><a href="{{ route('about') }}">Xanadu Resort</a></li>
                         <li><a href="{{ route('rooms') }}">Pokoje</a></li>

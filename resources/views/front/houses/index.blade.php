@@ -20,8 +20,8 @@
     <section class="pb-0">
         <div class="container">
             <div class="row">
-                <div class="col-9">
-                    <div class="container">
+                <div class="order-2 order-lg-1 col-12 col-lg-9">
+                    <div class="container p-0">
                         <div class="row">
                             <div class="col-12">
                                 <div class="mix-nav text-center offer-mix-nav">
@@ -43,8 +43,8 @@
                             </div>
                         </div>
 
-                        <div class="row mt-5 pt-3">
-                            <div class="col-12 d-flex justify-content-center">
+                        <div class="row mt-3 mt-lg-5 pt-3">
+                            <div class="col-12 d-flex justify-content-center icon-box-row">
 
                                 <div class="icon-box icon-box-blue m-2">
                                     <div>
@@ -84,7 +84,7 @@
                         </div>
                     </div>
 
-                    <div class="container mt-5">
+                    <div class="container mt-3 mt-lg-5 p-0">
                       <div class="row">
                           <div class="col-12">
                               <h2 class="section-title text-center"><span class="text-blue">Galeria</span></h2>
@@ -187,7 +187,7 @@
                     </div>
 
                     <section>
-                        <div class="container">
+                        <div class="container p-0">
                             <div class="row">
                                 <div class="col-12">
                                     <h2 class="section-title text-center"><span class="text-blue">Dodatkowe</span> informacje i opłaty</h2>
@@ -244,7 +244,7 @@
                         </div>
                     </section>
                 </div>
-                <div class="col-3">
+                <div class="order-1 order-lg-2 col-12 col-lg-3 position-relative">
                     <div class="offer-form-track">
                         <div id="offer-form">
                             <h3>Rezerwacja on-line</h3>
@@ -257,10 +257,10 @@
         </div>
     </section>
 
-    <section class="cta-section domek-bg m-0">
+    <section class="cta-section domek-bg m-0 rwd-section">
         <div class="container">
             <div class="row justify-content-start">
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                     <h2 class="section-title">Nasz ośrodek wczasowy zapewnia komfortowe warunki</h2>
                     <p>Oferujemy drewniane, dwupoziomowe domki, będące odzwierciedleniem nowoczesnego podejścia do budownictwa. Zostały wykończone z największą starannością, aby zapewnić idealne warunki do wypoczynku, a zarazem zachwycać funkcjonalnością i prostą formą. Wynajem domku to najlepsza decyzja, jaką można podjąć z myślą o komfortowym i kameralnym wypoczynku w kilka osób.</p>
                 </div>
@@ -278,7 +278,7 @@
             <div class="row justify-content-center text-center">
                 <div class="col-12 col-xxl-8">
                     <p>Nasze pokoje zaprojektowano z myślą o tych z Państwa, którzy poszukują przede wszystkim komfortu wysokiej klasy. Wyposażenie każdego pokoju hotelowego o wielkości 21 m<sup>2</sup> obejmuje niezbędne i zarazem luksusowe rozwiązania, dzięki którym czas spędzany w naszym obiekcie będzie należał do przyjemnych.</p>
-                    <a href="{{ route('rooms') }}" class="btn btn-theme btn-icon mt-5">ZOBACZ OFERTĘ <i class="las la-arrow-right"></i></a>
+                    <a href="{{ route('rooms') }}" class="btn btn-theme btn-icon mt-4 mt-xxl-5">ZOBACZ OFERTĘ <i class="las la-arrow-right"></i></a>
                 </div>
             </div>
         </div>

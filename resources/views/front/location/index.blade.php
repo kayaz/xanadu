@@ -27,7 +27,7 @@
         </div>
     </section>
 
-    <section class="bg-light">
+    <section class="bg-light rwd-section">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -76,21 +76,21 @@
                 <div class="col-12 mb-4">
                     <h3>Dworzec PKP/PKS</h3>
                 </div>
-                <div class="col-2">
+                <div class="col-3 col-lg-2">
                     <div class="transport">
                         <i class="las la-bus"></i>
                         <span>3 km</span>
                         <p>Ustronie Morskie</p>
                     </div>
                 </div>
-                <div class="col-2">
+                <div class="col-3 col-lg-2">
                     <div class="transport">
                         <i class="las la-bus"></i>
                         <span>13 km</span>
                         <p>Kołobrzeg</p>
                     </div>
                 </div>
-                <div class="col-2">
+                <div class="col-3 col-lg-2">
                     <div class="transport">
                         <i class="las la-bus"></i>
                         <span>34 km</span>
@@ -101,10 +101,10 @@
         </div>
     </section>
 
-    <section class="location-cta">
+    <section class="location-cta rwd-section">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-8 text-center">
+                <div class="col-12 col-lg-8 text-center">
                     <h2 class="section-title">Nasza lokalizacja, <br>bliskość morza i spokoju.</h2>
                     <p>Nasze noclegi stwarzają możliwość spokojnego wypoczynku połączonego z aktywnościami na świeżym powietrzu. W pobliżu ośrodka Xanadu znajdą Państwo promenadę dla pieszych i rowerzystów, która łączy Sianożęty z Ustroniem Morskim oraz Sianożęty z Kołobrzegiem.</p>
                 </div>
@@ -112,20 +112,18 @@
         </div>
     </section>
 
-    <section class="pt-0">
+    <section class="pt-0 rwd-section">
         <div id="homepage-map">
             <div class="container-fluid p-0">
                 <div class="row m-0">
-                    <div class="col-7 p-0">
+                    <div class="col-12 col-md-7 p-0">
                         <div class="position-relative">
                             <img src="{{ asset('/images/mapa.png') }}" alt="Mapa lokalizacji" width="1178" height="738">
                             <a href="https://maps.app.goo.gl/jaWf75Q1rqin9oKv9" target="_blank" class="btn btn-theme btn-icon">WSKAZÓWKI DOJAZDU<i class="las la-map-marker"></i></a>
                         </div>
                     </div>
-                    <div class="col-5 p-0">
-                        <div class="map-text justify-content-center" style="background: url({{ asset('section/lokalizacja-domki.jpg') }}) no-repeat top center;background-size:  cover">
-
-                        </div>
+                    <div class="col-5 p-0 d-none d-md-block">
+                        <div class="map-text justify-content-center" style="background: url({{ asset('section/lokalizacja-domki.jpg') }}) no-repeat top center;background-size:  cover"></div>
                     </div>
                 </div>
             </div>

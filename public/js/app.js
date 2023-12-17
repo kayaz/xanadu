@@ -21,9 +21,18 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Lightbox
     $( '.swipebox' ).swipebox({useSVG : false});
-});
 
-document.addEventListener("DOMContentLoaded", function() {
+    $("#triggermenu, .closemenu").click(function(b){
+        b.preventDefault();
+        $('body').toggleClass('openmenu');
+    });
+    $("#megamenu-opacity").click(function (event) {
+        if ($('body').hasClass("openmenu")) {
+            $('body').removeClass("openmenu");
+        }
+        event.preventDefault();
+    });
+
     const header = $('header');
     const aboveHeight = 20;
 

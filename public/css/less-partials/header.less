@@ -5,6 +5,8 @@ header {
   right: 0;
   z-index: 10;
   nav {
+    display: flex;
+    justify-content: end;
     ul {
       display: flex;
       flex-wrap: nowrap;
@@ -60,6 +62,10 @@ header {
         ul {
           display: flex;
         }
+      }
+
+      &.nav-rwd {
+        display: none;
       }
     }
   }

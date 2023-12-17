@@ -20,8 +20,8 @@
     <section class="pb-0">
         <div class="container">
             <div class="row">
-                <div class="col-9">
-                    <div class="container">
+                <div class="order-2 order-lg-1 col-12 col-lg-9">
+                    <div class="container p-0">
                         <div class="row">
                             <div class="col-12">
                                 <div class="mix-nav text-center offer-mix-nav">
@@ -41,8 +41,8 @@
                             </div>
                         </div>
 
-                        <div class="row mt-5 pt-3">
-                            <div class="col-12 d-flex justify-content-center">
+                        <div class="row mt-3 mt-lg-5 pt-3">
+                            <div class="col-12 d-flex justify-content-center icon-box-row">
 
                                 <div class="icon-box icon-box-blue m-2">
                                     <div>
@@ -82,9 +82,9 @@
                         </div>
                     </div>
 
-                    <div class="container">
+                    <div class="container p-0">
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-12 col-md-6">
                                 <div class="nocleg text-center">
                                     <img src="/uploads/nocleg_pokoje.jpg" alt="Pokoje nad morzem do wynajęcia" />
                                     <h2>Pokój 2-osobowy</h2>
@@ -92,7 +92,7 @@
                                     <a href="{{ asset('/uploads/gallery/images/203121_dsc-0359.jpeg') }}" class="btn btn-theme btn-icon mb-4 swipebox" rel="gallery-1" title="Pokój 2-osobowy">GALERIA <i class="las la-file-alt"></i></a>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-12 col-md-">
                                 <div class="nocleg text-center">
                                     <img src="/uploads/nocleg_pokoje.jpg" alt="Pokoje nad morzem do wynajęcia" />
                                     <h2>Pokój 3-osobowy</h2>
@@ -104,7 +104,7 @@
                     </div>
 
 
-                    <div class="container mt-5">
+                    <div class="container mt-3 mt-md-5 p-0">
                         <div class="row">
                             <div class="col-12">
                                 <h2 class="section-title text-center"><span class="text-blue">Galeria</span></h2>
@@ -257,7 +257,7 @@
                     </div>
 
                     <section>
-                        <div class="container">
+                        <div class="container p-0">
                             <div class="row">
                                 <div class="col-12">
                                     <h2 class="section-title text-center"><span class="text-blue">Dodatkowe</span> informacje i opłaty</h2>
@@ -305,7 +305,7 @@
                         </div>
                     </section>
                 </div>
-                <div class="col-3">
+                <div class="order-1 order-lg-2 col-12 col-lg-3 position-relative">
                     <div class="offer-form-track">
                         <div id="offer-form">
                             <h3>Rezerwacja on-line</h3>
@@ -318,10 +318,10 @@
         </div>
     </section>
 
-    <section class="cta-section pokoje-bg m-0">
+    <section class="cta-section pokoje-bg m-0 rwd-section">
         <div class="container">
             <div class="row justify-content-end">
-                <div class="col-6 text-left">
+                <div class="col-12 col-lg-6 text-left">
                     <h2 class="section-title">Nasz obiekt zapewnia przytulne i nowoczesne wnętrza</h2>
                     <p>Xanadu to obiekt zlokalizowany blisko morza w Sianożętach. Pokoje zostały zaprojektowane z myślą o tych z Państwa, którzy poszukują przede wszystkim komfortu wysokiej klasy. Tutaj Goście chcą zatrzymywać się jak najdłużej. Nic dziwnego, ponieważ na wszystkich odwiedzających czekają aż <b>24 luksusowo wykończone</b>, przestronne wnętrza z licznymi udogodnieniami. Nasz obiekt w Sianożętach to kwintesencja dobrze spędzonego urlopu nad morzem. Zachęcamy do tego, by zapomnieli Państwo na chwilę o stresie i troskach codziennego dnia i oddali się błogim, relaksującym chwilom w resorcie Xanadu. Zapraszamy do rezerwowania pobytu!</p>
                 </div>

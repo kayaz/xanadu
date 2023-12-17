@@ -23,8 +23,8 @@
                 </div>
             </div>
 
-            <div class="row mt-5 pt-3">
-                <div class="col-12 d-flex justify-content-center">
+            <div class="row mt-3 mt-lg-5 pt-3">
+                <div class="col-12 d-flex justify-content-center icon-box-row">
 
                     <div class="icon-box icon-box-blue">
                         <div>
@@ -68,7 +68,7 @@
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-7">
+                <div class="col-12 col-lg-7">
                     <div class="sliderWrapper m-0">
                         <ul class="rslides">
                             <li><img src="{{ asset('section/restauracja-sniadania.jpg') }}" alt="" width="1120" height="780"></li>
@@ -76,7 +76,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-5 d-flex align-items-center">
+                <div class="col-12 col-lg-5 d-flex align-items-center">
                     <div class="section-box text-left">
                         <h2 class="section-title"><span class="text-blue">Filozofia</span> smaku!</h2>
                         <p>Bliskość morza powoduje, że w menu pojawiają się oprócz wielu doskonałych potraw bałtyckie ryby, a także dania o niespotykanym nigdzie dotąd smaku. Świeżość, niezwykły smak, potrawy regionalne i z lokalnych produktów coraz częściej poszukiwane przez miłośników dobrego, zdrowego odżywiania na co dzień goszczą w naszym obiekcie.</p>
@@ -88,10 +88,10 @@
         </div>
     </section>
 
-    <section class="pt-0">
+    <section class="pt-0 mt-3 mt-lg-0">
         <div class="container">
             <div class="row flex-row-reverse">
-                <div class="col-7">
+                <div class="col-12 col-lg-7">
                     <div class="sliderWrapper m-0">
                         <ul class="rslides">
                             <li><img src="{{ asset('section/restauracja-3.jpg') }}" alt="" width="870" height="606"></li>
@@ -100,7 +100,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-5 d-flex align-items-center">
+                <div class="col-12 col-lg-5 d-flex align-items-center">
                     <div class="section-box text-left">
                         <h2 class="section-title"><span class="text-blue">Doskonała </span> obsługa!</h2>
                         <p>Dopełnieniem wypoczynku w obiekcie Xanadu Resort jest wyjątkowa kuchnia i potrawy przygotowane z niezwykłą starannością przez naszych kucharzy. Oferujemy menu oparte na tradycji kuchni polskiej, włoskiej, a także regionalnej. Jego bogactwo z pewnością zaspokoi gust każdego Gościa, a unikalna atmosfera i klimat panujący w naszej restauracji sprawi, że każdy posiłek stanie się dla Państwa wyjątkowy.</p>

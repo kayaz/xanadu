@@ -13,9 +13,9 @@
   color: var(--main-color-orange);
 }
 
-#triggermenu {display:none;float:right;font-size:16px;color:white;font-weight:600;text-transform:uppercase;margin:2px 0 0;padding:5px 12px;transition:all 200ms linear;background:#222;cursor: pointer}
-#triggermenu:hover {background:var(--main-color-blue);color: var(--main-color-orange)}
-.openmenu #triggermenu {color: #fff}
+#triggermenu {display:none;float:right;font-size:16px;color:white;font-weight:600;text-transform:uppercase;padding:5px 12px;transition:all 200ms linear;background:#113f63;cursor: pointer}
+#triggermenu:hover {background:#fff;color: #113f63}
+.openmenu #triggermenu {background:#fff;color: #113f63}
 .openmenu #triggermenu:hover {color:white}
 
 @media (max-width: 1579.98px) {
@@ -25,6 +25,11 @@
         top: 290px
       }
     }
+  }
+
+  .contact-box {
+    padding: 25px;
+    margin-bottom: 60px
   }
 }
 
@@ -211,26 +216,358 @@
   #offer-form {
     top:80px
   }
+  .location-cta {
+    padding: 60px 0;
+  }
 }
 /* end of 1399.98 */
 
 @media (max-width: 1199.98px) {
+  header {
+    nav {
+      ul {
+        li {
+          padding: 0 10px;
+          height: 60px;
+          line-height: normal;
+          a {
+            font-size: 18px;
+            i {
+              font-size: 26px;
+            }
+          }
+          ul {
+            width: 180px;
+            a {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+    .col-3 {
+      width: 120px;
+    }
+    .col-9 {
+      width: calc(100% - 120px);
+    }
+  }
 
+  .icon-box-row {
+    flex-wrap: wrap;
+
+    .icon-box {
+      height: 145px;
+      width: 31.33333%;
+      margin: 1%;
+      h3 {
+        margin-bottom: 0;
+      }
+    }
+  }
+  section.cta-section {
+    margin: 30px 0 0;
+  }
+  section, section#page {
+    padding: 30px 0;
+  }
+  section .section-box {
+    padding: 30px 30px 0;
+  }
+  #homepage-map .map-text {
+    padding: 30px;
+  }
+  .section-att-text {
+    padding: 0 30px 30px !important;
+  }
+  .attraction,
+  .attraction-carousel {
+    padding:0 15px;
+  }
+
+  .features-box h3 {
+    font-size: 21px;
+    margin-bottom: 2px;
+  }
+  .features-box p {
+    font-size: 13px;
+    line-height: 19px;
+  }
+
+  .mix-nav .btn-theme {
+    font-size: 15px;
+  }
+
+  .contact-box {
+    margin-bottom: 30px;
+    padding: 20px;
+    a, p {
+      font-size: 17px;
+    }
+    img {
+      width: 40px;
+    }
+    &-icon {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  }
+
+  .rwd-section {
+    margin-right: -15px !important;
+    margin-left: -15px !important;
+  }
+
+  #page-header.offer-header {
+    height: 420px;
+  }
+  #offer-form, .offer-mix-nav {
+    margin-top: -70px;
+  }
+  #offer-form {
+    padding: 15px
+  }
+  .nocleg h2 {
+    font-size: 22px;
+    margin: 20px 0;
+  }
+  .btn-theme {
+    font-size: 17px;
+    padding: 9px 10px;
+  }
 }
 /* end of 1199.98 */
 
 @media (max-width: 991.98px) {
+  .h2, h2 {
+    font-size: 27px;
+  }
+  #page-header .container .row {
+    margin-top: 70px;
+  }
+  #ask-form {
+    padding: 40px 0;
+    margin: 20px 0;
+    button {
+      padding: 8px 15px
+    }
+    label {
+      font-size: 24px;
+    }
+    input,
+    select
+    {
+      padding: 9px 15px 8px 35px;
+      font-size: 12px;
+    }
+    button {
+      padding: 5px 15px;
+      font-size: 18px;
+    }
+  }
 
+  section, section#page {
+    padding: 15px 0;
+  }
+  #page-header {
+    height: 190px;
+    h1 {
+      font-size: 24px;
+    }
+    img {
+      width: 60px;
+    }
+  }
+
+  .contact-box {
+    padding: 12px;
+    a, p {
+      font-size: 13px;
+    }
+    img {
+      width: 30px;
+    }
+  }
+
+  section#page {
+    padding: 30px 15px;
+  }
+
+  header nav ul.nav-menu {
+    display: none;
+  }
+  header nav ul li {
+    height: 55px;
+  }
+
+  .openmenu {
+    overflow: hidden;
+    .nav-menu {
+      display: block;
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 56px;
+      z-index: 9999;
+      background: #113f63;
+      overflow: scroll;
+      padding: 5px 0;
+    }
+    header nav ul.nav-menu li {
+      height: auto;
+      display: block;
+      padding: 5px 15px;
+    }
+    header nav li ul {
+      position: static;
+      display: block;
+      width: 100%;
+      li {
+        padding: 0 !important;
+      }
+    }
+    header nav li ul {
+      margin-top: 10px;
+
+      li {
+        padding: 0 15px;
+      }
+    }
+  }
+  .offer-mix-nav,
+  #offer-form
+  {
+    z-index: 1
+  }
+
+  header nav li.nav-rwd {
+    display: flex;
+  }
+
+  .booking {
+    display: none;
+  }
+
+  #page-header.offer-header {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  #offer-form {
+    margin-top: -52px;
+  }
+  .offer-form-track {
+    position: static;
+  }
+  .offer-mix-nav {
+    margin-top: 30px;
+  }
+  section.cta-section.pokoje-bg,
+  section.cta-section.domek-bg
+  {
+    padding: 40px 0;
+  }
 }
 /* end of 991.98 */
 
 @media (max-width: 767.98px) {
+  .contact-box {
+    margin-bottom: 2px;
+    a, p {
+      font-size: 17px;
+    }
+  }
 
+  .icon-box-row .icon-box-4 {
+    width: 48%;
+    margin: 1%;
+    height: 145px;
+  }
+
+  #slider .slider-apla {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    width: auto;
+  }
+  #slider .slider-apla h1 {
+    font-size: 22px;
+    line-height: 23px;
+    text-align: center;
+  }
+  table.cennik tr td {
+    padding: 4px 9px;
+    font-size: 13px
+  }
+  .majowka {
+    font-size: 13px;
+    text-align: center;
+  }
 }
 /* end of 767.98 */
 
 @media (max-width: 575.98px) {
+  .h2, h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  #page-header h1 {
+    font-size: 18px;
+    margin-top: 10px !important;
+  }
+  #page-header .container .row {
+    margin-top: 70px;
+  }
+  #page-header img {
+    width: 40px;
+  }
+  #page-header {
+    height: 140px;
+  }
+  #contact-form {
+    padding: 20px;
+  }
 
+  footer {
+    .copyrights {
+      position: static;
+      margin-top: 15px;
+      text-align: center;
+    }
+  }
+  .page-text li, p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .icon-box-row .icon-box {
+    height: 145px;
+    width: 48%;
+    margin: 1% !important
+  }
+
+  #homepage-map .position-relative a.btn-theme {
+    bottom: 10px;
+    left: 10px;
+    font-size: 14px;
+  }
+  section.cta-section.domek-bg,
+  section.cta-section.pokoje-bg {
+    padding: 30px 15px;
+    background-size: cover;
+  }
+  #page-header.offer-header {
+    height: 240px;
+  }
+  .mix-nav .btn-theme {
+    padding: 6px 2px;
+  }
+  #offer-form h3 {
+    font-size: 25px
+  }
+  #offer-form p {
+    margin-bottom: 15px;
+  }
 }
 /* end of 575.98 */
 

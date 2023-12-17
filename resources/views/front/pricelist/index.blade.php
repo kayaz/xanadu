@@ -21,7 +21,7 @@
                     <h2 class="section-title section-title-border mb-4">Terminy i ceny na rok 2023</h2>
                     <p><b>Poniższe ceny obejmują tylko kwotę zakwaterowania. Oferujemy korzystne pakiety ze śniadaniem i obiadokolacją. Rezerwując pobyt zapytaj o opcję z wyżywieniem!</b></p>
                     <div class="majowka mt-5"><img src="{{ asset('/images/grill.png') }}" width="42" height="42" alt="Ikonka grilla"> {{ $pricelist->rooms_may }} <img src="{{ asset('/images/grill.png') }}" width="42" height="42" alt="Ikonka grilla"></div>
-                    <table class="cennik" border="0">
+                    <table class="cennik d-none d-lg-block" border="0">
                         <thead>
                         <tr>
                             <td>Pok&oacute;j do 3 os&oacute;b *</td>
@@ -47,9 +47,9 @@
 
                         </tbody>
                     </table>
-                    <ul class="list-unstyled mb-0 cenniklist d-none">
+                    <ul class="list-unstyled mb-0 cenniklist d-block d-lg-none">
                         <li>
-                            <div class="sliderWrapper">
+                            <div class="sliderWrapper mt-0">
                                 <ul class="list-unstyled mb-0 rslides">
                                     <li><img src="/section/pokoje-nad-morzem.jpg" alt="Dom 6 osobowy" /></li>
                                 </ul>
@@ -63,7 +63,7 @@
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
                     <div class="majowka"><img src="{{ asset('/images/grill.png') }}" width="42" height="42" alt="Ikonka grilla"> {{ $pricelist->houses_may }} <img src="{{ asset('/images/grill.png') }}" width="42" height="42" alt="Ikonka grilla"></div>
-                    <table class="cennik" border="0">
+                    <table class="cennik d-none d-lg-block" border="0">
                         <thead>
                         <tr>
                             <td>Dom 6 osobowy</td>
@@ -89,10 +89,9 @@
 
                         </tbody>
                     </table>
-                    <p>&nbsp;</p>
-                    <ul class="list-unstyled mb-0 cenniklist d-none">
+                    <ul class="list-unstyled mb-0 cenniklist d-block d-lg-none">
                         <li>
-                            <div class="sliderWrapper">
+                            <div class="sliderWrapper mt-0">
                                 <ul class="list-unstyled mb-0 rslides">
                                     <li><img src="/section/pokoje-nad-morzem.jpg" alt="Dom 6 osobowy" /></li>
                                 </ul>
@@ -117,7 +116,7 @@
                     <p style="text-align: center;"><strong>UWAGA!!!</strong><br /><strong>Jeżeli prowadzisz działalność gospodarczą i chcesz otrzymać fakturę za dokonane zakupy <br>lub świadczone usługi, <span style="text-decoration: underline;">poinformuj o tym przed dokonaniem transakcji</span> i podaj numer NIP. <br></strong><strong>Od 1 stycznia 2020 roku nie wystawiamy faktur do paragonu bez numeru NIP <br>dla firm i os&oacute;b prowadzących działalność gospodarczą.</strong></p>
                     <p>&nbsp;</p>
                     <section>
-                        <div class="container">
+                        <div class="container p-0">
                             <div class="row">
                                 <div class="col-12">
                                     <section class="p-0 text-center">
@@ -126,56 +125,56 @@
                                 </div>
                             </div>
                             <div class="row justify-content-center">
-                                <div class="col-4">
+                                <div class="col-12 col-sm-6 col-lg-4">
                                     <div class="features-box">
                                         <i class="las la-broom"></i>
                                         <h3>SPRZĄTANIE NA ŻYCZENIE</h3>
                                         <p>Pokój - 60 zł / domy 100 zł</p>
                                     </div>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-12 col-sm-6 col-lg-4">
                                     <div class="features-box">
                                         <i class="las la-copy"></i>
                                         <h3>KOMPLET RĘCZNIKÓW</h3>
                                         <p>Wypożyczenie (duży i mały) - 10 zł</p>
                                     </div>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-12 col-sm-6 col-lg-4">
                                     <div class="features-box">
                                         <i class="las la-parking"></i>
                                         <h3>PARKING</h3>
                                         <p>10 zł / doba za każdy samochód</p>
                                     </div>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-12 col-sm-6 col-lg-4">
                                     <div class="features-box">
                                         <i class="las la-dog"></i>
                                         <h3>ZWIERZĘTA</h3>
                                         <p>30 zł / doba</p>
                                     </div>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-12 col-sm-6 col-lg-4">
                                     <div class="features-box">
                                         <i class="las la-plug"></i>
                                         <h3>OPŁATA ZA PRĄD</h3>
                                         <p>Obowiązuje tylko w domach 1,00 zł / 1 kWh</p>
                                     </div>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-12 col-sm-6 col-lg-4">
                                     <div class="features-box">
                                         <i class="las la-couch"></i>
                                         <h3>ŁÓŻECZKO DLA DZIECKA</h3>
                                         <p>Wypożyczenie - 10 zł / doba</p>
                                     </div>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-12 col-sm-6 col-lg-4">
                                     <div class="features-box">
                                         <i class="las la-leaf"></i>
                                         <h3>OPŁATA KLIMATYCZNA</h3>
                                         <p>2 zł / doba osoba dorosła. Dzieci od 0 do 3 roku życia zwolnione z opłat. Brak ulgi dla seniorów, rencistów i dzieci powyżej 3 roku życia</p>
                                     </div>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-12 col-sm-6 col-lg-4">
                                     <div class="features-box">
                                         <i class="las la-user-plus"></i>
                                         <h3>DODATKOWA OSOBA</h3>
@@ -186,7 +185,7 @@
                         </div>
                     </section>
                     <section class="pt-0">
-                        <div class="container">
+                        <div class="container p-0">
                             <div class="row justify-content-center text-center">
                                 <div class="col-12 col-xxl-8">
                                     <p class="text-danger"><sup>*</sup> Uwaga! <b>Akceptujemy psy do 20 kg</b>. Podczas rezerwacji pobytu poinformuj nas o przyjeździe ze zwierzakiem. Prosimy również o zapoznanie się z regulaminem dostępnym poniżej.</p>
@@ -214,7 +213,7 @@
         </div>
     </section>
 
-    <section id="ask-form" class="mb-0">
+    <section id="ask-form" class="mb-0 rwd-section">
         @include('front.partials.askform')
     </section>
 @endsection

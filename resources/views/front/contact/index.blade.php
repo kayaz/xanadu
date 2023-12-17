@@ -13,7 +13,7 @@
     <div id="page-content" class="page-text">
         <div class="container">
             <div class="row">
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                     <div class="contact-box">
                         <div class="contact-box-icon">
                             <img src="/images/icons/icon-envelope.png" alt="" width="70" height="70">
@@ -22,7 +22,7 @@
                         <p><a href="mailto:rezerwacje@xanaduhotel.pl">rezerwacje@xanaduhotel.pl</a></p>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                     <div class="contact-box">
                         <div class="contact-box-icon">
                             <img src="/images/icons/icon-phone.png" alt="" width="70" height="70">
@@ -31,7 +31,7 @@
                         <p><a href="tel:+48503094222">503 094 222</a></p>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                     <div class="contact-box">
                         <div class="contact-box-icon">
                             <img src="/images/icons/icon-location.png" alt="" width="70" height="70">
@@ -42,16 +42,16 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-5 text-left">
+            <div class="row mt-4 mt-md-0">
+                <div class="col-12 col-lg-5 text-left">
                     <h2 class="section-title mb-3">Xanadu Resort</h2>
                     <h4>Lotnicza 17</h4>
                     <h4>78-111 Sianożęty</h4>
                     <p>&nbsp;</p>
                     <p>Już dziś zachęcamy Państwa do kontaktu z hotelem Xanadu. To kompleksowy <strong>ośrodek wypoczynkowy w Sianożętach</strong>, który oferuje wyżywienie, kameralną atmosferę i wiele atrakcji. Naszym niewątpliwym atutem jest również bliskość brzegu Bałtyku oraz możliwość skorzystania przez Gości z pobliskiego basenu. Zapraszamy do nas singli, pary, rodziny z dziećmi i wszystkich tych, którzy po prostu chcą przyjemnie i relaksująco spędzić urlop z dala od trosk i szarości dnia codziennego.</p>
                 </div>
-                <div class="col-7">
-                    <div class="ps-5">
+                <div class="col-12 col-lg-7">
+                    <div class="ps-0 ps-lg-5 mt-4 mt-lg-0">
                         @if (session('success'))
                             <div class="alert alert-success border-0">
                                 {{ session('success') }}
@@ -65,7 +65,7 @@
                         <form method="post" id="contact-form" action="{{ route("contact.form") }}" class="validateForm">
                             {{ csrf_field() }}
                             <div class="row">
-                                <div class="col-12 col-md-4 form-input">
+                                <div class="col-12 col-sm-6 col-xl-4 form-input">
                                     <label for="form_name">Imię <span class="text-danger">*</span></label>
                                     <input name="form_name" id="form_name" class="validate[required] form-control @error('form_name') is-invalid @enderror" type="text" value="{{ old('form_name') }}">
 
@@ -73,11 +73,11 @@
                                     <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
                                     @enderror
                                 </div>
-                                <div class="col-12 col-md-4 form-input col-input-important">
+                                <div class="col-12 col-sm-6 col-xl-4 form-input col-input-important">
                                     <label for="form_surname">Nazwisko <span class="text-danger">*</span></label>
                                     <input name="form_surname" id="form_surname" class="form-control" type="text" value="{{ old('form_surname') }}">
                                 </div>
-                                <div class="col-12 col-md-4 form-input">
+                                <div class="col-12 col-sm-6 col-xl-4 form-input">
                                     <label for="form_email">E-mail <span class="text-danger">*</span></label>
                                     <input name="form_email" id="form_email" class="validate[required] form-control @error('form_email') is-invalid @enderror" type="text" value="{{ old('form_email') }}">
 
@@ -85,7 +85,7 @@
                                     <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
                                     @enderror
                                 </div>
-                                <div class="col-12 col-md-4 form-input">
+                                <div class="col-12 col-xl-4 form-input">
                                     <label for="form_phone">Telefon</label>
                                     <input name="form_phone" id="form_phone" class="form-control @error('form_phone') is-invalid @enderror" type="text" value="{{ old('form_phone') }}">
 
@@ -117,19 +117,19 @@
             </div>
         </div>
 
-        <section class="mt-3">
+        <section class="mt-3 rwd-section">
             <div id="homepage-map">
                 <div class="container-fluid p-0">
                     <div class="row m-0">
-                        <div class="col-7 p-0">
+                        <div class="col-12 col-xl-7 p-0">
                             <img src="{{ asset('/images/mapa.png') }}" alt="Mapa lokalizacji" width="1178" height="738">
                         </div>
-                        <div class="col-5 p-0">
+                        <div class="col-12 col-xl-5 p-0">
                             <div class="map-text">
                                 <div>
                                     <h2>Nasza lokalizacja, <br>bliskość morza i spokoju.</h2>
                                     <p>Nasze noclegi stwarzają możliwość spokojnego wypoczynku połączonego z aktywnościami na świeżym powietrzu. W pobliżu ośrodka Xanadu znajdą Państwo promenadę dla pieszych i rowerzystów, która łączy łączący Sianożęty z Ustroniem Morskim oraz Sianożęty z Kołobrzegiem.</p>
-                                    <a href="https://maps.app.goo.gl/jaWf75Q1rqin9oKv9" class="btn btn-theme btn-icon mt-5" target="_blank">WYZNACZ TRASĘ <i class="las la-arrow-right"></i></a>
+                                    <a href="https://maps.app.goo.gl/jaWf75Q1rqin9oKv9" class="btn btn-theme btn-icon mt-3 mt-xl-5" target="_blank">WYZNACZ TRASĘ <i class="las la-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -140,11 +140,11 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-6 d-none d-lg-block">
                     <img src="{{ asset('images/kontakt-osrodek.jpg') }}" alt="">
                 </div>
-                <div class="col-6 d-flex align-items-center">
-                    <div class="ps-5">
+                <div class="col-12 col-lg-6 d-flex align-items-center text-center text-lg-left justify-content-center justify-content-lg-start">
+                    <div class="ps-0 ps-lg-5 mt-4 mb-4 mb-lg-0 mt-lg-0">
                         <p>Przelew krajowy:</p>
                         <p>F.H.U "Fiszerija" s.c,</p>
                         <p>Ul. Bolesława Chrobrego 4A,</p>

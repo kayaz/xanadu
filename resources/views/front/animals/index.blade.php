@@ -28,7 +28,7 @@
     <section>
         <div class="container-fluid p-0">
             <div class="row g-0">
-                <div class="col-7">
+                <div class="col-12 col-lg-7">
                     <div class="section-img pe-0 pe-xxl-5">
                         <picture>
                             <source type="image/webp" srcset="{{ asset('/uploads/zwierzeta-na-plazy.webp') }}">
@@ -37,7 +37,7 @@
                         </picture>
                     </div>
                 </div>
-                <div class="col-5 d-flex align-items-center">
+                <div class="col-12 col-lg-5 d-flex align-items-center">
                     <div class="section-box text-left">
                         <h2 class="section-title">Czy na plażę w Sianożętach <br><span class="text-blue">wolno wchodzić z psem?</span></h2>
                         <p>Pies na plaży w Sianożętach jest zawsze mile widziany, pod warunkiem, że nie stanowi zagrożenia dla innych użytkowników plaży. Właściciel rzecz jasna musi posprzątać po swoim pupilu, jeżeli zajdzie taka potrzeba. W Sianożętach właściciele czworonogów z pewnością poczują się jak w domu i nie odczują dyskomfortu z tak błahego powodu, jakim jest przyjazd z psem na wakacje.</p>

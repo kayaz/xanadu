@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-12">
                 <img src="{{ asset('/images/svg/section-title-icon.svg') }}" alt="{{ $page->title }}">
-                <h1 class="mt-4">{{ $page->title }}</h1>
+                <h1 class="mt-3 mt-lg-4">{{ $page->title }}</h1>
             </div>
         </div>
     </div>

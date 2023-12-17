@@ -28,27 +28,27 @@
                     <p>Przy basenie znajduje się także jacuzzi wyposażone w 24 dysze do hydromasażu, również z podgrzewaną wodą. Spędzanie czasu w jacuzzi stanowi doskonałą formę relaksu.</p>
                 </div>
             </div>
-            <div class="row mt-5 pt-3">
-                <div class="col-12 d-flex justify-content-center">
-                    <div class="icon-box icon-box-blue">
+            <div class="row mt-3 mt-lg-5 pt-3">
+                <div class="col-12 d-flex justify-content-center icon-box-row mb-3 mb-lg-0">
+                    <div class="icon-box-4 icon-box icon-box-blue">
                         <div>
                             <img src="{{ asset('/images/icons/icon-pool.png') }}" alt="" width="70" height="70">
                             <h3>Basen rekreacyjny</h3>
                         </div>
                     </div>
-                    <div class="icon-box icon-box-blue">
+                    <div class="icon-box-4 icon-box icon-box-blue">
                         <div>
                             <img src="{{ asset('/images/icons/icon-kidspool.png') }}" alt="" width="70" height="70">
                             <h3>Brodzik dla dzieci</h3>
                         </div>
                     </div>
-                    <div class="icon-box icon-box-blue">
+                    <div class="icon-box-4 icon-box icon-box-blue">
                         <div>
                             <img src="{{ asset('/images/icons/icon-jacuzzi.png') }}" alt="" width="70" height="70">
                             <h3>Jacuzzi</h3>
                         </div>
                     </div>
-                    <div class="icon-box icon-box-blue">
+                    <div class="icon-box-4 icon-box icon-box-blue">
                         <div>
                             <img src="{{ asset('/images/icons/icon-sauna.png') }}" alt="" width="70" height="70">
                             <h3>Sauna fińska</h3>
@@ -59,7 +59,9 @@
         </div>
     </section>
 
-    <img src="/images/basen.jpg" alt="" class="w-100">
+    <div class="rwd-section">
+        <img src="/images/basen.jpg" alt="" class="w-100">
+    </div>
 
     <section class="page-text">
         <div class="container">
@@ -81,7 +83,11 @@
             </div>
         </div>
     </section>
-    <img src="/images/sauna.jpg" alt="" class="w-100">
+
+    <div class="rwd-section">
+        <img src="/images/sauna.jpg" alt="" class="w-100">
+    </div>
+
 @endsection
 @push('scripts')
 

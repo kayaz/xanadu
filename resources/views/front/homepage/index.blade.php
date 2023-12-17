@@ -48,8 +48,8 @@
             </div>
         </div>
 
-        <div class="row mt-5 pt-3">
-            <div class="col-12 d-flex justify-content-center">
+        <div class="row mt-3 mt-lg-5 pt-3">
+            <div class="col-12 d-flex justify-content-center icon-box-row">
                 <div class="icon-box icon-box-blue">
                     <div>
                         <img src="{{ asset('/images/icons/icon-location.png') }}" alt="" width="70" height="70">
@@ -88,7 +88,7 @@
 <section>
     <div class="container-fluid p-0">
         <div class="row g-0">
-            <div class="col-7">
+            <div class="col-12 col-lg-7">
                 <div class="sliderWrapper m-0">
                     <ul class="rslides">
                         <li><img src="{{ asset('section/domki_1.jpg') }}" alt="" width="1120" height="780"></li>
@@ -96,7 +96,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-5 d-flex align-items-center">
+            <div class="col-12 col-lg-5 d-flex align-items-center">
                 <div class="section-box text-left">
                     <h2 class="section-title"><span class="text-blue">Luksusowy domek</span> letniskowy blisko morza to znakomity pomysł na nocleg!</h2>
                     <p>Planowanie długiego urlopu z całą rodziną lub przyjaciółmi należy zacząć od wyboru idealnego kompleksu noclegowego. A nie ma nic lepszego niż przestronny domek letniskowy, w którym znajdzie się miejsce aż dla 6 osób.</p>
@@ -110,9 +110,9 @@
 </section>
 
 <section>
-    <div class="container-fluid">
+    <div class="container-fluid p-0">
         <div class="row g-0 flex-row-reverse">
-            <div class="col-7">
+            <div class="col-12 col-lg-7">
                 <div class="sliderWrapper m-0">
                     <ul class="rslides">
                         <li><img src="{{ asset('section/pokoje_1.jpg') }}" alt="" width="1120" height="780"></li>
@@ -120,7 +120,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-5 d-flex align-items-center">
+            <div class="col-12 col-lg-5 d-flex align-items-center">
                 <div class="section-box text-left">
                     <h2 class="section-title"><span class="text-blue">Zaplanuj urlop</span> nad morzem w naszych pokojach.</h2>
                     <p>Wiemy, jak ważne jest, aby wczasy nad morzem okazały się udaną inwestycją. Pokój noclegowy powinien spełniać podstawową funkcję, ale jednocześnie odpowiadać wygórowanym oczekiwaniom Gości.</p>
@@ -136,7 +136,7 @@
 <section class="cta-section">
     <div class="container">
         <div class="row justify-content-end">
-            <div class="col-5 col-xxl-4 text-left">
+            <div class="col-12 col-lg-5 col-xxl-4 text-left">
                 <h2 class="section-title">Rozpocznij dzień od pysznego śniadania!</h2>
                 <p>Nasza oferta śniadaniowa to doskonały sposób na rozpoczęcie dnia w pełni energii. Wybierz spośród różnorodnych świeżych produktów i ciesz się smakiem, który pobudzi Twoje zmysły. Niech każde śniadanie będzie wyjątkowym momentem. Dołącz do nas i odkryj magię poranka!</p>
                 <a href="{{ route('breakfast') }}" class="btn btn-theme btn-icon mt-4 mt-xxl-5">CZYTAJ WIĘCEJ <i class="las la-arrow-right"></i></a>
@@ -148,14 +148,14 @@
 <section>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-3 p-0">
-                <div class="section-box text-left pe-5 ps-5">
+            <div class="col-12 col-lg-3 p-0">
+                <div class="section-box text-left pe-5 ps-5 section-att-text">
                     <h2 class="section-title"><span class="text-blue">Atrakcje</span> w okolicy</h2>
                     <p>W sąsiadującym Ustroniu Morskim znajduje się "Wesołe Miasteczko", mini ZOO, galeria, biblioteka, kino, boiska i korty tenisowe. W samym Ustroniu Morskim w okresie letnim odbywa się wiele imprez cyklicznych.</p>
                     <a href="{{ route('front.menu', ['language' => 'pl', 'uri' => 'atrakcje-regionalne']) }}" class="btn btn-theme btn-icon mt-4 mt-xxl-5">CZYTAJ WIĘCEJ <i class="las la-arrow-right"></i></a>
                 </div>
             </div>
-            <div class="col-9 p-0">
+            <div class="col-12 col-lg-9 p-0">
                 <ul class="mb-0 list-unstyled attraction-carousel">
                     @foreach($attractions as $a)
                     <li>
@@ -181,10 +181,10 @@
     <div id="homepage-map">
         <div class="container-fluid p-0">
             <div class="row m-0">
-                <div class="col-7 p-0">
+                <div class="col-12 col-lg-7 p-0">
                     <img src="{{ asset('/images/mapa.png') }}" alt="Mapa lokalizacji" width="1178" height="738">
                 </div>
-                <div class="col-5 p-0">
+                <div class="col-12 col-lg-5 p-0">
                     <div class="map-text text-left">
                         <div>
                             <h2>Nasza lokalizacja, <br>bliskość morza i spokoju.</h2>
@@ -218,6 +218,15 @@
                         breakpoint: 1930,
                         settings: {
                             slidesToShow: 4,
+                            slidesToScroll: 1,
+                            infinite: true,
+
+                        }
+                    },
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 3,
                             slidesToScroll: 1,
                             infinite: true,
 
