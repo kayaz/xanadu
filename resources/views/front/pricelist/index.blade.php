@@ -20,8 +20,13 @@
                     <p>&nbsp;</p>
                     <h2 class="section-title section-title-border mb-4">Terminy i ceny na rok 2023</h2>
                     <p><b>Poniższe ceny obejmują tylko kwotę zakwaterowania. Oferujemy korzystne pakiety ze śniadaniem i obiadokolacją. Rezerwując pobyt zapytaj o opcję z wyżywieniem!</b></p>
-                    <div class="majowka mt-5"><img src="{{ asset('/images/grill.png') }}" width="42" height="42" alt="Ikonka grilla"> {{ $pricelist->rooms_may }} <img src="{{ asset('/images/grill.png') }}" width="42" height="42" alt="Ikonka grilla"></div>
-                    <table class="cennik d-none d-lg-block" border="0">
+
+                    <img src="/section/pokoje-nad-morzem.jpg" alt="Pokoje nad morzem" class="mt-5 d-block d-lg-none" />
+
+                    <div class="majowka mt-0 mt-lg-5 mb-3 mb-lg-0">
+                        <img src="{{ asset('/images/grill.png') }}" width="42" height="42" alt="Ikonka grilla"> {{ $pricelist->rooms_may }} <img src="{{ asset('/images/grill.png') }}" width="42" height="42" alt="Ikonka grilla">
+                    </div>
+                    <table class="cennik d-none d-lg-table" border="0">
                         <thead>
                         <tr>
                             <td>Pok&oacute;j do 3 os&oacute;b *</td>
@@ -49,13 +54,6 @@
                     </table>
                     <ul class="list-unstyled mb-0 cenniklist d-block d-lg-none">
                         <li>
-                            <div class="sliderWrapper mt-0">
-                                <ul class="list-unstyled mb-0 rslides">
-                                    <li><img src="/section/pokoje-nad-morzem.jpg" alt="Dom 6 osobowy" /></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
                             <h2 class="section-title">Pok&oacute;j do 3 os&oacute;b *</h2>
                         </li>
                         {!! formatDatesAndPrices($pricelist->rooms_prices) !!}
@@ -63,10 +61,14 @@
                             <a href="{{ route('reservation') }}?form_room_type=1" class="btn btn-theme btn-icon w-100">REZERWACJA <i class="las la-concierge-bell"></i></a>
                         </li>
                     </ul>
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-                    <div class="majowka"><img src="{{ asset('/images/grill.png') }}" width="42" height="42" alt="Ikonka grilla"> {{ $pricelist->houses_may }} <img src="{{ asset('/images/grill.png') }}" width="42" height="42" alt="Ikonka grilla"></div>
-                    <table class="cennik d-none d-lg-block" border="0">
+
+                    <img src="/section/domki-nad-morzem.jpg" alt="Dom 6 osobowy" class="mt-5 d-block d-lg-none" />
+
+                    <div class="majowka mt-0 mt-lg-5 mb-3 mb-lg-0">
+                        <img src="{{ asset('/images/grill.png') }}" width="42" height="42" alt="Ikonka grilla"> {{ $pricelist->houses_may }} <img src="{{ asset('/images/grill.png') }}" width="42" height="42" alt="Ikonka grilla">
+                    </div>
+
+                    <table class="cennik d-none d-lg-table" border="0">
                         <thead>
                         <tr>
                             <td>Dom 6 osobowy</td>
@@ -93,13 +95,6 @@
                         </tbody>
                     </table>
                     <ul class="list-unstyled mb-0 cenniklist d-block d-lg-none">
-                        <li>
-                            <div class="sliderWrapper mt-0">
-                                <ul class="list-unstyled mb-0 rslides">
-                                    <li><img src="/section/pokoje-nad-morzem.jpg" alt="Dom 6 osobowy" /></li>
-                                </ul>
-                            </div>
-                        </li>
                         <li>
                             <h2 class="section-title">Dom 6 osobowy</h2>
                         </li>
