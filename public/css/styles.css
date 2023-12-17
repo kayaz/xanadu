@@ -2398,6 +2398,9 @@ footer .copyrights {
     font-size: 17px;
     padding: 9px 10px;
   }
+  .attraction-item:hover .attraction-item-desc {
+    top: 120px;
+  }
 }
 /* end of 1199.98 */
 @media (max-width: 991.98px) {
@@ -2533,6 +2536,9 @@ footer .copyrights {
   section .section-box {
     padding: 30px 0 0;
   }
+  .attraction-item:hover .attraction-item-desc {
+    top: 0;
+  }
 }
 /* end of 991.98 */
 @media (max-width: 767.98px) {
@@ -2567,6 +2573,16 @@ footer .copyrights {
   .majowka {
     font-size: 13px;
     text-align: center;
+  }
+  .modal-body h2 {
+    font-size: 23px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+  .modal-body p {
+    font-size: 14px;
+    line-height: 23px;
+    margin-top: 20px;
   }
 }
 /* end of 767.98 */

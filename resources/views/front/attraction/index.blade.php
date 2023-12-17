@@ -31,9 +31,9 @@
         <div class="container">
             <div class="row justify-content-center">
                 @foreach($attractions as $a)
-                    <div class="col-4">
+                    <div class="col-12 col-sm-6 col-lg-4">
                         <div class="attraction-item">
-                            <img src="{{ asset('/uploads/attractions/'.$a->file) }}" alt="{{ $a->name }}">
+                            <a href="#" data-id="{{ $a->id }}"><img src="{{ asset('/uploads/attractions/'.$a->file) }}" alt="{{ $a->name }}"></a>
                             <h3>{{ $a->name }}</h3>
                             <div class="attraction-item-desc">
                                 <div class="attraction-item-short">
@@ -62,7 +62,7 @@
 @push('scripts')
 <script>
     $(document).ready(function() {
-        $('.btn-theme').click(function(event) {
+        $('.attraction-item a').click(function(event) {
             event.preventDefault();
             const attractionId = $(this).data('id');
             const modal = new bootstrap.Modal(document.getElementById('attractionModal'));
