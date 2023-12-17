@@ -112,7 +112,7 @@
                         <p>Bank Spółdzielczy Gryfice</p>
                         <p>Nr konta: 27 9376 0001 2006 00162463 0002</p>
                         <p><b>W tytule przelewu proszę podać: Imię i nazwisko</b></p>
-                        <div class="hr mt-5 mb-5"><img src="https://xanaduhotel.test/images/svg/section-title-icon.svg" alt=""></div>
+                        <div class="hr mt-5 mb-5"><img src="{{ asset('/images/svg/section-title-icon.svg') }}" alt=""></div>
                     </div>
                     <p style="text-align: center;"><strong>UWAGA!!!</strong><br /><strong>Jeżeli prowadzisz działalność gospodarczą i chcesz otrzymać fakturę za dokonane zakupy <br>lub świadczone usługi, <span style="text-decoration: underline;">poinformuj o tym przed dokonaniem transakcji</span> i podaj numer NIP. <br></strong><strong>Od 1 stycznia 2020 roku nie wystawiamy faktur do paragonu bez numeru NIP <br>dla firm i os&oacute;b prowadzących działalność gospodarczą.</strong></p>
                     <p>&nbsp;</p>
