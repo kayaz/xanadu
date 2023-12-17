@@ -97,7 +97,7 @@
                 </div>
             </div>
             <div class="col-12 col-lg-5 d-flex align-items-center">
-                <div class="section-box text-left">
+                <div class="section-box text-left section-box-rwd">
                     <h2 class="section-title"><span class="text-blue">Luksusowy domek</span> letniskowy blisko morza to znakomity pomysł na nocleg!</h2>
                     <p>Planowanie długiego urlopu z całą rodziną lub przyjaciółmi należy zacząć od wyboru idealnego kompleksu noclegowego. A nie ma nic lepszego niż przestronny domek letniskowy, w którym znajdzie się miejsce aż dla 6 osób.</p>
                     <p>&nbsp;</p>
@@ -121,7 +121,7 @@
                 </div>
             </div>
             <div class="col-12 col-lg-5 d-flex align-items-center">
-                <div class="section-box text-left">
+                <div class="section-box text-left section-box-rwd">
                     <h2 class="section-title"><span class="text-blue">Zaplanuj urlop</span> nad morzem w naszych pokojach.</h2>
                     <p>Wiemy, jak ważne jest, aby wczasy nad morzem okazały się udaną inwestycją. Pokój noclegowy powinien spełniać podstawową funkcję, ale jednocześnie odpowiadać wygórowanym oczekiwaniom Gości.</p>
                     <p>&nbsp;</p>
@@ -148,7 +148,7 @@
 <section>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 col-lg-3 p-0">
+            <div class="col-12 col-lg-3 p-0 mt-4 mt-lg-0">
                 <div class="section-box text-left pe-5 ps-5 section-att-text">
                     <h2 class="section-title"><span class="text-blue">Atrakcje</span> w okolicy</h2>
                     <p>W sąsiadującym Ustroniu Morskim znajduje się "Wesołe Miasteczko", mini ZOO, galeria, biblioteka, kino, boiska i korty tenisowe. W samym Ustroniu Morskim w okresie letnim odbywa się wiele imprez cyklicznych.</p>
@@ -227,6 +227,24 @@
                         breakpoint: 992,
                         settings: {
                             slidesToShow: 3,
+                            slidesToScroll: 1,
+                            infinite: true,
+
+                        }
+                    },
+                    {
+                        breakpoint: 910,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            infinite: true,
+
+                        }
+                    },
+                    {
+                        breakpoint: 420,
+                        settings: {
+                            slidesToShow: 1,
                             slidesToScroll: 1,
                             infinite: true,
 

@@ -2519,6 +2519,7 @@ footer .copyrights {
   .offer-mix-nav {
     margin-top: 30px;
   }
+  section.cta-section,
   section.cta-section.pokoje-bg,
   section.cta-section.domek-bg {
     padding: 40px 0;
@@ -2535,6 +2536,9 @@ footer .copyrights {
   }
   section .section-box {
     padding: 30px 0 0;
+  }
+  section .section-box.section-box-rwd {
+    padding: 30px 30px 0;
   }
   .attraction-item:hover .attraction-item-desc {
     top: 0;
@@ -2584,8 +2588,25 @@ footer .copyrights {
     line-height: 23px;
     margin-top: 20px;
   }
+  section.cta-section {
+    background: #222 url(../images/restaurant-mobile-bg.jpg) no-repeat fixed center;
+    background-size: 100% auto;
+  }
+  section.cta-section.pokoje-bg {
+    background: #222 url(../images/pokoje-mobile-bg.jpg) no-repeat fixed center;
+    background-size: 100% auto;
+  }
+  section.cta-section.domek-bg {
+    background: #222 url(../images/domek-mobile-bg.jpg) no-repeat fixed center;
+    background-size: 100% auto;
+  }
 }
 /* end of 767.98 */
+@media (max-width: 640px) {
+  .attraction-carousel .attraction-text {
+    display: none;
+  }
+}
 @media (max-width: 575.98px) {
   .h2,
   h2 {
@@ -2628,6 +2649,7 @@ footer .copyrights {
     left: 10px;
     font-size: 14px;
   }
+  section.cta-section,
   section.cta-section.domek-bg,
   section.cta-section.pokoje-bg {
     padding: 30px 15px;
