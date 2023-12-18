@@ -58,7 +58,7 @@
                         </li>
                         {!! formatDatesAndPrices($pricelist->rooms_prices) !!}
                         <li>
-                            <a href="{{ route('reservation') }}?form_room_type=1" class="btn btn-theme btn-icon w-100">REZERWACJA <i class="las la-concierge-bell"></i></a>
+                            <a href="{{ route('reservation') }}?form_room_type=1" class="btn btn-theme btn-icon w-100 btn-blue">REZERWACJA <i class="las la-concierge-bell"></i></a>
                         </li>
                     </ul>
 
@@ -100,7 +100,7 @@
                         </li>
                         {!! formatDatesAndPrices($pricelist->houses_prices) !!}
                         <li>
-                            <a href="{{ route('reservation') }}?form_room_type=2" class="btn btn-theme btn-icon w-100">REZERWACJA <i class="las la-concierge-bell"></i></a>
+                            <a href="{{ route('reservation') }}?form_room_type=2" class="btn btn-theme btn-icon w-100 btn-blue">REZERWACJA <i class="las la-concierge-bell"></i></a>
                         </li>
                     </ul>
                     <div class="text-center">

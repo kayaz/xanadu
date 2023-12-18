@@ -35,6 +35,21 @@
     </div>
 </div>
 
+<div id="mobile-home" class="d-flex d-lg-none">
+    <a class="mobile-btn" href="https://maps.app.goo.gl/jaWf75Q1rqin9oKv9" target="_blank">
+        <i class="las la-map-marker-alt"></i>
+        LOKALIZACJA
+    </a>
+    <a class="mobile-btn" href="tel:+48502058200">
+        <i class="las la-phone"></i>
+        ZADZWOŃ
+    </a>
+    <a class="mobile-btn" href="{{ route('reservation') }}">
+        <i class="las la-concierge-bell"></i>
+        REZERWACJA
+    </a>
+</div>
+
 <section>
     <div class="container">
         <div class="row">

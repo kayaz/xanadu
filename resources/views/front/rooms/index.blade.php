@@ -92,7 +92,7 @@
                                     <a href="{{ asset('/uploads/gallery/images/203121_dsc-0359.jpeg') }}" class="btn btn-theme btn-icon mb-4 swipebox" rel="gallery-1" title="Pokój 2-osobowy">GALERIA <i class="las la-file-alt"></i></a>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-">
+                            <div class="col-12 col-md-6">
                                 <div class="nocleg text-center">
                                     <img src="/uploads/nocleg_pokoje.jpg" alt="Pokoje nad morzem do wynajęcia" />
                                     <h2>Pokój 3-osobowy</h2>
@@ -110,7 +110,7 @@
                                 <h2 class="section-title text-center"><span class="text-blue">Galeria</span></h2>
                             </div>
                             <div class="col-12">
-                                @include('front.parse.slider', $list)
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/hlfIoCWMu6k?si=OykIob814tiYFb8X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>

@@ -76,7 +76,15 @@ iframe {
 
 /* Youtube
 ================================================== */
-.video-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; margin: 35px 0;background: #f5f8fd url("../images/loader.gif") no-repeat center}
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  margin: 0;
+  background: #f5f8fd url("../images/loader.gif") no-repeat center
+}
 .video-container iframe,
 .video-container object,
 .video-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
@@ -205,6 +213,17 @@ iframe {
     i {
       margin-left: 30px;
       color: #e77918;
+    }
+  }
+  &.btn-blue {
+    background: #1b5582;
+    color: white;
+    padding: 12px 0;
+    font-size: 20px;
+    &.btn-icon i {
+      margin-left: 30px;
+      color: #ff9c00;
+      font-size: 32px;
     }
   }
 }
