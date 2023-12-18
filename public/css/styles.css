@@ -1463,14 +1463,14 @@ html.swipebox-html.swipebox-touch {
   width: 100%;
 }
 #swipebox-bottom-bar {
-  top: 50%;
+  bottom: 0;
 }
 #swipebox-bottom-bar.visible-bars {
   -webkit-transform: translate3d(0, -50px, 0);
   transform: translate3d(0, -50px, 0);
 }
 #swipebox-top-bar {
-  top: -50px;
+  bottom: 50px;
 }
 #swipebox-top-bar.visible-bars {
   -webkit-transform: translate3d(0, 50px, 0);
@@ -1481,8 +1481,8 @@ html.swipebox-html.swipebox-touch {
   width: 100%;
   text-align: center;
   font-family: 'Merriweather', serif;
-  font-size: 40px;
-  margin-top: 40px;
+  font-size: 20px;
+  margin-top: 6px;
 }
 #swipebox-close {
   border: none!important;
@@ -2592,6 +2592,10 @@ footer .copyrights {
   .cenniklist li strong {
     float: right;
   }
+  #swipebox-close {
+    top: 55px;
+    right: 10px !important;
+  }
 }
 /* end of 991.98 */
 @media (max-width: 767.98px) {
@@ -2638,16 +2642,16 @@ footer .copyrights {
     margin-top: 20px;
   }
   section.cta-section {
-    background: #222 url(../images/restaurant-mobile-bg.jpg) no-repeat fixed center;
-    background-size: 100% auto;
+    background: #222 url(../images/restaurant-mobile-bg.jpg) no-repeat local center;
+    background-size: 100%;
   }
   section.cta-section.pokoje-bg {
-    background: #222 url(../images/pokoje-mobile-bg.jpg) no-repeat fixed center;
-    background-size: 100% auto;
+    background: #222 url(../images/pokoje-mobile-bg.jpg) no-repeat local center;
+    background-size: 100%;
   }
   section.cta-section.domek-bg {
-    background: #222 url(../images/domek-mobile-bg.jpg) no-repeat fixed center;
-    background-size: 100% auto;
+    background: #222 url(../images/domek-mobile-bg.jpg) no-repeat local center;
+    background-size: 100%;
   }
 }
 /* end of 767.98 */
