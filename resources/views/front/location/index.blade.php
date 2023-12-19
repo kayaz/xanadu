@@ -72,25 +72,27 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="container-fluid container-sm">
             <div class="row justify-content-center text-center mt-5">
                 <div class="col-12 mb-4">
                     <h3>Dworzec PKP/PKS</h3>
                 </div>
-                <div class="col-3 col-lg-2">
+                <div class="col-4 col-sm-3 col-lg-2">
                     <div class="transport">
                         <i class="las la-bus"></i>
                         <span>3 km</span>
                         <p>Ustronie Morskie</p>
                     </div>
                 </div>
-                <div class="col-3 col-lg-2">
+                <div class="col-4 col-sm-3 col-lg-2">
                     <div class="transport">
                         <i class="las la-bus"></i>
                         <span>13 km</span>
                         <p>Kołobrzeg</p>
                     </div>
                 </div>
-                <div class="col-3 col-lg-2">
+                <div class="col-4 col-sm-3 col-lg-2">
                     <div class="transport">
                         <i class="las la-bus"></i>
                         <span>34 km</span>

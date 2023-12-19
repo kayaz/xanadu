@@ -166,6 +166,12 @@
                                         <p>Na terenie całego obiektu dostęp do <b>bezpłatnej sieci Wi-Fi</b>. <br><b>Akceptujemy pobyty ze zwierzętami</b>. Opcja dodatkowo płatna.</p>
                                     </div>
                                     <div class="modal-footer">
+                                        @foreach($houses as $index => $hi)
+                                            @if($index === 0)
+                                                <a href="/uploads/gallery/images/{{$hi->file}}" class="btn btn-theme swipebox" rel="gallery-{{$hi->gallery_id}}" title="Domki nad morzem">GALERIA</a>
+                                                @break
+                                            @endif
+                                        @endforeach
                                         <button class="btn btn-theme" data-bs-target="#priceModal" data-bs-toggle="modal">ZOBACZ CENNIK</button>
                                     </div>
 
@@ -195,6 +201,12 @@
                                         </table>
                                     </div>
                                     <div class="modal-footer">
+                                        @foreach($houses as $index => $hi)
+                                            @if($index === 0)
+                                                <a href="/uploads/gallery/images/{{$hi->file}}" class="btn btn-theme swipebox" rel="gallery-{{$hi->gallery_id}}" title="Domki nad morzem">GALERIA</a>
+                                                @break
+                                            @endif
+                                        @endforeach
                                         <button class="btn btn-theme" data-bs-target="#equipmentModal" data-bs-toggle="modal">ZOBACZ WYPOSAŻENIE</button>
                                     </div>
 

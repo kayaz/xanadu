@@ -250,6 +250,9 @@
   .location-cta {
     padding: 60px 0;
   }
+  #distance .distance .dist-mark p {
+    width: 100px;
+  }
 }
 /* end of 1399.98 */
 
@@ -541,6 +544,67 @@
     top: 55px;
     right: 10px !important
   }
+
+  #distance {
+    height: auto;
+    padding-bottom: 0;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 80px;
+    width: 270px;
+    margin: auto;
+    i {
+      font-size: 82px;
+      position: absolute;
+      bottom: auto;
+      left: -40px;
+      right: auto;
+      margin: auto;
+      top: 0;
+      text-align: center;
+      background: #e8f3fb;
+      z-index: 10;
+    }
+    &:after {
+      width: 2px;
+      left: 0;
+      right: auto;
+      top: 0;
+      bottom: 0;
+      height: 100%;
+    }
+    .distance.dist-top {
+      position: static;
+      width: 100%;
+      margin: 15px 0;
+    }
+    .distance {
+      .dist-mark {
+        height: auto !important;
+        width: 100% !important;
+        padding-left: 20px;
+        &:after {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 22px;
+          height: 2px;
+          right: auto;
+        }
+        p {
+          width: auto;
+          height: 60px;
+        }
+      }
+      span {
+        height: 60px;
+        font-size: 18px;
+        width: 60px;
+      }
+    }
+  }
 }
 /* end of 991.98 */
 
@@ -695,6 +759,15 @@
       height: 100%;
       width: auto !important;
       max-width: none !important;
+    }
+  }
+  .h3, h3 {
+    font-size: 25px;
+  }
+  .transport {
+    p {
+      font-size: 12px;
+      line-height: 14px;
     }
   }
 }
