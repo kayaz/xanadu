@@ -74,7 +74,7 @@
                         @endforeach
                         @foreach($restaurant as $ri)
                             <div class="col-4 mix category-{{$ri->gallery_id}}">
-                                <a href="/uploads/gallery/images/{{$ri->file}}" class="swipebox" rel="gallery-1" title="Pokój 3-osobowy">
+                                <a href="/uploads/gallery/images/{{$ri->file}}" class="swipebox" rel="gallery-1" title="Restauracja">
                                     <picture>
                                         <source type="image/webp" srcset="{{asset('uploads/gallery/images/thumbs/webp/'.$ri->file_webp) }}">
                                         <source type="image/jpeg" srcset="{{asset('uploads/gallery/images/thumbs/'.$ri->file) }}">
