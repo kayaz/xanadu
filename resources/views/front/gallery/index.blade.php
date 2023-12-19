@@ -48,6 +48,18 @@
                         <div class="col-4 mix category-1"><img src="https://placehold.co/600x400/orange/white" alt=""></div>
                         <div class="col-4 mix category-2"><img src="https://placehold.co/600x400/blue/white" alt=""></div>
                         <div class="col-4 mix category-1"><img src="https://placehold.co/600x400/orange/white" alt=""></div>
+
+                        @foreach($pool as $pi)
+                            <div class="col-4 mix category-{{$pi->gallery_id}}">
+                                <a href="/uploads/gallery/images/{{$pi->file}}" class="swipebox" rel="gallery-1" title="Basen">
+                                    <picture>
+                                        <source type="image/webp" srcset="{{asset('uploads/gallery/images/thumbs/webp/'.$pi->file_webp) }}">
+                                        <source type="image/jpeg" srcset="{{asset('uploads/gallery/images/thumbs/'.$pi->file) }}">
+                                        <img src="{{asset('uploads/gallery/images/thumbs/'.$pi->file) }}" alt="{{ $pi->name }}">
+                                    </picture>
+                                </a>
+                            </div>
+                        @endforeach
                     </div>
                 </div>
             </div>

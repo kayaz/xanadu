@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Front;
 
 use App\Http\Controllers\Controller;
 use App\Models\Gallery;
+use App\Models\Image;
 use App\Models\Page;
 
 class GalleryController extends Controller
@@ -13,7 +14,9 @@ class GalleryController extends Controller
         $page = Page::find(9);
         $galeries = Gallery::orderBy('sort', 'ASC')->get();
 
-        return view('front.gallery.index', compact('page', 'galeries'));
+        $pool = Image::where('gallery_id', 6)->get();
+
+        return view('front.gallery.index', compact('page', 'galeries', 'pool'));
     }
 
     public function show()
