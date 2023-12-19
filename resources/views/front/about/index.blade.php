@@ -71,16 +71,16 @@
             <div class="row">
                 <div class="col-12 col-md-6">
                     <div class="offer text-center">
-                        <a href=""><img src="{{ asset('section/domki-nad-morzem.jpg') }}" alt="Domki nad morzem 6-osobowe" width="750" height="520"></a>
-                        <h2 class="m-0 mt-4"><a href=""><span class="text-blue">Domki nad morzem</span> <br>6-osobowe</a></h2>
-                        <a href="{{ route('front.menu', ['language' => 'pl', 'uri' => 'domki']) }}" class="btn btn-theme btn-icon mt-4">PEŁNA OFERTA <i class="las la-arrow-right"></i></a>
+                        <a href="{{ route('houses') }}"><img src="{{ asset('section/domki-nad-morzem.jpg') }}" alt="Domki nad morzem 6-osobowe" width="750" height="520"></a>
+                        <h2 class="m-0 mt-4"><a href="{{ route('houses') }}"><span class="text-blue">Domki nad morzem</span> <br>6-osobowe</a></h2>
+                        <a href="{{ route('houses') }}" class="btn btn-theme btn-icon mt-4">PEŁNA OFERTA <i class="las la-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 mt-5 mt-md-0">
                     <div class="offer text-center">
-                        <a href=""><img src="{{ asset('section/pokoje-nad-morzem.jpg') }}" alt="Pokoje nad morzem 2 i 3 - osobowe" width="750" height="520"></a>
-                        <h2 class="m-0 mt-4"><a href=""><span class="text-blue">Pokoje nad morzem</span> <br>2 i 3 - osobowe</a></h2>
-                        <a href="{{ route('front.menu', ['language' => 'pl', 'uri' => 'pokoje']) }}" class="btn btn-theme btn-icon mt-4">PEŁNA OFERTA <i class="las la-arrow-right"></i></a>
+                        <a href="{{ route('rooms') }}"><img src="{{ asset('section/pokoje-nad-morzem.jpg') }}" alt="Pokoje nad morzem 2 i 3 - osobowe" width="750" height="520"></a>
+                        <h2 class="m-0 mt-4"><a href="{{ route('rooms') }}"><span class="text-blue">Pokoje nad morzem</span> <br>2 i 3 - osobowe</a></h2>
+                        <a href="{{ route('rooms') }}" class="btn btn-theme btn-icon mt-4">PEŁNA OFERTA <i class="las la-arrow-right"></i></a>
                     </div>
                 </div>
             </div>

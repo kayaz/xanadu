@@ -48,7 +48,7 @@
                         <div class="col-6 col-xl-4">
                             <div class="mb-3 mb-sm-4 mb-xl-5">
                                 <label for="dataStart" class="form-label">Data przyjazdu <span>*</span></label>
-                                <input type="text" class="form-control datepicker @error('form_data_start') is-invalid @enderror" id="dataStart" name="form_data_start" value="{{ request('form_data_start') }}">
+                                <input type="text" class="form-control datepicker @error('form_data_start') is-invalid @enderror" id="dataStart" name="form_data_start" value="{{ request('form_data_start') }}" autocomplete="off">
 
                                 @error('form_data_start')
                                 <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
@@ -58,7 +58,7 @@
                         <div class="col-6 col-xl-4">
                             <div class="mb-3 mb-sm-4 mb-xl-5">
                                 <label for="dataEnd" class="form-label">Data wyjazdu <span>*</span></label>
-                                <input type="text" class="form-control datepicker @error('form_data_end') is-invalid @enderror" id="dataEnd" name="form_data_end" value="{{ request('form_data_end') }}">
+                                <input type="text" class="form-control datepicker @error('form_data_end') is-invalid @enderror" id="dataEnd" name="form_data_end" value="{{ request('form_data_end') }}" autocomplete="off">
 
                                 @error('form_data_end')
                                 <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
@@ -136,7 +136,7 @@
                         <div class="col-12 col-sm-6 col-md-4">
                             <div class="mb-3 mb-sm-4 mb-xl-5">
                                 <label for="formName" class="form-label" >Imię <span>*</span></label>
-                                <input type="text" class="form-control @error('form_name') is-invalid @enderror" id="formName" name="form_name" value="{{ old('form_name') }}">
+                                <input type="text" class="form-control @error('form_name') is-invalid @enderror" id="formName" name="form_name" value="{{ old('form_name') }}" autocomplete="off">
 
                                 @error('form_name')
                                 <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
@@ -146,7 +146,7 @@
                         <div class="col-12 col-sm-6 col-md-4">
                             <div class="mb-3 mb-sm-4 mb-xl-5">
                                 <label for="formEmail" class="form-label">E-mail <span>*</span></label>
-                                <input type="email" class="form-control @error('form_email') is-invalid @enderror" id="formEmail" name="form_email" value="{{ old('form_email') }}">
+                                <input type="email" class="form-control @error('form_email') is-invalid @enderror" id="formEmail" name="form_email" value="{{ old('form_email') }}" autocomplete="off">
 
                                 @error('form_email')
                                 <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
@@ -156,7 +156,7 @@
                         <div class="col-12 col-md-4">
                             <div class="mb-3 mb-sm-4 mb-xl-5">
                                 <label for="formPhone" class="form-label">Telefon <span>*</span></label>
-                                <input type="tel" class="form-control @error('form_phone') is-invalid @enderror" id="formPhone" name="form_phone" value="{{ old('form_phone') }}">
+                                <input type="tel" class="form-control @error('form_phone') is-invalid @enderror" id="formPhone" name="form_phone" value="{{ old('form_phone') }}" autocomplete="off">
 
                                 @error('form_phone')
                                 <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
@@ -166,7 +166,7 @@
                         <div class="col-12">
                             <div class="">
                                 <label for="formMessage" class="form-label">Treść wiadomości</label>
-                                <textarea class="form-control @error('form_message') is-invalid @enderror" id="formMessage" rows="3" name="form_message"></textarea>
+                                <textarea class="form-control @error('form_message') is-invalid @enderror" id="formMessage" rows="3" name="form_message" autocomplete="off"></textarea>
 
                                 @error('form_message')
                                 <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>

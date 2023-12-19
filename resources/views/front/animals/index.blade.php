@@ -42,7 +42,7 @@
                         <h2 class="section-title">Czy na plażę w Sianożętach <br><span class="text-blue">wolno wchodzić z psem?</span></h2>
                         <p>Pies na plaży w Sianożętach jest zawsze mile widziany, pod warunkiem, że nie stanowi zagrożenia dla innych użytkowników plaży. Właściciel rzecz jasna musi posprzątać po swoim pupilu, jeżeli zajdzie taka potrzeba. W Sianożętach właściciele czworonogów z pewnością poczują się jak w domu i nie odczują dyskomfortu z tak błahego powodu, jakim jest przyjazd z psem na wakacje.</p>
                         <p>&nbsp;</p>
-                        <p>W Podczelu i Kołobrzegu znajduję się również wybiegi dla psów!</p>
+                        <p>W Podczelu i Kołobrzegu znajdują się również wybiegi dla psów!</p>
                     </div>
                 </div>
             </div>
