@@ -15,6 +15,6 @@ class RoomsController extends Controller
         $entry = Pricelist::find(1);
         $pok2 = Image::where('gallery_id', 2)->get();
         $pok3 = Image::where('gallery_id', 3)->get();
-        return view('front.rooms.index')->with(['page' => $page, 'list' => $list, 'pricelist' => $entry, 'pok2' => $pok2, 'pok3' => $pok3]);
+        return view('front.rooms.index')->with(['page' => $page, 'pricelist' => $entry, 'pok2' => $pok2, 'pok3' => $pok3]);
     }
 }
