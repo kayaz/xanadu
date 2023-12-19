@@ -14,12 +14,13 @@ class GalleryController extends Controller
         $page = Page::find(9);
         $galeries = Gallery::orderBy('sort', 'ASC')->get();
 
-        $pool = Image::where('gallery_id', 6)->get();
+        $houses = Image::where('gallery_id', 1)->get();
         $pok2 = Image::where('gallery_id', 2)->get();
         $pok3 = Image::where('gallery_id', 3)->get();
-        $houses = Image::where('gallery_id', 1)->get();
+        $restaurant = Image::where('gallery_id', 4)->get();
+        $pool = Image::where('gallery_id', 6)->get();
 
-        return view('front.gallery.index', compact('page', 'galeries', 'pool', 'pok2', 'pok3', 'houses'));
+        return view('front.gallery.index', compact('page', 'galeries', 'pool', 'pok2', 'pok3', 'houses', 'restaurant'));
     }
 
     public function show()

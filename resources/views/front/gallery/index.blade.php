@@ -72,6 +72,17 @@
                                 </a>
                             </div>
                         @endforeach
+                        @foreach($restaurant as $ri)
+                            <div class="col-4 mix category-{{$ri->gallery_id}}">
+                                <a href="/uploads/gallery/images/{{$ri->file}}" class="swipebox" rel="gallery-1" title="Pokój 3-osobowy">
+                                    <picture>
+                                        <source type="image/webp" srcset="{{asset('uploads/gallery/images/thumbs/webp/'.$ri->file_webp) }}">
+                                        <source type="image/jpeg" srcset="{{asset('uploads/gallery/images/thumbs/'.$ri->file) }}">
+                                        <img src="{{asset('uploads/gallery/images/thumbs/'.$ri->file) }}" alt="{{ $ri->name }}">
+                                    </picture>
+                                </a>
+                            </div>
+                        @endforeach
                         @foreach($pool as $pi)
                             <div class="col-4 mix category-{{$pi->gallery_id}}">
                                 <a href="/uploads/gallery/images/{{$pi->file}}" class="swipebox" rel="gallery-1" title="Basen">
