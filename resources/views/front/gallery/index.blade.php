@@ -39,15 +39,6 @@
                         @endforeach
                     </div>
                     <div class="mix-container row mt-3 mt-xxl-5">
-                        <div class="col-4 mix category-1"><img src="https://placehold.co/600x400/orange/white" alt=""></div>
-                        <div class="col-4 mix category-2"><img src="https://placehold.co/600x400/blue/white" alt=""></div>
-                        <div class="col-4 mix category-1"><img src="https://placehold.co/600x400/orange/white" alt=""></div>
-                        <div class="col-4 mix category-2"><img src="https://placehold.co/600x400/blue/white" alt=""></div>
-                        <div class="col-4 mix category-1"><img src="https://placehold.co/600x400/orange/white" alt=""></div>
-                        <div class="col-4 mix category-2"><img src="https://placehold.co/600x400/blue/white" alt=""></div>
-                        <div class="col-4 mix category-1"><img src="https://placehold.co/600x400/orange/white" alt=""></div>
-                        <div class="col-4 mix category-2"><img src="https://placehold.co/600x400/blue/white" alt=""></div>
-                        <div class="col-4 mix category-1"><img src="https://placehold.co/600x400/orange/white" alt=""></div>
                         @foreach($pok2 as $pok2i)
                             <div class="col-4 mix category-{{$pok2i->gallery_id}}">
                                 <a href="/uploads/gallery/images/{{$pok2i->file}}" class="swipebox" rel="gallery-1" title="Pokój 2-osobowy">
