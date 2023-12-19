@@ -35,7 +35,7 @@
                                     @endforeach
 
                                     @foreach($houses as $hi)
-                                        <a href="/uploads/gallery/images/{{$hi->file}}" class="swipebox d-none" rel="gallery-{{$hi->gallery_id}}" title="Pokój 2-osobowy">
+                                        <a href="/uploads/gallery/images/{{$hi->file}}" class="swipebox d-none" rel="gallery-{{$hi->gallery_id}}" title="Domki nad morzem">
                                             <picture>
                                                 <source type="image/webp" srcset="{{asset('uploads/gallery/images/thumbs/webp/'.$hi->file_webp) }}">
                                                 <source type="image/jpeg" srcset="{{asset('uploads/gallery/images/thumbs/'.$hi->file) }}">
