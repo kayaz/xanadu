@@ -41,7 +41,7 @@
                     <div class="mix-container row mt-3 mt-xxl-5">
                         @foreach($houses as $hi)
                             <div class="col-4 mix category-{{$hi->gallery_id}}">
-                                <a href="/uploads/gallery/images/{{$hi->file}}" class="swipebox" rel="gallery-1" title="Pokój 2-osobowy">
+                                <a href="/uploads/gallery/images/{{$hi->file}}" class="swipebox" rel="gallery-{{$hi->gallery_id}}" title="Pokój 2-osobowy">
                                     <picture>
                                         <source type="image/webp" srcset="{{asset('uploads/gallery/images/thumbs/webp/'.$hi->file_webp) }}">
                                         <source type="image/jpeg" srcset="{{asset('uploads/gallery/images/thumbs/'.$hi->file) }}">
@@ -52,7 +52,7 @@
                         @endforeach
                         @foreach($pok2 as $pok2i)
                             <div class="col-4 mix category-{{$pok2i->gallery_id}}">
-                                <a href="/uploads/gallery/images/{{$pok2i->file}}" class="swipebox" rel="gallery-1" title="Pokój 2-osobowy">
+                                <a href="/uploads/gallery/images/{{$pok2i->file}}" class="swipebox" rel="gallery-{{$pok2i->gallery_id}}" title="Pokój 2-osobowy">
                                     <picture>
                                         <source type="image/webp" srcset="{{asset('uploads/gallery/images/thumbs/webp/'.$pok2i->file_webp) }}">
                                         <source type="image/jpeg" srcset="{{asset('uploads/gallery/images/thumbs/'.$pok2i->file) }}">
@@ -63,7 +63,7 @@
                         @endforeach
                         @foreach($pok3 as $pok3i)
                             <div class="col-4 mix category-{{$pok3i->gallery_id}}">
-                                <a href="/uploads/gallery/images/{{$pok3i->file}}" class="swipebox" rel="gallery-1" title="Pokój 3-osobowy">
+                                <a href="/uploads/gallery/images/{{$pok3i->file}}" class="swipebox" rel="gallery-{{$pok3i->gallery_id}}" title="Pokój 3-osobowy">
                                     <picture>
                                         <source type="image/webp" srcset="{{asset('uploads/gallery/images/thumbs/webp/'.$pok3i->file_webp) }}">
                                         <source type="image/jpeg" srcset="{{asset('uploads/gallery/images/thumbs/'.$pok3i->file) }}">
@@ -74,7 +74,7 @@
                         @endforeach
                         @foreach($restaurant as $ri)
                             <div class="col-4 mix category-{{$ri->gallery_id}}">
-                                <a href="/uploads/gallery/images/{{$ri->file}}" class="swipebox" rel="gallery-1" title="Restauracja">
+                                <a href="/uploads/gallery/images/{{$ri->file}}" class="swipebox" rel="gallery-{{$ri->gallery_id}}" title="Restauracja">
                                     <picture>
                                         <source type="image/webp" srcset="{{asset('uploads/gallery/images/thumbs/webp/'.$ri->file_webp) }}">
                                         <source type="image/jpeg" srcset="{{asset('uploads/gallery/images/thumbs/'.$ri->file) }}">
@@ -85,7 +85,7 @@
                         @endforeach
                         @foreach($playground as $pli)
                             <div class="col-4 mix category-{{$pli->gallery_id}}">
-                                <a href="/uploads/gallery/images/{{$pli->file}}" class="swipebox" rel="gallery-1" title="Basen">
+                                <a href="/uploads/gallery/images/{{$pli->file}}" class="swipebox" rel="gallery-{{$pli->gallery_id}}" title="Basen">
                                     <picture>
                                         <source type="image/webp" srcset="{{asset('uploads/gallery/images/thumbs/webp/'.$pli->file_webp) }}">
                                         <source type="image/jpeg" srcset="{{asset('uploads/gallery/images/thumbs/'.$pli->file) }}">
@@ -96,7 +96,7 @@
                         @endforeach
                         @foreach($pool as $pi)
                             <div class="col-4 mix category-{{$pi->gallery_id}}">
-                                <a href="/uploads/gallery/images/{{$pi->file}}" class="swipebox" rel="gallery-1" title="Basen">
+                                <a href="/uploads/gallery/images/{{$pi->file}}" class="swipebox" rel="gallery-{{$pi->gallery_id}}" title="Basen">
                                     <picture>
                                         <source type="image/webp" srcset="{{asset('uploads/gallery/images/thumbs/webp/'.$pi->file_webp) }}">
                                         <source type="image/jpeg" srcset="{{asset('uploads/gallery/images/thumbs/'.$pi->file) }}">
