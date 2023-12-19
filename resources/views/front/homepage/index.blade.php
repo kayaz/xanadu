@@ -7,7 +7,8 @@
             <div class="slider-apla">
                 <h1>Bałtyckie przygody czekają na Ciebie.</h1>
             </div>
-            <img src="{{ asset('/uploads/slider/slider-1.jpg') }}" alt="" width="1920" height="900" class="w-100">
+            <img src="{{ asset('/uploads/slider/slider-1.jpg') }}" alt="" width="1920" height="900" class="w-100 d-none d-sm-block">
+            <img src="{{ asset('/uploads/slider/slider-1-mobile.jpg') }}" alt="" width="440" height="782" class="w-100 d-block d-sm-none">
         </li>
     </ul>
 

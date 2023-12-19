@@ -56,6 +56,12 @@
                     </div>
                 </div>
             </div>
+
+            <div class="row mt-3 mt-lg-5">
+                <div class="col-12">
+                    {!! parse_text('[galeria=gallery]6[/galeria]') !!}
+                </div>
+            </div>
         </div>
     </section>
 
