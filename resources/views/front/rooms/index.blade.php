@@ -92,7 +92,7 @@
 
                                     @foreach($pok2 as $index => $pok2si)
                                         @if($index === 0)
-                                            <a href="/uploads/gallery/images/{{$pok2si->file}}" class="btn btn-theme btn-icon mb-4 swipebox" rel="gallery-{{$pok2si->gallery_id}}" title="Pokój 3-osobowy">GALERIA <i class="las la-file-alt"></i></a>
+                                            <a href="/uploads/gallery/images/{{$pok2si->file}}" class="btn btn-theme btn-icon mb-4 swipebox" rel="gallery-{{$pok2si->gallery_id}}" title="Pokój 2-osobowy">GALERIA <i class="las la-file-alt"></i></a>
                                             @break
                                         @endif
                                     @endforeach
