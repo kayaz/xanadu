@@ -83,6 +83,17 @@
                                 </a>
                             </div>
                         @endforeach
+                        @foreach($playground as $pli)
+                            <div class="col-4 mix category-{{$pli->gallery_id}}">
+                                <a href="/uploads/gallery/images/{{$pli->file}}" class="swipebox" rel="gallery-1" title="Basen">
+                                    <picture>
+                                        <source type="image/webp" srcset="{{asset('uploads/gallery/images/thumbs/webp/'.$pli->file_webp) }}">
+                                        <source type="image/jpeg" srcset="{{asset('uploads/gallery/images/thumbs/'.$pli->file) }}">
+                                        <img src="{{asset('uploads/gallery/images/thumbs/'.$pli->file) }}" alt="{{ $pli->name }}">
+                                    </picture>
+                                </a>
+                            </div>
+                        @endforeach
                         @foreach($pool as $pi)
                             <div class="col-4 mix category-{{$pi->gallery_id}}">
                                 <a href="/uploads/gallery/images/{{$pi->file}}" class="swipebox" rel="gallery-1" title="Basen">

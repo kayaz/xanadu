@@ -18,9 +18,10 @@ class GalleryController extends Controller
         $pok2 = Image::where('gallery_id', 2)->get();
         $pok3 = Image::where('gallery_id', 3)->get();
         $restaurant = Image::where('gallery_id', 4)->get();
+        $playground = Image::where('gallery_id', 5)->get();
         $pool = Image::where('gallery_id', 6)->get();
 
-        return view('front.gallery.index', compact('page', 'galeries', 'pool', 'pok2', 'pok3', 'houses', 'restaurant'));
+        return view('front.gallery.index', compact('page', 'galeries', 'pool', 'pok2', 'pok3', 'houses', 'restaurant', 'playground'));
     }
 
     public function show()
