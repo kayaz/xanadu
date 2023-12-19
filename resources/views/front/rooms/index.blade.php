@@ -89,7 +89,23 @@
                                     <img src="/uploads/nocleg_pokoje.jpg" alt="Pokoje nad morzem do wynajęcia" />
                                     <h2>Pokój 2-osobowy</h2>
                                     <a href="#" class="btn btn-theme btn-icon mb-4 me-3" data-bs-toggle="modal" data-bs-target="#equipmentModal2">WYPOSAŻENIE <i class="las la-file-alt"></i></a>
-                                    <a href="{{ asset('/uploads/gallery/images/203121_dsc-0359.jpeg') }}" class="btn btn-theme btn-icon mb-4 swipebox" rel="gallery-1" title="Pokój 2-osobowy">GALERIA <i class="las la-file-alt"></i></a>
+
+                                    @foreach($pok2 as $index => $pok2si)
+                                        @if($index === 0)
+                                            <a href="/uploads/gallery/images/{{$pok2si->file}}" class="btn btn-theme btn-icon mb-4 swipebox" rel="gallery-{{$pok2si->gallery_id}}" title="Pokój 3-osobowy">GALERIA <i class="las la-file-alt"></i></a>
+                                            @break
+                                        @endif
+                                    @endforeach
+
+                                    @foreach($pok2 as $pok2i)
+                                        <a href="/uploads/gallery/images/{{$pok2i->file}}" class="swipebox d-none" rel="gallery-{{$pok2i->gallery_id}}" title="Pokój 2-osobowy">
+                                            <picture>
+                                                <source type="image/webp" srcset="{{asset('uploads/gallery/images/thumbs/webp/'.$pok2i->file_webp) }}">
+                                                <source type="image/jpeg" srcset="{{asset('uploads/gallery/images/thumbs/'.$pok2i->file) }}">
+                                                <img src="{{asset('uploads/gallery/images/thumbs/'.$pok2i->file) }}" alt="{{ $pok2i->name }}">
+                                            </picture>
+                                        </a>
+                                    @endforeach
                                 </div>
                             </div>
                             <div class="col-12 col-md-6">
@@ -97,7 +113,22 @@
                                     <img src="/uploads/nocleg_pokoje.jpg" alt="Pokoje nad morzem do wynajęcia" />
                                     <h2>Pokój 3-osobowy</h2>
                                     <a href="#" class="btn btn-theme btn-icon mb-4 me-3" data-bs-toggle="modal" data-bs-target="#equipmentModal3">WYPOSAŻENIE <i class="las la-file-alt"></i></a>
-                                    <a href="{{ asset('/uploads/gallery/images/203121_dsc-0359.jpeg') }}" class="btn btn-theme btn-icon mb-4 swipebox" rel="gallery-1" title="Pokój 3-osobowy">GALERIA <i class="las la-file-alt"></i></a>
+
+                                    @foreach($pok3 as $index => $pok3si)
+                                        @if($index === 0)
+                                            <a href="/uploads/gallery/images/{{$pok3si->file}}" class="btn btn-theme btn-icon mb-4 swipebox" rel="gallery-{{$pok3si->gallery_id}}" title="Pokój 3-osobowy">GALERIA <i class="las la-file-alt"></i></a>
+                                            @break
+                                        @endif
+                                    @endforeach
+                                    @foreach($pok3 as $pok3i)
+                                        <a href="/uploads/gallery/images/{{$pok3i->file}}" class="swipebox d-none" rel="gallery-{{$pok3i->gallery_id}}" title="Pokój 3-osobowy">
+                                            <picture>
+                                                <source type="image/webp" srcset="{{asset('uploads/gallery/images/thumbs/webp/'.$pok3i->file_webp) }}">
+                                                <source type="image/jpeg" srcset="{{asset('uploads/gallery/images/thumbs/'.$pok3i->file) }}">
+                                                <img src="{{asset('uploads/gallery/images/thumbs/'.$pok3i->file) }}" alt="{{ $pok3i->name }}">
+                                            </picture>
+                                        </a>
+                                    @endforeach
                                 </div>
                             </div>
                         </div>
