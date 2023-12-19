@@ -86,7 +86,7 @@
                         <div class="row">
                             <div class="col-12 col-md-6">
                                 <div class="nocleg text-center">
-                                    <img src="/uploads/nocleg_pokoje.jpg" alt="Pokoje nad morzem do wynajęcia" />
+                                    <img src="/uploads/nocleg_pokoje_2.jpg" alt="Pokoje nad morzem do wynajęcia" />
                                     <h2>Pokój 2-osobowy</h2>
                                     <a href="#" class="btn btn-theme btn-icon mb-4 me-3" data-bs-toggle="modal" data-bs-target="#equipmentModal2">WYPOSAŻENIE <i class="las la-file-alt"></i></a>
 
@@ -97,7 +97,8 @@
                                         @endif
                                     @endforeach
 
-                                    @foreach($pok2 as $pok2i)
+                                    @foreach($pok2 as $index => $pok2i)
+                                        @if($index > 0)
                                         <a href="/uploads/gallery/images/{{$pok2i->file}}" class="swipebox d-none" rel="gallery-{{$pok2i->gallery_id}}" title="Pokój 2-osobowy">
                                             <picture>
                                                 <source type="image/webp" srcset="{{asset('uploads/gallery/images/thumbs/webp/'.$pok2i->file_webp) }}">
@@ -105,6 +106,7 @@
                                                 <img src="{{asset('uploads/gallery/images/thumbs/'.$pok2i->file) }}" alt="{{ $pok2i->name }}">
                                             </picture>
                                         </a>
+                                        @endif
                                     @endforeach
                                 </div>
                             </div>
@@ -120,7 +122,8 @@
                                             @break
                                         @endif
                                     @endforeach
-                                    @foreach($pok3 as $pok3i)
+                                    @foreach($pok3 as $index => $pok3i)
+                                        @if($index > 0)
                                         <a href="/uploads/gallery/images/{{$pok3i->file}}" class="swipebox d-none" rel="gallery-{{$pok3i->gallery_id}}" title="Pokój 3-osobowy">
                                             <picture>
                                                 <source type="image/webp" srcset="{{asset('uploads/gallery/images/thumbs/webp/'.$pok3i->file_webp) }}">
@@ -128,6 +131,7 @@
                                                 <img src="{{asset('uploads/gallery/images/thumbs/'.$pok3i->file) }}" alt="{{ $pok3i->name }}">
                                             </picture>
                                         </a>
+                                        @endif
                                     @endforeach
                                 </div>
                             </div>

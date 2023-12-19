@@ -34,7 +34,8 @@
                                         @endif
                                     @endforeach
 
-                                    @foreach($houses as $hi)
+                                    @foreach($houses as $index => $hi)
+                                        @if($index > 0)
                                         <a href="/uploads/gallery/images/{{$hi->file}}" class="swipebox d-none" rel="gallery-{{$hi->gallery_id}}" title="Domki nad morzem">
                                             <picture>
                                                 <source type="image/webp" srcset="{{asset('uploads/gallery/images/thumbs/webp/'.$hi->file_webp) }}">
@@ -42,6 +43,7 @@
                                                 <img src="{{asset('uploads/gallery/images/thumbs/'.$hi->file) }}" alt="{{ $hi->name }}">
                                             </picture>
                                         </a>
+                                        @endif
                                     @endforeach
                                 </div>
                             </div>
