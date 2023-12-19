@@ -28,6 +28,24 @@
                                     <button type="button" class="btn btn-theme mt-0" data-bs-toggle="modal" data-bs-target="#equipmentModal"><span><i class="las la-file-alt"></i></span>Wyposażenie</button>
                                     <button type="button" class="btn btn-theme mt-0" data-bs-toggle="modal" data-bs-target="#priceModal"><span><i class="las la-th-list"></i></span>Cennik</button>
                                     <a href="{{ asset('/uploads/gallery/images/203121_dsc-0359.jpeg') }}" class="btn btn-theme mt-0 swipebox" rel="gallery-1"><span><i class="las la-image"></i></span>Galeria</a>
+
+
+                                    @foreach($houses as $index => $hi)
+                                        @if($index === 0)
+                                            <a href="/uploads/gallery/images/{{$hi->file}}" class="btn btn-theme btn-icon mb-4 swipebox" rel="gallery-{{$hi->gallery_id}}" title="Domki nad morzem">GALERIA <i class="las la-file-alt"></i></a>
+                                            @break
+                                        @endif
+                                    @endforeach
+
+                                    @foreach($houses as $hi)
+                                        <a href="/uploads/gallery/images/{{$hi->file}}" class="swipebox d-none" rel="gallery-{{$hi->gallery_id}}" title="Pokój 2-osobowy">
+                                            <picture>
+                                                <source type="image/webp" srcset="{{asset('uploads/gallery/images/thumbs/webp/'.$hi->file_webp) }}">
+                                                <source type="image/jpeg" srcset="{{asset('uploads/gallery/images/thumbs/'.$hi->file) }}">
+                                                <img src="{{asset('uploads/gallery/images/thumbs/'.$hi->file) }}" alt="{{ $hi->name }}">
+                                            </picture>
+                                        </a>
+                                    @endforeach
                                 </div>
                             </div>
                         </div>
@@ -90,7 +108,7 @@
                               <h2 class="section-title text-center"><span class="text-blue">Galeria</span></h2>
                           </div>
                           <div class="col-12">
-                              @include('front.parse.slider', $list)
+                              @include('front.parse.slider', $houses)
                           </div>
                       </div>
                     </div>

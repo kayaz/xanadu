@@ -12,7 +12,6 @@ class RoomsController extends Controller
     public function index()
     {
         $page = Page::find(7);
-        $list = Image::where('gallery_id', 1)->get();
         $entry = Pricelist::find(1);
         $pok2 = Image::where('gallery_id', 2)->get();
         $pok3 = Image::where('gallery_id', 3)->get();

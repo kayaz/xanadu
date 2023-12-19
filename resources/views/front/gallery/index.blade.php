@@ -39,6 +39,17 @@
                         @endforeach
                     </div>
                     <div class="mix-container row mt-3 mt-xxl-5">
+                        @foreach($houses as $hi)
+                            <div class="col-4 mix category-{{$hi->gallery_id}}">
+                                <a href="/uploads/gallery/images/{{$hi->file}}" class="swipebox" rel="gallery-1" title="Pokój 2-osobowy">
+                                    <picture>
+                                        <source type="image/webp" srcset="{{asset('uploads/gallery/images/thumbs/webp/'.$hi->file_webp) }}">
+                                        <source type="image/jpeg" srcset="{{asset('uploads/gallery/images/thumbs/'.$hi->file) }}">
+                                        <img src="{{asset('uploads/gallery/images/thumbs/'.$hi->file) }}" alt="{{ $hi->name }}">
+                                    </picture>
+                                </a>
+                            </div>
+                        @endforeach
                         @foreach($pok2 as $pok2i)
                             <div class="col-4 mix category-{{$pok2i->gallery_id}}">
                                 <a href="/uploads/gallery/images/{{$pok2i->file}}" class="swipebox" rel="gallery-1" title="Pokój 2-osobowy">
