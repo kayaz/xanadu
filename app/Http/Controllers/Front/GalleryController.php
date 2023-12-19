@@ -15,8 +15,10 @@ class GalleryController extends Controller
         $galeries = Gallery::orderBy('sort', 'ASC')->get();
 
         $pool = Image::where('gallery_id', 6)->get();
+        $pok2 = Image::where('gallery_id', 2)->get();
+        $pok3 = Image::where('gallery_id', 3)->get();
 
-        return view('front.gallery.index', compact('page', 'galeries', 'pool'));
+        return view('front.gallery.index', compact('page', 'galeries', 'pool', 'pok2', 'pok3'));
     }
 
     public function show()
