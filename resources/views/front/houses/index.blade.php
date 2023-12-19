@@ -105,7 +105,7 @@
                               <h2 class="section-title text-center"><span class="text-blue">Galeria</span></h2>
                           </div>
                           <div class="col-12">
-                              @include('front.parse.slider', $houses)
+                              @include('front.parse.slider', ['list' => $houses])
                           </div>
                       </div>
                     </div>
