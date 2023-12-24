@@ -10,9 +10,11 @@
 @stop
 
 @section('content')
-    <div class="p-0 p-md-5">
-        <div class="spacer-container">
-            <iframe src="/spacer/" frameborder="0" allowfullscreen></iframe>
+    <div class="pt-3 pt-md-0 pb-3 pb-md-0">
+        <div class="p-0 p-md-5">
+            <div class="spacer-container">
+                <iframe src="/spacer/" frameborder="0" allowfullscreen></iframe>
+            </div>
         </div>
     </div>
 @endsection
