@@ -26,7 +26,7 @@ Route::group(['namespace' => 'Front'], function () {
     Route::get('/pl/zwierzeta-w-resorcie', 'AnimalsController@index')->name('animals');
 
     // Gallery
-    Route::get('/pl/galeria/{slug}', 'GalleryController@show')->name('gallery.show');
+    Route::get('/pl/wirtualny-spacer', 'GalleryController@show')->name('gallery.show');
     Route::get('/pl/galeria', 'GalleryController@index')->name('gallery');
 
     // Restaurant

@@ -34,7 +34,7 @@
                             <a href="#" class="got-sub">Galeria</a>
                             <ul class="nav-sub mb-0">
                                 <li><a href="{{ route('gallery') }}">Zdjęcia</a></li>
-                                <li><a href="#">Wirtualny spacer</a></li>
+                                <li><a href="{{ route('gallery.show') }}">Wirtualny spacer</a></li>
                             </ul>
                         </li>
                         <li><a href="{{ route('pool') }}">Basen</a></li>
