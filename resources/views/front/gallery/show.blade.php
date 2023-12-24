@@ -10,7 +10,7 @@
 @stop
 
 @section('content')
-    <div class="p-5">
+    <div class="p-0 p-md-5">
         <div class="spacer-container">
             <iframe src="/spacer/" frameborder="0" allowfullscreen></iframe>
         </div>
