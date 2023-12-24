@@ -1365,14 +1365,14 @@ span.label i {
   font-size: 30px;
   color: #ff9c00;
 }
-.3d-container {
+.spacer-container {
   position: relative;
   width: 100%;
   padding-bottom: 56.25%;
   /* 16:9 aspect ratio (9 / 16 * 100) */
   overflow: hidden;
 }
-.3d-container iframe {
+.spacer-container iframe {
   position: absolute;
   top: 0;
   left: 0;
