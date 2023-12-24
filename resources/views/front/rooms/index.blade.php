@@ -277,7 +277,7 @@
                                             </tr>
                                             </thead>
                                             <tbody>
-                                            {!! tableDatesAndPrices($pricelist->houses_prices) !!}
+                                            {!! tableDatesAndPrices($pricelist->rooms_prices) !!}
                                             </tbody>
                                         </table>
                                     </div>
