@@ -134,13 +134,11 @@
 
     @include('front.partials.good-to-know')
 
-    <section class="pb-0">
+    <section class="p-0">
         <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <div id="virtual">
-                        <h3 class="mb-0">[ Miejsce na wirtualny spacer ]</h3>
-                    </div>
+            <div class="col-12">
+                <div class="spacer-container">
+                    <iframe src="/spacer/" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
