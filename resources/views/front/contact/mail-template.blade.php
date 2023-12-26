@@ -10,7 +10,7 @@
             <table align="center" cellpadding="0" cellspacing="0" border="0" width="600" style="margin:0 auto;width:600px;padding:0;border-collapse:collapse">
                 <tr>
                     <td align="center">
-                        <img src="{{ env('APP_URL') }}/images/logo.png" alt="Logotyp Podkarpacki Oddział PTMSiZP" width="135" height="141">
+                        <img style="width:214px;height:89px;border:0" width="214" height="89" border="0" src="{{ asset('/images/xanadu-logo.png') }}" alt="Xanadu Restort">
                     </td>
                 </tr>
             </table>
