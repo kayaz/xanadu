@@ -13,23 +13,41 @@
     </ul>
 
     <div class="booking">
+        @php
+            $today = date('Y-m-d');
+            $datetime = new DateTime('tomorrow');
+            $tomorrow = $datetime->format('Y-m-d');
+
+            $specificDate = '2024-04-26';
+            $compareDate = date('Y-m-d');
+            $useSpecificDate = $compareDate <= $specificDate;
+
+            if ($useSpecificDate) {
+                $today = '2024-04-26';
+                $datetime = new DateTime($today);
+                $datetime->modify('+1 day');
+                $tomorrow = $datetime->format('Y-m-d');
+            }
+
+            $today_ar = explode('-', $today);
+            $tomorrow_ar = explode('-', $tomorrow);
+        @endphp
+
         <form action="{{ route('reservation') }}" method="get">
             <div id="checkin">
                 <span class="label">PRZYJAZD</span>
-                <span class="date_day">09</span>
-                <span class="date_month">11</span>
-                <span class="date_year">2023</span>
+                <span class="date_day">{{ $today_ar[2] }}</span>
+                <span class="date_month">{{ $today_ar[1] }}</span>
+                <span class="date_year">{{ $today_ar[0] }}</span>
                 <button class="date_change checkin" type="button">ZMIEŃ DATĘ</button>
-                <input type="hidden" name="form_data_start" value="">
             </div>
 
             <div id="checkout">
                 <span class="label">WYJAZD</span>
-                <span class="date_day">10</span>
-                <span class="date_month">11</span>
-                <span class="date_year">2023</span>
+                <span class="date_day">{{ $tomorrow_ar[2] }}</span>
+                <span class="date_month">{{ $tomorrow_ar[1] }}</span>
+                <span class="date_year">{{ $tomorrow_ar[0] }}</span>
                 <button class="date_change checkout" type="button">ZMIEŃ DATĘ</button>
-                <input type="hidden" name="form_data_end" value="">
             </div>
             <button type="submit" class="date_check">SPRAWDŹ DOSTĘPNOŚĆ</button>
         </form>
@@ -218,9 +236,81 @@
 @endsection
 
 @push('scripts')
+    <link href="{{ asset('/css/picker/default.css') }}" rel="stylesheet">
+    <link href="{{ asset('/css/picker/default.date.css') }}" rel="stylesheet">
+    <script src="{{ asset('js/picker/picker.js') }}" charset="utf-8"></script>
+    <script src="{{ asset('js/picker/picker.date.js') }}" charset="utf-8"></script>
+    <script src="{{ asset('js/picker/picker.pl.js') }}" charset="utf-8"></script>
     <script src="{{ asset('js/slick.min.js') }}" charset="utf-8"></script>
+
     <script type="text/javascript">
         $(document).ready(function(){
+            const $input = $('.date_change.checkin').pickadate({
+                formatSubmit: 'yyyy-mm-dd',
+                container: "body",
+                editable: true,
+                closeOnSelect: true,
+                clear: '',
+                closeOnClear: false,
+                hiddenSuffix: "form_data_start",
+                min: new Date(2024,3,26),
+                max: new Date(2024,8,30),
+                onSet: function () {
+                    const date = $("#checkin input[type=hidden]").val();
+                    const arr = date.split('-');
+
+                    $('#checkin .date_day').text(arr[2]);
+                    $('#checkin .date_month').text(arr[1]);
+                    $('#checkin .date_year').text(arr[0]);
+
+                },
+                onStart: function() {
+                    console.log('Hello there :)');
+                    $("#checkin input[type=hidden]").val('{{ $today }}');
+                }
+            });
+
+            const $input2 = $('.date_change.checkout').pickadate({
+                formatSubmit: 'yyyy-mm-dd',
+                container: "body",
+                editable: true,
+                closeOnSelect: true,
+                clear: '',
+                closeOnClear: false,
+                hiddenSuffix: "form_data_end",
+                min: new Date(2024,3,26),
+                max: new Date(2024,8,30),
+                onSet: function () {
+                    const date = $("#checkout input[type=hidden]").val();
+                    const arr = date.split('-');
+
+                    $('#checkout .date_day').text(arr[2]);
+                    $('#checkout .date_month').text(arr[1]);
+                    $('#checkout .date_year').text(arr[0]);
+
+                },
+                onStart: function() {
+                    console.log('Hello there :)');
+                    $("#checkout input[type=hidden]").val('{{ $tomorrow }}');
+                }
+            });
+
+            $( ".date_change.checkin").on('click', function(event) {
+                const picker = $input.pickadate('picker');
+                picker.open();
+                event.stopPropagation();
+                event.preventDefault();
+            });
+
+            $( ".date_change.checkout").on('click', function(event) {
+
+                const picker = $input2.pickadate('picker');
+                picker.open();
+                event.stopPropagation();
+                event.preventDefault();
+            });
+
+
             $(".attraction-carousel").slick({
                 infinite: true,
                 slidesToShow: 5,
