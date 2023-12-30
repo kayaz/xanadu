@@ -83,7 +83,7 @@
                             <div class="mb-3 mb-sm-4 mb-xl-5">
                                 <label for="foodType" class="form-label">Wyżywienie <span>*</span></label>
                                 <select class="form-select" name="form_food" id="foodType">
-                                    <option selected>Brak</option>
+                                    <option value="0" selected>Brak</option>
                                     <option value="1">Śniadanie</option>
                                     <option value="2">Śniadanie + obiadokolacja</option>
                                 </select>
