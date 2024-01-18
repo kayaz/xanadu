@@ -3,7 +3,6 @@
 namespace App\Mail;
 
 use App\Models\Client;
-use App\Models\Property;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
@@ -35,9 +34,8 @@ class ChatSend extends Mailable
      */
     public function build()
     {
-        return $this->subject('Xanadu Resort - masz nową wiadomość')->view('front.contact.mail-template',
-            [
-                'request' => $this->request
-            ]);
+        return $this->subject('Xanadu Resort - masz nową wiadomość')
+            ->view('front.contact.mail-template', ['request' => $this->request])
+            ->replyTo($this->request->form_email, $this->request->form_name);
     }
 }
