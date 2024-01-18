@@ -29,7 +29,7 @@ class ReservationSend extends Mailable
      */
     public function build()
     {
-        return $this->subject(config('app.name').' - wiadomość wysłana z: '.$this->request->form_page)
+        return $this->subject(config('app.name').' - rezerwacja ze strony xanaduhotel.pl')
             ->view('front.mail.reservation', ['request' => $this->request])
             ->replyTo($this->request->form_email, $this->request->form_name);
     }
