@@ -18,7 +18,7 @@
                     <p>Chcą Państwo zarezerwować u nas pobyt? Interesują Państwa najbardziej komfortowe i pełne pozytywnych wrażeń noclegi w Sianożętach nad polskim morzem? Zapraszamy do zapoznania się z cennikiem oraz do dobrania najbardziej korzystnej dla siebie opcji wczasowej. Urlop w naszym ośrodku polecamy zarówno parom, rodzinom z dziećmi oraz grupom znajomych, jak i turystom podróżującym samotnie. Oferujemy atrakcyjne ceny za wysoką jakość usług. Dostępne jest wyżywienie (śniadania i obiadokolacje zarówno dla gości z pokoi, jak i z domów). Zachęcamy do sprawdzenia terminów i cen na najbliższy sezon wypoczynkowy.</p>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
-                    <h2 class="section-title section-title-border mb-4">Terminy i ceny na rok 2024</h2>
+                    <h2 class="section-title section-title-border mb-4">Terminy i ceny na rok 2025</h2>
                     <p><b>Poniższe ceny obejmują tylko kwotę zakwaterowania. Oferujemy korzystne pakiety ze śniadaniem i obiadokolacją. Rezerwując pobyt zapytaj o opcję z wyżywieniem!</b></p>
 
                     <img src="/section/pokoje-nad-morzem.jpg" alt="Pokoje nad morzem" class="mt-5 d-block d-lg-none" />
